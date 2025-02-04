@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(3, 3, 3);
+  font-size: 10px;
+  font-family: "IBM Plex Sans KR";
+  font-weight: 500;
+  font-style: medium;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* 영어 디자인 폰트 */
+/* .rosarivo-regular {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.rosarivo-regular-italic {
+    font-family: "Rosarivo", serif;
+    font-weight: 400;
+    font-style: italic;
+} */
+
+/* 영어 메인 폰트
+.dm-sans-<uniquifier> {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
