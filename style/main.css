@@ -77,7 +77,6 @@ header {
   position: absolute;
   opacity: 0;
   width: 100rem;
-  border: 1px solid black;
   transition: 2s;
   background-repeat: no-repeat;
   background-image: cover;
