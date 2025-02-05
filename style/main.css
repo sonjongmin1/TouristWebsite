@@ -11,3 +11,78 @@ footer {
   height: 100px;
   background-color: black;
 }
+body{overflow-x: hidden;}
+
+/* hein section 01 ----------*/
+.hi-section{
+  width: 100vw; height: 90vh; position: relative;
+}
+.hi-subTit{
+  width: 100%; height: 10rem;
+  margin-bottom: 2rem; display: flex; 
+  justify-content: center; align-items: center;
+  font-size: 3rem;
+}
+.hi-seasonT{
+  width: 80%; height: 70%; margin: auto;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.hi-seasonT>div{
+  width: 20%; height: 85%; align-content: center;
+}
+#hi-seasonImg{
+  width: 100%; height: 80%; background-color: gray;
+}
+.hi-seasonImg1{
+  border-radius: 3rem 0 0 0;
+}
+.hi-seasonImg2{
+  border-radius: 0 0 3rem 0;
+}
+.hi-seasonName{
+  font-size: 2rem; text-align: center;
+}
+/* hein section 02 ----------*/
+.hi-seasonEnf{
+  width: 100%; height: 80%; margin: auto; background-color: rgba(20,20,57,0.85);
+  display: flex; justify-content: space-between; align-items: center;
+}
+/* button style */
+.hi-seasonEnf-btn{
+  display: block; width: 5rem; height: 5rem;
+  border: none; cursor: pointer; background-color: transparent;
+}
+#hi-seasonEnf-btnL{
+  margin-left: 10rem;
+}
+#hi-seasonEnf-btnR{
+  margin-right: 10rem;
+}
+/* main bord style */
+.hi-seasonEnf-mainBox{
+  width: 80%; height: 80%; display: flex; align-items: center;
+  gap: 10rem; overflow: hidden;
+}
+/* img style */
+.hi-seasonEnf-img{
+  width: 40rem; height: 40rem; background-color: aqua; 
+  align-content: end; margin-left: 10rem;
+}
+.hi-seasonEnf-imgLabel{
+  width: 100%; height: 1.5rem; background-color: rgba(20,20,57,0.7);
+  display: flex; justify-content: end; align-items: center; color: white;
+}
+.hi-seasonEnf-imgLabel>span{padding-right: 0.5rem; color: white;}
+/* story style */
+.hi-seasonEnf-txtB{
+  width: 60rem; height: 80%;
+}
+.hi-seasonEnf-txtTop{
+  width: 40%; height: 5rem;
+  align-content: end; padding-bottom: 0.3rem; 
+  border-bottom: 0.1rem solid #22D5FF;
+  color: white;
+}
+.hi-seasonEnf-txtName{
+  font-size: 2.5rem;
+}
