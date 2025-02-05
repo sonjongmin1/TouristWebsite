@@ -1,88 +1,254 @@
 header {
+  position: relative;
   width: 100%;
-  height: 150px;
-  background-color: black;
+  height: 300px;
+  background-color: #141b33;
   color: white;
   font-size: 3.2rem;
 }
-footer {
-  margin-top: 703px;
-  width: 100%;
-  height: 100px;
-  background-color: black;
+
+.jm-topNavMenu {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: 100vw;
+  border: 2px solid gold;
+  padding: 30px 0;
+  background-color: #141b33;
+  z-index: 1000;
 }
-body{overflow-x: hidden;}
+
+.jm-topNavMenu > ul {
+  display: flex;
+}
+
+.jm-topNav {
+  display: flex;
+  justify-content: end;
+  border: 1px solid #fff;
+}
+
+/* 계절 메뉴 테그*/
+
+.jm-topNavMenu > ul > li > a {
+  font-size: 3.2rem;
+  border: 1px solid #fff;
+  color: #fff;
+  color: gold;
+}
+
+.jm-topNavMenu > ul > li {
+  margin-right: 30px;
+  color: gold;
+}
+
+.jm-mainMenuBtn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* 메인페이지 이미지 */
+.jm-mainImgBox {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 650px;
+  border: 3px solid gold;
+  text-align: center;
+  align-content: center;
+  /* overflow: hidden; */
+}
+
+.jm-mainImgBox > .jm-mainImgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 3000px;
+  height: 100%;
+}
+
+.jm-mainImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  border: 1px solid blue;
+  font-size: 60px;
+  text-align: center;
+  align-items: center;
+}
+
+/* 메인 버튼 */
+.jm-mainPrevBtn,
+.jm-mainNextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gold;
+  font-size: 30px;
+}
+
+.jm-mainPrevBtn {
+  left: 0;
+}
+
+.jm-mainNextBtn {
+  right: 0;
+}
+
+/* 사람 아이콘 */
+.jm-pepleIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 500px;
+  height: 100px;
+}
+
+.jm-pepleIcon > li {
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid #000; */
+  align-content: center;
+}
+
+.jm-pepleIcon > li > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.jm-pepleIcon > li > ul > li {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #000;
+  align-content: center;
+}
+body {
+  overflow-x: hidden;
+}
 
 /* hein section 01 ----------*/
-.hi-section{
-  width: 100vw; height: 90vh; position: relative;
+.hi-section {
+  margin-top: 600px;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
 }
-.hi-subTit{
-  width: 100%; height: 10rem;
-  margin-bottom: 2rem; display: flex; 
-  justify-content: center; align-items: center;
+.hi-subTit {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
 }
-.hi-seasonT{
-  width: 80%; height: 70%; margin: auto;
-  display: flex; justify-content: space-between; align-items: center;
+.hi-seasonT {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.hi-seasonT>div{
-  width: 20%; height: 85%; align-content: center;
+.hi-seasonT > div {
+  width: 20%;
+  height: 85%;
+  align-content: center;
 }
-#hi-seasonImg{
-  width: 100%; height: 80%; background-color: gray;
+#hi-seasonImg {
+  width: 100%;
+  height: 80%;
+  background-color: gray;
 }
-.hi-seasonImg1{
+.hi-seasonImg1 {
   border-radius: 3rem 0 0 0;
 }
-.hi-seasonImg2{
+.hi-seasonImg2 {
   border-radius: 0 0 3rem 0;
 }
-.hi-seasonName{
-  font-size: 2rem; text-align: center;
+.hi-seasonName {
+  font-size: 2rem;
+  text-align: center;
 }
 /* hein section 02 ----------*/
-.hi-seasonEnf{
-  width: 100%; height: 80%; margin: auto; background-color: rgba(20,20,57,0.85);
-  display: flex; justify-content: space-between; align-items: center;
+.hi-seasonEnf {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  background-color: rgba(20, 20, 57, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* button style */
-.hi-seasonEnf-btn{
-  display: block; width: 5rem; height: 5rem;
-  border: none; cursor: pointer; background-color: transparent;
+.hi-seasonEnf-btn {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
-#hi-seasonEnf-btnL{
+#hi-seasonEnf-btnL {
   margin-left: 10rem;
 }
-#hi-seasonEnf-btnR{
+#hi-seasonEnf-btnR {
   margin-right: 10rem;
 }
 /* main bord style */
-.hi-seasonEnf-mainBox{
-  width: 80%; height: 80%; display: flex; align-items: center;
-  gap: 10rem; overflow: hidden;
+.hi-seasonEnf-mainBox {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  overflow: hidden;
 }
 /* img style */
-.hi-seasonEnf-img{
-  width: 40rem; height: 40rem; background-color: aqua; 
-  align-content: end; margin-left: 10rem;
+.hi-seasonEnf-img {
+  width: 40rem;
+  height: 40rem;
+  background-color: aqua;
+  align-content: end;
+  margin-left: 10rem;
 }
-.hi-seasonEnf-imgLabel{
-  width: 100%; height: 1.5rem; background-color: rgba(20,20,57,0.7);
-  display: flex; justify-content: end; align-items: center; color: white;
-}
-.hi-seasonEnf-imgLabel>span{padding-right: 0.5rem; color: white;}
-/* story style */
-.hi-seasonEnf-txtB{
-  width: 60rem; height: 80%;
-}
-.hi-seasonEnf-txtTop{
-  width: 40%; height: 5rem;
-  align-content: end; padding-bottom: 0.3rem; 
-  border-bottom: 0.1rem solid #22D5FF;
+.hi-seasonEnf-imgLabel {
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgba(20, 20, 57, 0.7);
+  display: flex;
+  justify-content: end;
+  align-items: center;
   color: white;
 }
-.hi-seasonEnf-txtName{
+.hi-seasonEnf-imgLabel > span {
+  padding-right: 0.5rem;
+  color: white;
+}
+/* story style */
+.hi-seasonEnf-txtB {
+  width: 60rem;
+  height: 80%;
+}
+.hi-seasonEnf-txtTop {
+  width: 40%;
+  height: 5rem;
+  align-content: end;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid #22d5ff;
+  color: white;
+}
+.hi-seasonEnf-txtName {
   font-size: 2.5rem;
 }
