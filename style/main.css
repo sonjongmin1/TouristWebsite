@@ -1,10 +1,11 @@
 header {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 30rem;
   background-color: #141b33;
   color: white;
   font-size: 3.2rem;
+  margin-bottom: 600px;
 }
 
 .jm-topNavMenu {
@@ -12,8 +13,7 @@ header {
   justify-content: end;
   position: fixed;
   width: 100vw;
-  border: 2px solid gold;
-  padding: 30px 0;
+  padding: 3rem 0;
   background-color: #141b33;
   z-index: 1000;
 }
@@ -25,39 +25,40 @@ header {
 .jm-topNav {
   display: flex;
   justify-content: end;
-  border: 1px solid #fff;
 }
 
 /* 계절 메뉴 테그*/
 
 .jm-topNavMenu > ul > li > a {
   font-size: 3.2rem;
-  border: 1px solid #fff;
   color: #fff;
-  color: gold;
 }
 
 .jm-topNavMenu > ul > li {
-  margin-right: 30px;
-  color: gold;
+  margin-right: 3rem;
 }
 
 .jm-mainMenuBtn {
+  position: relative;
+  bottom: 1rem;
   display: flex;
   align-items: center;
-  border: 1px solid #fff;
+  width: 5rem;
+  height: 5rem;
   color: #fff;
+  background-image: url("../img/icon/mainHambar.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* 메인페이지 이미지 */
 .jm-mainImgBox {
   position: absolute;
-  top: 100px;
+  top: 10rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 1000px;
-  height: 650px;
-  border: 3px solid gold;
+  width: 100rem;
+  height: 65rem;
   text-align: center;
   align-content: center;
   /* overflow: hidden; */
@@ -65,37 +66,70 @@ header {
 
 .jm-mainImgBox > .jm-mainImgs {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   display: flex;
-  width: 3000px;
-  height: 100%;
 }
 
-.jm-mainImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.jm-mainImgs > li {
+  position: absolute;
+  opacity: 0;
+  width: 100rem;
+  transition: 2s;
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-position: center;
+}
+
+.jm-mainImgs > li.on {
+  opacity: 1;
+}
+
+.jm-mainImg.on {
   width: 100%;
-  height: 80%;
-  border: 1px solid blue;
-  font-size: 60px;
-  text-align: center;
-  align-items: center;
+  height: 84%;
+}
+
+.jm-mainImgs > li:nth-child(1) {
+  background-image: url("../img/main/mainImg1.png");
+}
+.jm-mainImgs > li:nth-child(2) {
+  background-image: url("../img/main/mainImg2.png");
+}
+.jm-mainImgs > li:nth-child(3) {
+  background-image: url("../img/main/mainImg3.png");
+}
+.jm-mainImgs > li:nth-child(4) {
+  background-image: url("../img/main/mainImg4.png");
+}
+
+.jm-mainImg.on > img {
+  background: cover;
 }
 
 /* 메인 버튼 */
 .jm-mainPrevBtn,
 .jm-mainNextBtn {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  top: 37.5%;
   color: gold;
-  font-size: 30px;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jm-mainPrevBtn {
+  background-image: url("../img/icon/mainArrow.svg");
   left: 0;
+}
+
+.jm-mainNextBtn {
+  background-image: url("../img/icon/mainArrow.svg");
+  transform: rotate(180deg);
 }
 
 .jm-mainNextBtn {
@@ -117,7 +151,6 @@ header {
 .jm-pepleIcon > li {
   width: 50%;
   height: 100%;
-  /* border: 1px solid #000; */
   align-content: center;
 }
 
@@ -130,7 +163,6 @@ header {
 .jm-pepleIcon > li > ul > li {
   width: 50%;
   height: 100%;
-  border: 1px solid #000;
   align-content: center;
 }
 body {
@@ -138,9 +170,7 @@ body {
 }
 
 /* hein section 01 ----------*/
-.hi-section:nth-of-type(1) {
-  margin-top: 600px;
-}
+
 .hi-section {
   width: 100vw;
   height: 90vh;
