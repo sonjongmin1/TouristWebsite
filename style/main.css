@@ -31,6 +31,7 @@ header {
 
 .jm-topNavMenu > ul > li > a {
   font-size: 3.2rem;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -144,7 +145,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  width: 500px;
+  width: 700px;
   height: 100px;
 }
 
@@ -160,13 +161,22 @@ header {
   height: 100%;
 }
 
-.jm-pepleIcon > li > ul > li {
-  width: 50%;
+.jm-pepleIcon > li > ul > li:first-child {
+  width: 30%;
   height: 100%;
   align-content: center;
 }
-body {
-  overflow-x: hidden;
+
+.jm-pepleIcon > li > ul > li:last-child {
+  width: 70%;
+  height: 100%;
+  align-content: center;
+}
+
+.jm-createTour-intro span {
+  display: block;
+  text-align: start;
+  font-size: 1.6rem;
 }
 
 /* hein section 01 ----------*/
