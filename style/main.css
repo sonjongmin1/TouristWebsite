@@ -138,8 +138,10 @@ body {
 }
 
 /* hein section 01 ----------*/
-.hi-section {
+.hi-section:nth-of-type(1) {
   margin-top: 600px;
+}
+.hi-section {
   width: 100vw;
   height: 90vh;
   position: relative;
