@@ -1,69 +1,264 @@
 header {
+  position: relative;
   width: 100%;
-  height: 150px;
-  background-color: black;
+  height: 30rem;
+  background-color: #141b33;
   color: white;
   font-size: 3.2rem;
+  margin-bottom: 600px;
 }
-footer {
-  margin-top: 703px;
+
+.jm-topNavMenu {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  width: 100vw;
+  padding: 3rem 0;
+  background-color: #141b33;
+  z-index: 1000;
+}
+
+.jm-topNavMenu > ul {
+  display: flex;
+}
+
+.jm-topNav {
+  display: flex;
+  justify-content: end;
+}
+
+/* 계절 메뉴 테그*/
+
+.jm-topNavMenu > ul > li > a {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.jm-topNavMenu > ul > li {
+  margin-right: 3rem;
+}
+
+.jm-mainMenuBtn {
+  position: relative;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  color: #fff;
+  background-image: url("../img/icon/mainHambar.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 메인페이지 이미지 */
+.jm-mainImgBox {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100rem;
+  height: 65rem;
+  text-align: center;
+  align-content: center;
+  /* overflow: hidden; */
+}
+
+.jm-mainImgBox > .jm-mainImgs {
+  position: absolute;
   width: 100%;
-  height: 100px;
-  background-color: black;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
 }
-body{overflow-x: hidden;}
+
+.jm-mainImgs > li {
+  position: absolute;
+  opacity: 0;
+  width: 100rem;
+  transition: 2s;
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-position: center;
+}
+
+.jm-mainImgs > li.on {
+  opacity: 1;
+}
+
+.jm-mainImg.on {
+  width: 100%;
+  height: 84%;
+}
+
+.jm-mainImgs > li:nth-child(1) {
+  background-image: url("../img/main/mainImg1.png");
+}
+.jm-mainImgs > li:nth-child(2) {
+  background-image: url("../img/main/mainImg2.png");
+}
+.jm-mainImgs > li:nth-child(3) {
+  background-image: url("../img/main/mainImg3.png");
+}
+.jm-mainImgs > li:nth-child(4) {
+  background-image: url("../img/main/mainImg4.png");
+}
+
+.jm-mainImg.on > img {
+  background: cover;
+}
+
+/* 메인 버튼 */
+.jm-mainPrevBtn,
+.jm-mainNextBtn {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 37.5%;
+  color: gold;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jm-mainPrevBtn {
+  background-image: url("../img/icon/mainArrow.svg");
+  left: 0;
+}
+
+.jm-mainNextBtn {
+  background-image: url("../img/icon/mainArrow.svg");
+  transform: rotate(180deg);
+}
+
+.jm-mainNextBtn {
+  right: 0;
+}
+
+/* 사람 아이콘 */
+.jm-pepleIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 700px;
+  height: 100px;
+}
+
+.jm-pepleIcon > li {
+  width: 50%;
+  height: 100%;
+  align-content: center;
+}
+
+.jm-pepleIcon > li > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.jm-pepleIcon > li > ul > li:first-child {
+  width: 30%;
+  height: 100%;
+  align-content: center;
+}
+
+.jm-pepleIcon > li > ul > li:last-child {
+  width: 70%;
+  height: 100%;
+  align-content: center;
+}
+
+.jm-createTour-intro span {
+  display: block;
+  text-align: start;
+  font-size: 1.6rem;
+}
 
 /* hein section 01 ----------*/
-.hi-section{
-  width: 100vw; height: 90vh; position: relative;
+
+.hi-section {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
 }
-.hi-subTit{
-  width: 100%; height: 10rem;
-  margin-bottom: 2rem; display: flex; 
-  justify-content: center; align-items: center;
+.hi-subTit {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
 }
-.hi-seasonT{
-  width: 80%; height: 70%; margin: auto;
-  display: flex; justify-content: space-between; align-items: center;
+.hi-seasonT {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.hi-seasonT>div{
-  width: 20%; height: 85%; align-content: center;
+.hi-seasonT > div {
+  width: 20%;
+  height: 85%;
+  align-content: center;
 }
-#hi-seasonImg{
-  width: 100%; height: 80%; background-color: gray;
+#hi-seasonImg {
+  width: 100%;
+  height: 80%;
+  background-color: gray;
 }
-.hi-seasonImg1{
+.hi-seasonImg1 {
   border-radius: 3rem 0 0 0;
 }
-.hi-seasonImg2{
+.hi-seasonImg2 {
   border-radius: 0 0 3rem 0;
 }
-.hi-seasonName{
-  font-size: 2rem; text-align: center;
+.hi-seasonName {
+  font-size: 2rem;
+  text-align: center;
 }
 /* hein section 02 ----------*/
-.hi-seasonEnf{
-  width: 100%; height: 80%; margin: auto; background-color: rgba(20,20,57,0.85);
-  display: flex; justify-content: space-between; align-items: center;
+.hi-seasonEnf {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  background-color: rgba(20, 20, 57, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* button style */
-.hi-seasonEnf-btn{
-  display: block; width: 5rem; height: 5rem;
-  border: none; cursor: pointer; background-color: transparent;
+.hi-seasonEnf-btn {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
-#hi-seasonEnf-btnL{
+#hi-seasonEnf-btnL {
   margin-left: 10rem;
 }
-#hi-seasonEnf-btnR{
+#hi-seasonEnf-btnR {
   margin-right: 10rem;
 }
 /* main bord style */
-.hi-seasonEnf-mainBox{
-  width: 80%; height: 80%; display: flex; align-items: center;
-  gap: 10rem; overflow: hidden;
+.hi-seasonEnf-mainBox {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  overflow: hidden;
 }
 /* img style */
+<<<<<<< HEAD
 .hi-seasonEnf-img{
   width: 40em; height: 40em; background-color: aqua; 
   align-content: end; margin-left: 10rem;
@@ -92,4 +287,212 @@ body{overflow-x: hidden;}
 }
 .hi-seasonEnf-ex{
   color: rgba(255, 255, 255, 0.7); margin-top: 6rem;
+=======
+.hi-seasonEnf-img {
+  width: 40rem;
+  height: 40rem;
+  background-color: aqua;
+  align-content: end;
+  margin-left: 10rem;
+}
+.hi-seasonEnf-imgLabel {
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgba(20, 20, 57, 0.7);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: white;
+}
+.hi-seasonEnf-imgLabel > span {
+  padding-right: 0.5rem;
+  color: white;
+}
+/* story style */
+.hi-seasonEnf-txtB {
+  width: 60rem;
+  height: 80%;
+}
+.hi-seasonEnf-txtTop {
+  width: 40%;
+  height: 5rem;
+  align-content: end;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid #22d5ff;
+  color: white;
+}
+.hi-seasonEnf-txtName {
+  font-size: 2.5rem;
+}
+
+/* SAVE TOUR 섹션 스타일 */
+.jb-section {
+  width: 100%;
+  height: 20%;
+  padding: 2rem 0;
+  background-color: #0F172A;
+  text-align: center;
+}
+
+.jb-section1 {
+  width: 100%;
+  height: 43%;
+  padding: 2rem 0;
+  background-color: #0F172A;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* 제목 스타일 */
+.jb-subTit {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+.jb-subTit1 {
+  font-size: 1.25rem;
+  color: #94A3B8;
+  margin-bottom: 2rem;
+}
+
+/* 슬라이드 컨테이너 */
+.jb-mainImgBox {
+  width: 100rem; 
+  overflow: hidden; 
+  position: relative;
+  margin: 50px auto;
+}
+
+/* 실제 슬라이드 이동하는 부분 */
+.jb-mainImgWrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  white-space: nowrap;
+}
+
+/* 개별 이미지 박스 */
+.jb-mainImgWrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem; 
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+/* 이미지 스타일 */
+.jb-mainImg {
+  width: 100%;
+  height: 20rem; 
+  background-color: #CBD5E1;
+  border-radius: 0.75rem;
+}
+
+/* 이미지 하단의 이름 */
+.jb-springName,
+.jb-summerName,
+.jb-autumnName,
+.jb-winterName {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F8FAFC;
+}
+
+/* 추억 기록,리뷰 페이지 */
+
+.jb-section2 {
+  width: 100%;
+  height: 75%;
+  padding: 2rem 0;
+  background-color: #0F172A;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* 제목 스타일 */
+.jb-subTit2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F8FAFC;
+}
+.jb-subTit3 {
+  font-size: 1.25rem;
+  color: #94A3B8;
+  margin-bottom: 2rem;
+}
+
+/* 시즌별 컨테이너 */
+.jb-reBox {
+  display: none; /* 기본적으로 숨김 */
+  padding: 4rem;
+  border-radius: 1.5rem;
+  margin: 2rem;
+  background-color: #0F1626;
+}
+
+/* 기본적으로 Spring이 보이도록 설정 */
+.jb-reBox1 { display: block; }
+
+/* Season 텍스트 스타일 */
+.jb-whiteBox {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 시즌 제목 */
+.jb-springBox, .jb-summerBox, .jb-autumnBox, .jb-winterBox {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* 색상 설정 */
+.jb-springBox { color: #FFC0CB; }
+.jb-summerBox { color: #FFD700; }
+.jb-autumnBox { color: #FF8C00; }
+.jb-winterBox { color: #ADD8E6; }
+
+/* 리뷰 박스 스타일 */
+.jb-spRevBox1, .jb-spRevBox2, .jb-spRevBox3, .jb-spRevBox4,
+.jb-suRevBox1, .jb-suRevBox2, .jb-suRevBox3, .jb-suRevBox4,
+.jb-auRevBox1, .jb-auRevBox2, .jb-auRevBox3, .jb-auRevBox4,
+.jb-wiRevBox1, .jb-wirevBox2, .jb-wiRevBox3, .jb-wiRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  background-color: #FFC0CB;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0.5rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* footer 부분 */
+
+footer{
+  width : 100%;
+  height : 10rem;
+  background-color: #0F172A;
+  margin-top: 30px;
+  color : white;
+>>>>>>> develop
 }

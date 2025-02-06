@@ -6,8 +6,56 @@
     <title>계절별 한국 관광 홈페이지</title>
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
+    <header>
+      <div class="jm-topNav">
+        <div class="jm-topNavMenu">
+          <ul>
+            <li><a href="#">spring</a></li>
+            <li><a href="#">summer</a></li>
+            <li><a href="#">autumn</a></li>
+            <li><a href="#">winter</a></li>
+          </ul>
+          <ul>
+            <li class="jm-mainMenuBtn"></li>
+          </ul>
+        </div>
+
+        <div class="jm-mainImgBox">
+          <ul class="jm-mainImgs">
+            <li class="jm-mainImg on"></li>
+            <li class="jm-mainImg"></li>
+            <li class="jm-mainImg"></li>
+            <li class="jm-mainImg"></li>
+          </ul>
+          <div class="jm-mainPrevBtn"></div>
+          <div class="jm-mainNextBtn"></div>
+          <ul class="jm-pepleIcon">
+            <li class="jm-createTour">
+              <ul>
+                <li><img src="./img/icon/mainPerson.png" alt="" /></li>
+                <li class="jm-createTour-intro">
+                  <span>private tour</span>
+                  <span>혼자 여행 계획 중이신가요?</span>
+                </li>
+              </ul>
+            </li>
+            <li class="jm-groupTour">
+              <ul>
+                <li><img src="./img/icon/mainPeple.png" alt="" /></li>
+                <li class="jm-createTour-intro">
+                  <span> group tour </span
+                  ><span> 함께 여행을 떠나실 계획이신가요? </span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
     <!-- <header></header> -->
     <!-- 시즌 투어 section -->
     <section class="hi-section">
@@ -51,11 +99,11 @@
           </div>
           <!-- 이벤트 및 축제 내용 -->
           <div class="hi-seasonEnf-txtB">
-            <div class="hi-seasonEnf-txtTop">신나는 여름  축제</div>
-            <div class="hi-seasonEnf-txtName">2019<br>SUMMER FESTIVAL</div>
+            <div class="hi-seasonEnf-txtTop">신나는 여름 축제</div>
+            <div class="hi-seasonEnf-txtName">2019<br />SUMMER FESTIVAL</div>
             <div class="hi-seasonEnf-term">2019.07.01 - 2019.07.20</div>
             <div class="hi-seasonEnf-ex">
-              뜨거운 여름, 시원한 즐거움이 가득한 축제!<br>
+              뜨거운 여름, 시원한 즐거움이 가득한 축제!<br />
               함께여서 더 즐거운 순간들로 가득한 여름 밤을 만끽해보세요!
             </div>
           </div>
@@ -63,5 +111,116 @@
         <button id="hi-seasonEnf-btnR" class="hi-seasonEnf-btn">Right</button>
       </div>
     </section>
+    <!-- 여행 사진 슬라이드 -->
+    <section class="jb-section1">
+      <!-- 제목 -->
+      <div class="jb-subTit">SAVE TOUR</div>
+      <div class="jb-subTit1">소중한 추억들을 기록해보세요</div>
+      <!-- 본문 -->
+      <div class="jb-mainImgBox">
+        <div class="jb-mainImgWrapper">
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-springName">Spring</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-springName">Spring</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-summerName">Summer</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-summerName">Summer</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-autumnName">Autumn</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-autumnName">Autumn</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-winterName">Winter</div>
+          </div>
+          <div>
+            <div class="jb-mainImg"></div>
+            <div class="jb-winterName">Winter</div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- 추억 기록,리뷰 페이지 -->
+      <section class="jb-section2">
+        <!-- 제목 -->
+        <div class="jb-subTit2">REVIEW</div>
+        <div class="jb-subTit3">소중한 추억들을 기록해보세요</div>
+
+        <!-- 봄 본문 -->
+        <div class="jb-reBox jb-reBox1">
+          <div class="jb-whiteBox">Season</div>
+          <div class="jb-springBox">Spring</div>
+          <div class="jb-spRevBox1"></div>
+          <div class="jb-spRevBox2"></div>
+          <div class="jb-spRevBox3"></div>
+          <div class="jb-spRevBox4"></div>
+          <button id="jb-springBtn">Spring</button>
+          <button id="jb-summerBtn">Summer</button>
+          <button id="jb-autumnBtn">Autumn</button>
+          <button id="jb-winterBtn">Winter</button>
+        </div>
+
+        <!-- 여름 본문 -->
+        <div class="jb-reBox jb-reBox2">
+          <div class="jb-whiteBox">Season</div>
+          <div class="jb-summerBox">Summer</div>
+          <div class="jb-suRevBox1"></div>
+          <div class="jb-suRevBox2"></div>
+          <div class="jb-suRevBox3"></div>
+          <div class="jb-suRevBox4"></div>
+          <button id="jb-springBtn">Spring</button>
+          <button id="jb-summerBtn">Summer</button>
+          <button id="jb-autumnBtn">Autumn</button>
+          <button id="jb-winterBtn">Winter</button>
+        </div>
+
+        <!-- 가을 본문 -->
+        <div class="jb-reBox jb-reBox3">
+          <div class="jb-whiteBox">Season</div>
+          <div class="jb-autumnBox">Autumn</div>
+          <div class="jb-auRevBox1"></div>
+          <div class="jb-auRevBox2"></div>
+          <div class="jb-auRevBox3"></div>
+          <div class="jb-auRevBox4"></div>
+          <button id="jb-springBtn">Spring</button>
+          <button id="jb-summerBtn">Summer</button>
+          <button id="jb-autumnBtn">Autumn</button>
+          <button id="jb-winterBtn">Winter</button>
+        </div>
+
+        <!-- 겨울 본문 -->
+        <div class="jb-reBox jb-reBox4">
+          <div class="jb-whiteBox">Season</div>
+          <div class="jb-winterBox">Winter</div>
+          <div class="jb-wiRevBox1"></div>
+          <div class="jb-wirevBox2"></div>
+          <div class="jb-wiRevBox3"></div>
+          <div class="jb-wiRevBox4"></div>
+          <button id="jb-springBtn">Spring</button>
+          <button id="jb-summerBtn">Summer</button>
+          <button id="jb-autumnBtn">Autumn</button>
+          <button id="jb-winterBtn">Winter</button>
+        </div>
+      </section>
+          <!-- footer 부분 -->
+    <footer>
+      Footer
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
+
