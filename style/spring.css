@@ -1,0 +1,248 @@
+/* jongmin sub-page ST*/
+
+.sp1-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 8rem;
+  background-color: #141b33;
+}
+
+.sp1-imgLogo {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.sp1-navMenu {
+  display: flex;
+}
+
+.sp1-navMenu > li {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sp1-navMenu > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sp1-hamBar {
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../img/icon/mainHambar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sp1-sec1 {
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  padding: 4rem;
+}
+
+.sp1-sec1 > div {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.sp1-sec1 > ul {
+  display: flex;
+  /* border: 1px solid #000; */
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.sp1-sec1 > ul > li {
+  width: 37rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.sp1-sec1 > ul > li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sp1-sec1 > ul > li:not(:last-child) {
+  margin-right: 6rem;
+}
+.sp1-mainImg1 {
+  background-image: url("../img/spring-sub1/springSubMain1.jpg");
+}
+.sp1-mainImg2 {
+  background-image: url("../img/spring-sub1/springSubMain2.jpg");
+}
+.sp1-mainImg3 {
+  background-image: url("../img/spring-sub1/springSubMain3.jpg");
+}
+
+.sp1-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60rem;
+  background-color: #141b33;
+}
+.sp1-sec2 > div {
+  width: 30%;
+  height: 70%;
+}
+
+.sp1-sec2 > div:not(:last-child) {
+  margin-right: 20rem;
+}
+
+.sp1-sec2 div {
+  color: #fff;
+}
+
+.sp1-sec2 > div:first-child {
+  padding: 2rem;
+}
+
+.sp1-sec2-line {
+  width: 30rem;
+  height: 0.03rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 0.03rem solid #fff;
+}
+
+.sp1-sec2-title {
+  font-size: 1.6rem;
+}
+
+.sp1-sec2-title-main {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+}
+
+.sp1-sec2-content {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.sp1-sub-img {
+  background-image: url("../img/spring-sub1/springSubSec1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.sp1-sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80rem;
+  border: 1px solid #000;
+  padding: 10rem;
+}
+
+.sp1-sec3 > div {
+  height: 50%;
+  margin-bottom: 5rem;
+}
+
+.sp1-sec3 > div:nth-child(1) {
+  width: 40%;
+  height: 50%;
+  border-radius: 1rem;
+}
+
+.sp1-sec3-apiImg {
+  background-image: url("../img/spring-sub1/springSubWeather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sp1-sec3-graph {
+  text-align: center;
+  align-content: center;
+  font-size: 6rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.sp1-sec4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #141b33; */
+  height: 60rem;
+}
+
+.sp1-sec4 > div {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.sp1-sec4 > ul {
+  height: 70%;
+}
+
+.sp1-sec4-card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellowgreen; */
+}
+
+.sp1-sec4-card-box > li {
+  width: 17%;
+  height: 90%;
+}
+
+.sp1-sec4-card-box > li:not(:last-child) {
+  margin-right: 4.5rem;
+}
+
+.sp1-sec4-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.sp1-sec4-card > li:nth-child(1) {
+  background-color: lightgrey;
+  height: 75%;
+}
+
+.sp1-sec4-card > li:nth-child(2) {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  background-color: lightgrey;
+}
+
+.sp1-sec4-card-even {
+  border-top-left-radius: 5rem; /* 왼쪽 위 대각 모서리 */
+  border-top-right-radius: 5rem;
+}
+
+.sp1-ft {
+  height: 10rem;
+  background-color: #141b33;
+  padding: 4rem;
+}
+
+.sp1-ft > span {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+/* jongmin sub-page ED*/
