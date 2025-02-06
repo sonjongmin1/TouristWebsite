@@ -8,6 +8,12 @@ header {
   margin-bottom: 600px;
 }
 
+.hi-blankColor{
+  position: absolute; 
+  width: 100%; height: 50rem; 
+  background-color: #141b33;
+}
+
 .jm-topNavMenu {
   display: flex;
   justify-content: end;
@@ -20,6 +26,7 @@ header {
 
 .jm-topNavMenu > ul {
   display: flex;
+  margin-right: 3rem;
 }
 
 .jm-topNav {
@@ -30,7 +37,7 @@ header {
 /* 계절 메뉴 테그*/
 
 .jm-topNavMenu > ul > li > a {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   color: #fff;
 }
@@ -94,7 +101,7 @@ header {
 }
 
 .jm-mainImgs > li:nth-child(1) {
-  background-image: url("../img/main/mainImg1.png");
+  background-image: url("../img/main/mainImg5.png");
 }
 .jm-mainImgs > li:nth-child(2) {
   background-image: url("../img/main/mainImg2.png");
@@ -189,11 +196,13 @@ header {
 .hi-subTit {
   width: 100%;
   height: 10rem;
+  margin: auto;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
+  font-family: "Rosarivo";
 }
 .hi-seasonT {
   width: 80%;
@@ -222,77 +231,58 @@ header {
 .hi-seasonName {
   font-size: 2rem;
   text-align: center;
+  font-family: "DM Sans";
 }
 /* hein section 02 ----------*/
-.hi-seasonEnf {
-  width: 100%;
-  height: 80%;
-  margin: auto;
-  background-color: rgba(20, 20, 57, 0.85);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hi-seasonEnf{
+  width: 100%; height: 80%; margin: auto; background-color: rgba(20,20,57,0.85);
+  display: flex; justify-content: space-between; align-items: center;
 }
 /* button style */
-.hi-seasonEnf-btn {
-  display: block;
-  width: 5rem;
-  height: 5rem;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
+.hi-seasonEnf-btn{
+  display: block; width: 5rem; height: 5rem;
+  border: none; cursor: pointer; background-color: transparent;
 }
-#hi-seasonEnf-btnL {
+#hi-seasonEnf-btnL{
   margin-left: 10rem;
 }
-#hi-seasonEnf-btnR {
+#hi-seasonEnf-btnR{
   margin-right: 10rem;
 }
 /* main bord style */
-.hi-seasonEnf-mainBox {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-  overflow: hidden;
+.hi-seasonEnf-mainBox{
+  width: 80%; height: 80%; display: flex; align-items: center;
+  gap: 10rem; overflow: hidden;
 }
 /* img style */
-.hi-seasonEnf-img {
-  width: 40rem;
-  height: 40rem;
-  background-color: aqua;
-  align-content: end;
-  margin-left: 10rem;
+.hi-seasonEnf-img{
+  width: 40em; height: 40em; background-color: aqua; 
+  align-content: end; margin-left: 10rem;
 }
-.hi-seasonEnf-imgLabel {
-  width: 100%;
-  height: 1.5rem;
-  background-color: rgba(20, 20, 57, 0.7);
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  color: white;
+.hi-seasonEnf-imgLabel{
+  width: 100%; height: 1.5rem; background-color: rgba(20,20,57,0.7);
+  display: flex; justify-content: end; align-items: center; color: white;
+  cursor: pointer;
 }
-.hi-seasonEnf-imgLabel > span {
-  padding-right: 0.5rem;
-  color: white;
-}
+.hi-seasonEnf-imgLabel>span{padding-right: 0.5rem; color: white;}
 /* story style */
-.hi-seasonEnf-txtB {
-  width: 60rem;
-  height: 80%;
+.hi-seasonEnf-txtB{
+  width: 60rem; height: 70%;
 }
-.hi-seasonEnf-txtTop {
-  width: 40%;
-  height: 5rem;
-  align-content: end;
-  padding-bottom: 0.3rem;
-  border-bottom: 0.1rem solid #22d5ff;
+.hi-seasonEnf-txtTop{
+  width: 40%; height: 5rem;
+  align-content: end; padding-bottom: 0.3rem; 
+  border-bottom: 0.1rem solid #22D5FF;
   color: white;
 }
-.hi-seasonEnf-txtName {
-  font-size: 2.5rem;
+.hi-seasonEnf-txtName{
+  font-size: 2.5rem; margin-top: 2rem; color: white;
+}
+.hi-seasonEnf-term{
+  color: rgba(255, 255, 255, 0.7); margin-top: 4rem;
+}
+.hi-seasonEnf-ex{
+  color: rgba(255, 255, 255, 0.7); margin-top: 6rem;
 }
 
 /* SAVE TOUR 섹션 스타일 */
@@ -308,16 +298,15 @@ header {
   width: 100%;
   height: 43%;
   padding: 2rem 0;
-  background-color: #0F172A;
   text-align: center;
   margin-top: 10%;
 }
 
 /* 제목 스타일 */
 .jb-subTit {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #F8FAFC;
+  font-size: 3rem;
+  font-family: "Rosarivo";
+  color: #000000;
 }
 .jb-subTit1 {
   font-size: 1.25rem;
@@ -327,7 +316,7 @@ header {
 
 /* 슬라이드 컨테이너 */
 .jb-mainImgBox {
-  width: 100rem; 
+  width: 115rem; 
   overflow: hidden; 
   position: relative;
   margin: 50px auto;
@@ -347,7 +336,7 @@ header {
   align-items: center;
   width: 30rem; 
   flex-shrink: 0;
-  margin-right: 1rem;
+  margin-right: 3.5rem;
 }
 
 /* 이미지 스타일 */
@@ -355,7 +344,7 @@ header {
   width: 100%;
   height: 20rem; 
   background-color: #CBD5E1;
-  border-radius: 0.75rem;
+  border-radius: 5rem;
 }
 
 /* 이미지 하단의 이름 */
@@ -365,8 +354,8 @@ header {
 .jb-winterName {
   margin-top: 0.5rem;
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #F8FAFC;
+  font-family: "DM Sans";
+  color: #000000;
 }
 
 /* 추억 기록,리뷰 페이지 */
@@ -382,8 +371,8 @@ header {
 
 /* 제목 스타일 */
 .jb-subTit2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Rosarivo";
   color: #F8FAFC;
 }
 .jb-subTit3 {
@@ -407,8 +396,8 @@ header {
 /* Season 텍스트 스타일 */
 .jb-whiteBox {
   display: inline-block;
-  background-color: white;
-  color: black;
+  border: 0.1rem solid white;
+  color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
   font-size: 1.2rem;
@@ -417,15 +406,15 @@ header {
 
 /* 시즌 제목 */
 .jb-springBox, .jb-summerBox, .jb-autumnBox, .jb-winterBox {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Rosarivo";
   margin-top: 1rem;
 }
 
 /* 색상 설정 */
 .jb-springBox { color: #FFC0CB; }
-.jb-summerBox { color: #FFD700; }
-.jb-autumnBox { color: #FF8C00; }
+.jb-summerBox { color: #22D5FF; }
+.jb-autumnBox { color: #FFBA08; }
 .jb-winterBox { color: #ADD8E6; }
 
 /* 리뷰 박스 스타일 */
@@ -462,6 +451,12 @@ footer{
   width : 100%;
   height : 10rem;
   background-color: #0F172A;
-  margin-top: 30px;
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer>span{
   color : white;
+  font-size: 1.5rem;
 }
