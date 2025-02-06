@@ -6,6 +6,7 @@
   font-family: "IBM Plex Sans KR";
   font-weight: 500;
   font-style: medium;
+  box-sizing: border-box;
 }
 
 body {
