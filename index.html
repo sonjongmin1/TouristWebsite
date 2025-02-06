@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 구글폰트 start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Sans+KR&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <!-- 구글폰트 end -->
     <title>계절별 한국 관광 홈페이지</title>
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/style.css" />
@@ -11,9 +16,10 @@
   <body>
     <header>
       <div class="jm-topNav">
+        <div class="hi-blankColor"></div>
         <div class="jm-topNavMenu">
           <ul>
-            <li><a href="#">spring</a></li>
+            <li><a href="#" class="hi-enBasicF">spring</a></li>
             <li><a href="#">summer</a></li>
             <li><a href="#">autumn</a></li>
             <li><a href="#">winter</a></li>
@@ -32,7 +38,7 @@
           </ul>
           <div class="jm-mainPrevBtn"></div>
           <div class="jm-mainNextBtn"></div>
-          <ul class="jm-pepleIcon">
+          <!-- <ul class="jm-pepleIcon">
             <li class="jm-createTour">
               <ul>
                 <li><img src="./img/icon/mainPerson.png" alt="" /></li>
@@ -51,12 +57,11 @@
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </header>
 
-    <!-- <header></header> -->
     <!-- 시즌 투어 section -->
     <section class="hi-section">
       <!-- 제목 -->
@@ -88,7 +93,7 @@
       <!-- 본문 -->
       <div class="hi-seasonEnf">
         <!-- 왼쪽 버튼 -->
-        <button id="hi-seasonEnf-btnL" class="hi-seasonEnf-btn">Left</button>
+        <button id="hi-seasonEnf-btnL" class="hi-seasonEnf-btn">&#10094;</button>
         <!-- 메인 내용 -->
         <div class="hi-seasonEnf-mainBox">
           <!-- 이벤트 및 축제 사진 -->
@@ -108,7 +113,7 @@
             </div>
           </div>
         </div>
-        <button id="hi-seasonEnf-btnR" class="hi-seasonEnf-btn">Right</button>
+        <button id="hi-seasonEnf-btnR" class="hi-seasonEnf-btn">&#10095;</button>
       </div>
     </section>
     <!-- 여행 사진 슬라이드 -->
@@ -156,9 +161,10 @@
     </section>
       <!-- 추억 기록,리뷰 페이지 -->
       <section class="jb-section2">
+        <!-- 제목 위 공백(그라데이션 적용을 위한) -->
         <!-- 제목 -->
         <div class="jb-subTit2">REVIEW</div>
-        <div class="jb-subTit3">소중한 추억들을 기록해보세요</div>
+        <div class="jb-subTit3">소중한 추억들을 공유해보세요</div>
 
         <!-- 봄 본문 -->
         <div class="jb-reBox jb-reBox1">
@@ -218,7 +224,7 @@
       </section>
           <!-- footer 부분 -->
     <footer>
-      Footer
+      <span>이 페이지는 학습 및 포트폴리오를 위해 제작되었습니다</span>
     </footer>
     <script src="./js/main.js"></script>
   </body>
