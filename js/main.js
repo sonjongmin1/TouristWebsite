@@ -55,3 +55,31 @@ $(document).ready(function () {
       });
   });
 });
+
+//이벤트 이동
+let hiSeasonEventCount = 0;
+let hiSeasonEventList = ["#hi-seasonEnf-e1", "#hi-seasonEnf-e2", "#hi-seasonEnf-e3", "#hi-seasonEnf-e4"];
+
+$(document).ready(function(){
+  $(".hi-seasonEnf-mainBox > div").hide();
+  $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
+  hiSeasonEventCount+=1;
+
+  $("#hi-seasonEnf-btnL").click(function(){
+    $(".hi-seasonEnf-mainBox > div").hide();
+    hiSeasonEventCount--;
+    if (hiSeasonEventCount < 0) {
+      hiSeasonEventCount = hiSeasonEventList.length - 1;
+    }
+    $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
+  });
+
+  $("#hi-seasonEnf-btnR").click(function(){
+    $(".hi-seasonEnf-mainBox > div").hide();
+    if (hiSeasonEventCount >= hiSeasonEventList.length) {
+      hiSeasonEventCount = 0;
+    }
+    $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
+    hiSeasonEventCount++;
+  });
+});
