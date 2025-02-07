@@ -1,3 +1,42 @@
+/* jongmin menuBar */
+
+.sp1-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 8rem;
+  background-color: #141b33;
+}
+
+.sp1-imgLogo {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.sp1-navMenu {
+  display: flex;
+}
+
+.sp1-navMenu > li {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sp1-navMenu > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sp1-hamBar {
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../img/icon/mainHambar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 /* 관광지 섹션 스타일 */
 .sp2-section1 {
   width: 100%;
@@ -9,7 +48,7 @@
 }
 
 /* 제목 */
-.sp2-subTit1 { 
+.sp2-subTit1 {
   font-size: 2rem;
   font-weight: 700;
   color: #f8fafc;
