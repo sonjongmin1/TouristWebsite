@@ -9,7 +9,7 @@
   background-color: #141b33;
 }
 
-.sp1-imgLogo {
+.sp1-imgLogo > a {
   font-size: 2.4rem;
   color: #fff;
 }
@@ -18,7 +18,7 @@
   display: flex;
 }
 
-.sp1-navMenu > li {
+.sp1-navMenu > li > a {
   font-size: 2rem;
   font-weight: 400;
   color: #fff;
