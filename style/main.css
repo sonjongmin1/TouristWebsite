@@ -123,21 +123,21 @@ header {
 }
 
 .jm-mainImgs > li:nth-child(2) {
-  background-image: url("../img/main/mainImg5.png");
+  background-image: url("../img/main/main-slide-sp.jpg");
 }
 .jm-mainImgs > li:nth-child(3) {
-  background-image: url("../img/main/mainImg2.png");
+  background-image: url("../img/main/main-slide-su.jpg");
 }
 .jm-mainImgs > li:nth-child(4) {
-  background-image: url("../img/main/mainImg3.png");
+  background-image: url("../img/main/main-slide-au.png");
 }
 .jm-mainImgs > li:nth-child(5) {
-  background-image: url("../img/main/mainImg4.png");
+  background-image: url("../img/main/main-slide-wi.jpg");
 }
 
 .jm-mainImg-content {
-  border: 1px solid #fff;
-  height: 400px;
+  display: flex; align-items: end;
+  padding-right: 2rem;
 }
 
 /* 메인 버튼 */
