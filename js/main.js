@@ -41,7 +41,25 @@ jmMainImgEl.forEach((img) => {
     }
   });
 });
+// 슬라이드 시키기
 
+document.addEventListener("DOMContentLoaded", () => {
+  const slideContainer = document.querySelector(".jb-mainImgWrapper");
+  const slides = document.querySelectorAll(".jb-mainImgWrapper > div");
+  let index = 0;
+  const totalSlides = slides.length;
+  const visibleSlides = 3; 
+  const slideWidth = 280 + 16;
+
+  function slideImages() {
+    index = (index + 1) % (totalSlides - visibleSlides + 1);
+
+    // 슬라이드 이동 적용
+    slideContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  setInterval(slideImages, 3000);
+});
 // 기록,리뷰 페이지 버튼누르기
 
 $(document).ready(function () {
