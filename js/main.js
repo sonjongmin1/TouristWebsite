@@ -88,7 +88,6 @@ let hiSeasonEventList = [
 $(document).ready(function () {
   $(".hi-seasonEnf-mainBox > div").hide();
   $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
-  hiSeasonEventCount += 1;
 
   $("#hi-seasonEnf-btnL").click(function () {
     $(".hi-seasonEnf-mainBox > div").hide();
@@ -101,10 +100,10 @@ $(document).ready(function () {
 
   $("#hi-seasonEnf-btnR").click(function () {
     $(".hi-seasonEnf-mainBox > div").hide();
+    hiSeasonEventCount++;
     if (hiSeasonEventCount >= hiSeasonEventList.length) {
       hiSeasonEventCount = 0;
     }
     $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
-    hiSeasonEventCount++;
   });
 });

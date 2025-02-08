@@ -105,6 +105,10 @@ header {
   display: block;
 }
 
+.jm-mainImg{
+  cursor: pointer;
+}
+
 .jm-mainImg > div {
   position: absolute;
   right: 0;
@@ -138,6 +142,8 @@ header {
 .jm-mainImg-content {
   display: flex; align-items: end;
   padding-right: 2rem;
+  font-family: "Rosarivo";
+  text-shadow: 0px 0px 5px black;
 }
 
 /* 메인 버튼 */
@@ -306,7 +312,7 @@ header {
 }
 .hi-seasonEnf-imgLabel {
   width: 100%;
-  height: 1.5rem;
+  height: 3rem;
   background-color: rgba(20, 20, 57, 0.7);
   display: flex;
   justify-content: end;
@@ -315,7 +321,7 @@ header {
   cursor: pointer;
 }
 .hi-seasonEnf-imgLabel > span {
-  padding-right: 0.5rem;
+  padding-right: 2.5rem;
   color: white;
 }
 /* story style */
@@ -496,15 +502,66 @@ header {
 .jb-spRevBox1,
 .jb-spRevBox2,
 .jb-spRevBox3,
-.jb-spRevBox4,
+.jb-spRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #ffc0cb;
+  border: 0.1rem solid #ffc0cb;
+  background-color: #ffc0cb15;
+  align-content: center;
+}
+.hi-reBoxSp-reviewStory{
+  color: #ffc0cb;
+}
+.hi-reBoxSp-reviewStory:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-suRevBox1,
 .jb-suRevBox2,
 .jb-suRevBox3,
-.jb-suRevBox4,
+.jb-suRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #22D5FF;
+  border: 0.1rem solid #22D5FF;
+  background-color: #22D5FF15;
+}
+
+.hi-reBoxSu-reviewStory{
+  color: #22D5FF;
+}
+.hi-reBoxSu-reviewStory:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-auRevBox1,
 .jb-auRevBox2,
 .jb-auRevBox3,
-.jb-auRevBox4,
+.jb-auRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #FFBA08;
+  border: 0.1rem solid #FFBA08;
+  background-color: #FFBA0815;
+}
+
+.hi-reBoxAu-reviewStory{
+  color: #FFBA08;
+}
+.hi-reBoxAu-reviewStory:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-wiRevBox1,
 .jb-wirevBox2,
 .jb-wiRevBox3,
@@ -513,23 +570,35 @@ header {
   height: 6rem;
   margin: 3rem auto;
   border-radius: 2rem;
-  background-color: #ffc0cb;
+  color: #add8e6;
+  border: 0.1rem solid #add8e6;
+  background-color: #add8e615;
 }
+
+.hi-reBoxWi-reviewStory{
+  color: #add8e6;
+}
+.hi-reBoxWi-reviewStory:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 
 /* 버튼 스타일 */
 button {
-  background-color: #333;
+  background-color: #5555555e;
   color: white;
-  border: none;
+  border: 0.1rem solid #555;
   padding: 1rem 1.5rem;
   margin: 1rem 0.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
   font-size: 1.6rem;
+  transition: 0.2s;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #0e0e0e;
 }
 
 /* footer 부분 */
@@ -546,4 +615,18 @@ footer {
 footer > span {
   color: white;
   font-size: 1.5rem;
+}
+.hi-footerBox{
+  position: absolute;
+  bottom: 0.5rem; right: 5rem;
+}
+.hi-figmaBox>a{
+  height: 2rem; display: flex; align-items: center;
+}
+.hi-footerSubtxt{
+  padding-left: 0.5rem; color: rgba(255, 255, 255, 0.5);
+}
+.hi-footerIcon{
+  width: 1.5rem; height: 1.5rem; object-fit: contain;
+  opacity: 0.5; transform: rotate(30deg);
 }
