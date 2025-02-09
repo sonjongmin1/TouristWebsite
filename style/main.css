@@ -41,6 +41,9 @@ header {
   font-size: 2.5rem;
   font-weight: 400;
   color: #fff;
+  font-family: "Rosarivo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .jm-topNavMenu > ul > li {
@@ -503,7 +506,7 @@ header {
 .jb-autumnBox,
 .jb-winterBox {
   font-size: 3rem;
-  font-family: "Rosarivo";
+  font-family: "Rosarivo",serif;
   margin-top: 1rem;
 }
 
