@@ -61,6 +61,7 @@ header {
   background-image: url("../img/icon/mainHambar.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 /* 메인페이지 이미지 */
@@ -130,16 +131,16 @@ header {
 }
 
 .jm-mainImgs > li:nth-child(2) {
-  background-image: url("../img/main/main-slide-sp.jpg");
+  background-image: url("../img/main/main-slide-sp.png");
 }
 .jm-mainImgs > li:nth-child(3) {
-  background-image: url("../img/main/main-slide-su.jpg");
+  background-image: url("../img/main/main-slide-su.png");
 }
 .jm-mainImgs > li:nth-child(4) {
   background-image: url("../img/main/main-slide-au.png");
 }
 .jm-mainImgs > li:nth-child(5) {
-  background-image: url("../img/main/main-slide-wi.jpg");
+  background-image: url("../img/main/main-slide-wi.png");
 }
 
 .jm-mainImg-content {
@@ -255,10 +256,22 @@ header {
   height: 80%;
   background-color: gray;
 }
+#hi-seasonImg>img{
+  width: 100%; height: 100%; object-fit: cover;
+  cursor: pointer;
+}
 .hi-seasonImg1 {
   border-radius: 3rem 0 0 0;
 }
+.hi-seasonImg1>img{
+  width: 100%; height: 100%; object-fit: cover;
+  border-radius: 3rem 0 0 0;
+}
 .hi-seasonImg2 {
+  border-radius: 0 0 3rem 0;
+}
+.hi-seasonImg2 >img{
+  width: 100%; height: 100%; object-fit: cover;
   border-radius: 0 0 3rem 0;
 }
 .hi-seasonName {
@@ -324,7 +337,8 @@ header {
   color: white;
   cursor: pointer;
 }
-.hi-seasonEnf-imgLabel > span {
+.hi-seasonEnf-imgLabel>a {
+  display: block;
   padding-right: 2.5rem;
   color: white;
 }
@@ -414,6 +428,14 @@ header {
   width: 100%;
   height: 20rem;
   background-color: #cbd5e1;
+  border-radius: 5rem;
+}
+
+/* 이미지 조절 */
+.jb-mainImg>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5rem;
 }
 
@@ -602,6 +624,138 @@ button {
 
 button:hover {
   background-color: #0e0e0e;
+}
+
+/* 웹버전 메뉴 */
+.hi-mainMenu-web{
+  width: 100vw; height: 100%;
+  background-color: #141B33;
+  position: absolute; overflow: hidden;
+  top: 0; z-index: 1001;
+  display: flex; justify-content: center;
+}
+.hi-mainMenu-web>div{
+  width: 60%; margin-top: 10%;
+}
+.hi-menuBoxTop{
+  width: 100%; height: 4rem; border-bottom: 0.1rem solid white;
+  display: flex; justify-content: left; align-items: center;
+  position: relative;
+}
+.hi-menuBoxTop>div{
+  font-family: "Rosarivo"; color: white;
+  font-size: 3rem; margin-right: 1rem; padding-left: 0.5rem;
+}
+.hi-menuBoxTop>span{
+  font-family: "Rosarivo"; color: white;
+  padding-left: 0.5rem; font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+
+.hi-menuBox{
+  width: 100%; margin-top: 3rem;
+  display: flex; justify-content: space-between; align-items: start;
+}
+.hi-menuSub>div:nth-child(1) a{
+  font-family: "Rosarivo"; color: white;
+  font-size: 2rem;
+}
+.hi-menuSub>div:nth-child(2)>ul>li{
+  padding-top: 1rem; 
+}
+.hi-menuSub>div:nth-child(2)>ul>li>a{
+  color: white;
+  font-family: "IBM Plex Sans KR";
+  font-size: 1.2rem;
+}
+.hi-menuSub>div a{
+  transition: 0.3s;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0);
+}
+.hi-menuSub>div a:hover{
+  border-bottom: 0.1rem solid white;
+}
+
+/* 앱버전 메뉴 */
+.hi-mainMenu-app{
+  width: 100vw; height: 100%;
+  background-color: #141B33;
+  position: absolute; overflow: hidden;
+  top: 0; z-index: 1001; align-content: center;
+}
+.hi-mainMenu-appBoxtop{
+  width: 100%; display: flex; justify-content: left; align-items: center;
+  border-bottom: 0.1rem solid white; position: relative;
+}
+.hi-mainMenu-appBoxtop>div{
+  font-family: "Rosarivo"; color: white;
+  font-size: 2.5rem; margin-right: 1rem; padding-left: 0.5rem;
+}
+.hi-mainMenu-appBoxtop>span{
+  font-family: "Rosarivo"; color: white;
+  padding-left: 0.5rem; font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+#hi-accordionMenu-Close{
+  width: 2rem; height: 2rem; cursor: pointer;
+  position: absolute; top: 50%; transform: translateY(-50%);
+  right: 0.5rem; display: flex; justify-content: center; align-items: center;
+}
+#hi-accordionMenu-Close img{
+  width: 2rem; height: 2rem; object-fit: contain;
+  transition: 0.3s;
+}
+#hi-accordionMenu-Close>img:hover{transform: rotate(180deg);}
+.hi-mainMenu-appBox{width: 85%; margin: auto;}
+.hi-accordionMenu{ 
+  background-color: rgba(191, 191, 191, 0);
+  text-align: left; cursor: pointer;
+  padding: 0.5rem; width: 100%; color: white; 
+  font-size: 2rem; font-family: "Rosarivo";
+  border-bottom: 0.1rem solid white; transition: 0.5s;
+}
+.hi-accordionMenu:hover{
+  background-color: rgba(128, 128, 128, 0.15);
+}
+.hi-accordionMenu::after{
+  content: "▼"; font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold; float: right;
+  margin-top: 0.5rem;
+}
+.hi-accordionMenu.on{
+  background-color: rgba(169, 169, 169, 0.3);
+}
+.on::after{
+  content: "▲"; font-size: 1rem;
+}
+.hi-appMenu{
+  padding: 0 1rem;
+  background-color: rgba(218, 218, 218, 0.05);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hi-appMenu>p{ padding: 1rem 0;}
+.hi-appMenu a{
+  width: 100%; height: 100%;
+  color: white; font-size: 1.5rem;
+}
+
+/* menu close */
+#hi-menuBox-Close{
+  position: absolute; right: 0; margin-bottom: 1rem;
+  width: 2rem; height: 2rem; cursor: pointer;
+}
+body.no-scroll{
+  width: 100vw; height: 100vh; overflow: hidden;
+}
+#hi-menuBox-Close img{
+  width: 100%; height: 100%; object-fit: contain;
+  transition: 0.3s;
+}
+#hi-menuBox-Close img:hover{
+  transform: rotate(180deg);
 }
 
 /* footer 부분 */
