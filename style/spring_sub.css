@@ -488,14 +488,15 @@
   height: 100%;
   padding: 2rem 0;
   text-align: center;
-  background: linear-gradient(to top, #091f92 0%, #ffffff 100%);
-  margin-top: 10%;
+  background: linear-gradient(to bottom, #141b33 0%, #ffffff 100%);
+  margin : 0;
 }
 
 /* 제목 */
 .sp3-subTit1 {
   font-size: 2rem;
   font-weight: 700;
+  color : white;
 }
 
 /* 본문 */
