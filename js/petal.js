@@ -17,8 +17,8 @@ class Petal {
     this.x = Math.random() * canvas.width; // 랜덤한 x 위치
     this.y = Math.random() * canvas.height; // 랜덤한 y 위치
     this.size = Math.random() * 10 + 10; // 꽃잎의 크기
-    this.speedX = Math.random() * 2 - 1; // x축 속도
-    this.speedY = Math.random() * 2 + 1; // y축 속도
+    this.speedX = Math.random() * 2 - 0.5; // x축 속도
+    this.speedY = Math.random() * 2 + 0.5; // y축 속도
   }
 
   // 꽃잎 애니메이션 메소드
