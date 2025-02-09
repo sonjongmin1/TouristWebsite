@@ -85,7 +85,7 @@ header {
   position: relative;
   width: 250px;
   background-repeat: no-repeat;
-  background-image: cover;
+  background-size: cover;
   background-position: center;
   transition: 2s;
 }
@@ -105,7 +105,7 @@ header {
   display: block;
 }
 
-.jm-mainImg{
+.jm-mainImg {
   cursor: pointer;
 }
 
@@ -140,7 +140,8 @@ header {
 }
 
 .jm-mainImg-content {
-  display: flex; align-items: end;
+  display: flex;
+  align-items: end;
   padding-right: 2rem;
   font-family: "Rosarivo";
   text-shadow: 0px 0px 5px black;
@@ -512,10 +513,10 @@ header {
   background-color: #ffc0cb15;
   align-content: center;
 }
-.hi-reBoxSp-reviewStory{
+.hi-reBoxSp-reviewStory {
   color: #ffc0cb;
 }
-.hi-reBoxSp-reviewStory:nth-child(2){
+.hi-reBoxSp-reviewStory:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
@@ -528,15 +529,15 @@ header {
   height: 6rem;
   margin: 3rem auto;
   border-radius: 2rem;
-  color: #22D5FF;
-  border: 0.1rem solid #22D5FF;
-  background-color: #22D5FF15;
+  color: #22d5ff;
+  border: 0.1rem solid #22d5ff;
+  background-color: #22d5ff15;
 }
 
-.hi-reBoxSu-reviewStory{
-  color: #22D5FF;
+.hi-reBoxSu-reviewStory {
+  color: #22d5ff;
 }
-.hi-reBoxSu-reviewStory:nth-child(2){
+.hi-reBoxSu-reviewStory:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
@@ -549,15 +550,15 @@ header {
   height: 6rem;
   margin: 3rem auto;
   border-radius: 2rem;
-  color: #FFBA08;
-  border: 0.1rem solid #FFBA08;
-  background-color: #FFBA0815;
+  color: #ffba08;
+  border: 0.1rem solid #ffba08;
+  background-color: #ffba0815;
 }
 
-.hi-reBoxAu-reviewStory{
-  color: #FFBA08;
+.hi-reBoxAu-reviewStory {
+  color: #ffba08;
 }
-.hi-reBoxAu-reviewStory:nth-child(2){
+.hi-reBoxAu-reviewStory:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
@@ -575,14 +576,13 @@ header {
   background-color: #add8e615;
 }
 
-.hi-reBoxWi-reviewStory{
+.hi-reBoxWi-reviewStory {
   color: #add8e6;
 }
-.hi-reBoxWi-reviewStory:nth-child(2){
+.hi-reBoxWi-reviewStory:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
-
 
 /* 버튼 스타일 */
 button {
@@ -616,17 +616,24 @@ footer > span {
   color: white;
   font-size: 1.5rem;
 }
-.hi-footerBox{
+.hi-footerBox {
   position: absolute;
-  bottom: 0.5rem; right: 5rem;
+  bottom: 0.5rem;
+  right: 5rem;
 }
-.hi-figmaBox>a{
-  height: 2rem; display: flex; align-items: center;
+.hi-figmaBox > a {
+  height: 2rem;
+  display: flex;
+  align-items: center;
 }
-.hi-footerSubtxt{
-  padding-left: 0.5rem; color: rgba(255, 255, 255, 0.5);
+.hi-footerSubtxt {
+  padding-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
 }
-.hi-footerIcon{
-  width: 1.5rem; height: 1.5rem; object-fit: contain;
-  opacity: 0.5; transform: rotate(30deg);
+.hi-footerIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  opacity: 0.5;
+  transform: rotate(30deg);
 }

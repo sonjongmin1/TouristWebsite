@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".jb-mainImgWrapper > div");
   let index = 0;
   const totalSlides = slides.length;
-  const visibleSlides = 3; 
+  const visibleSlides = 3;
   const slideWidth = 280 + 16;
 
   function slideImages() {
