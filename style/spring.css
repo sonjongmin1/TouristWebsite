@@ -296,3 +296,175 @@
 }
 
 /* jongmin sub-page ED*/
+
+/* pc */
+@media (min-width: 1025px) {
+  .mb-br {
+    display: none;
+  }
+}
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .sp1-navMenu > li > a {
+    font-size: 1.6rem;
+  }
+
+  .sp1-imgLogo > a {
+    font-size: 2.4rem;
+
+    /* color: #fff; */
+  }
+
+  .sp1-hamBar {
+    width: 4rem;
+    height: 4rem;
+    /* background-image: url("../img/icon/mainHambar.svg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
+
+  .sp1-nav {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 2rem;
+    /* height: 8rem;
+    background-color: #141b33; */
+  }
+
+  .sp1-sec2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    height: 60rem;
+    background-color: #141b33;
+    /* justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  .sp1-sec2-title {
+    width: 500px;
+  }
+
+  .sp1-sec2-content {
+    width: 500px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .sp1-sub-img {
+    width: 300px !important;
+  }
+
+  .sp-slide-left {
+    left: 435px;
+  }
+  .sp-slide-right {
+    right: 435px;
+  }
+
+  .sp1-sec4-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid black;
+  }
+
+  .sp1-sec4-card-box > li {
+    width: 150px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .sp1-sec4-card-box > li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sp1-sec4-card > li:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .sp1-sec1 {
+    height: 50rem;
+    overflow: hidden;
+  }
+
+  .sp1-sec1-img-Box {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sp1-sec1-img-Box > li {
+    width: 37rem;
+    height: 30rem;
+    border-radius: 10px;
+  }
+
+  .sp1-sec1-img-Box > li {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sp1-sec1-img-Box-bg {
+    height: 400px;
+  }
+  /* ----- */
+  .sp1-sec3 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding: 4rem;
+  }
+
+  .sp1-sec3 > div {
+    height: 50%;
+    margin-bottom: 5rem;
+  }
+
+  .sp1-sec3 > div:nth-child(1) {
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem;
+  }
+
+  .sp1-sec3-apiImg {
+    background-image: url("../img/spring-sub1/springSubWeather.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sp1-sec3-graph {
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  .sp-slide-left,
+  .sp-slide-right {
+    width: 40px;
+    height: 40px;
+  }
+  .sp1-sec4 > ul {
+    height: auto;
+  }
+
+  .mb-hidden {
+    display: none;
+  }
+}

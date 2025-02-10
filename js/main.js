@@ -66,15 +66,79 @@ $(document).ready(function () {
   // 모든 버튼에 대한 클릭 이벤트 설정
   $("button").click(function () {
     let season = $(this).attr("id").replace("jb-", "").replace("Btn", "");
-    $(".jb-reBox:visible").fadeOut(500, function () {
-      $(
-        ".jb-reBox." +
-          "jb-reBox" +
-          (["spring", "summer", "autumn", "winter"].indexOf(season) + 1)
-      ).fadeIn(500); // 해당 시즌 박스를 페이드인
-    });
+    if ($(this).attr("id") !== "searchButton") {
+      $(".jb-reBox:visible").fadeOut(500, function () {
+        $(
+          ".jb-reBox." +
+            "jb-reBox" +
+            (["spring", "summer", "autumn", "winter"].indexOf(season) + 1)
+        ).fadeIn(500); // 해당 시즌 박스를 페이드인
+      });
+    }
   });
 });
+
+// 카카오맵 api
+var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
+var map;
+
+document.getElementById("searchButton").addEventListener("click", function () {
+  var address = document.getElementById("address").value.trim();
+
+  if (!address) {
+    alert("주소를 입력하세요.");
+    return;
+  }
+
+  if (!map) {
+    createMap();
+  }
+
+  var ps = new kakao.maps.services.Places();
+  ps.keywordSearch(address, placesSearchCB);
+});
+
+function createMap() {
+  var mapContainer = document.getElementById("map");
+  mapContainer.style.display = "block";
+  var mapOption = {
+    center: new kakao.maps.LatLng(37.566826, 126.9786567),
+    level: 5,
+  };
+  map = new kakao.maps.Map(mapContainer, mapOption);
+  mapContainer.style.display = "block";
+  map.relayout();
+}
+
+function placesSearchCB(data, status, pagination) {
+  if (status === kakao.maps.services.Status.OK) {
+    var bounds = new kakao.maps.LatLngBounds();
+
+    for (var i = 0; i < data.length; i++) {
+      displayMarker(data[i]);
+      bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+    }
+
+    map.setBounds(bounds);
+    map.relayout();
+  } else {
+    alert("검색 결과가 없습니다.");
+  }
+}
+
+function displayMarker(place) {
+  var marker = new kakao.maps.Marker({
+    map: map,
+    position: new kakao.maps.LatLng(place.y, place.x),
+  });
+
+  kakao.maps.event.addListener(marker, "click", function () {
+    infowindow.setContent(
+      '<div style="padding:5px;font-size:12px;">' + place.place_name + "</div>"
+    );
+    infowindow.open(map, marker);
+  });
+}
 
 //이벤트 이동 + top Btn
 let hiSeasonEventCount = 0;
@@ -107,10 +171,10 @@ $(document).ready(function () {
     $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
   });
 
-  $('#hi-topBtn').click(function(){
+  $("#hi-topBtn").click(function () {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 });
@@ -125,7 +189,7 @@ $(document).ready(function(){
   $('.jm-mainMenuBtn').click(()=>{
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
       if(window.innerWidth<770){
         $('#hi-mainMenu-app').fadeIn();
@@ -146,7 +210,7 @@ $(document).ready(function(){
 //앱메뉴
 let hiAccordionMenu = document.querySelectorAll(".hi-accordionMenu");
 hiAccordionMenu.forEach((item) => {
-  item.addEventListener("click", function() {
+  item.addEventListener("click", function () {
     // 현재 클릭된 아코디언이 아닌 경우 닫음
     hiAccordionMenu.forEach((otherItem) => {
       if (otherItem !== item) {
