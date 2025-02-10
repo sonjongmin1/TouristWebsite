@@ -573,7 +573,10 @@ header {
   align-content: center;
 }
 .hi-reBoxSp-reviewStory:nth-child(1) {
-  color: #ffffff;
+  color: #ffffff; transition: 0.3s;
+}
+.hi-reBoxSp-reviewStory:nth-child(1):hover {
+  color: #b8818a;
 }
 .hi-reBoxSp-reviewStory:nth-child(2) {
   margin-top: 1rem; color: #ffc0cb;
@@ -594,7 +597,10 @@ header {
 }
 
 .hi-reBoxSu-reviewStory:nth-child(1) {
-  color: #ffffff;
+  color: #ffffff; transition: 0.3s;
+}
+.hi-reBoxSu-reviewStory:nth-child(1):hover {
+  color: #0996b6;
 }
 .hi-reBoxSu-reviewStory:nth-child(2) {
   margin-top: 1rem; color: #22d5ff;
@@ -615,7 +621,10 @@ header {
 }
 
 .hi-reBoxAu-reviewStory:nth-child(1) {
-  color: #ffffff;
+  color: #ffffff; transition: 0.3s;
+}
+.hi-reBoxAu-reviewStory:nth-child(1):hover {
+  color: #ad7f0a;
 }
 .hi-reBoxAu-reviewStory:nth-child(2) {
   margin-top: 1rem; color: #ffba08;
@@ -636,7 +645,10 @@ header {
 }
 
 .hi-reBoxWi-reviewStory:nth-child(1) {
-  color: #ffffff;
+  color: #ffffff; transition: 0.3s;
+}
+.hi-reBoxWi-reviewStory:nth-child(1):hover {
+  color: #7ab4c7;
 }
 .hi-reBoxWi-reviewStory:nth-child(2) {
   margin-top: 1rem;
@@ -696,16 +708,6 @@ header {
 }
 
 /* 웹버전 메뉴 */
-.hi-mainMenu-web {
-  width: 100vw;
-  height: 100%;
-  background-color: #141b33;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  z-index: 1001;
-  display: flex;
-  justify-content: center;}
 #hi-mainMenu-web{
   width: 100vw; height: 100%;
   background-color: #141B33;
@@ -717,68 +719,46 @@ header {
 #hi-mainMenu-web>div{
   width: 60%; margin-top: 10%;
 }
-.hi-menuBoxTop {
-  width: 100%;
-  height: 4rem;
-  border-bottom: 0.1rem solid white;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.hi-menuBoxTop{
+  width: 100%; height: 4rem; border-bottom: 0.1rem solid white;
+  display: flex; justify-content: left; align-items: center;
   position: relative;
 }
-.hi-menuBoxTop > div {
-  font-family: "Rosarivo";
-  color: white;
-  font-size: 3rem;
-  margin-right: 1rem;
-  padding-left: 0.5rem;
+.hi-menuBoxTop>div{
+  font-family: "Rosarivo"; color: white;
+  font-size: 3rem; margin-right: 1rem; padding-left: 0.5rem;
 }
-.hi-menuBoxTop > span {
-  font-family: "Rosarivo";
-  color: white;
-  padding-left: 0.5rem;
-  font-size: 2rem;
+.hi-menuBoxTop>span{
+  font-family: "Rosarivo"; color: white;
+  padding-left: 0.5rem; font-size: 2rem;
   border-left: 0.1rem solid white;
 }
 
-.hi-menuBox {
-  width: 100%;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
+.hi-menuBox{
+  width: 100%; margin-top: 3rem;
+  display: flex; justify-content: space-between; align-items: start;
 }
-.hi-menuSub > div:nth-child(1) a {
-  font-family: "Rosarivo";
-  color: white;
+.hi-menuSub>div:nth-child(1) a{
+  font-family: "Rosarivo"; color: white;
   font-size: 2rem;
 }
-.hi-menuSub > div:nth-child(2) > ul > li {
-  padding-top: 1rem;
+.hi-menuSub>div:nth-child(2)>ul>li{
+  padding-top: 1rem; 
 }
-.hi-menuSub > div:nth-child(2) > ul > li > a {
+.hi-menuSub>div:nth-child(2)>ul>li>a{
   color: white;
   font-family: "IBM Plex Sans KR";
   font-size: 1.2rem;
 }
-.hi-menuSub > div a {
+.hi-menuSub>div a{
   transition: 0.3s;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0);
 }
-.hi-menuSub > div a:hover {
+.hi-menuSub>div a:hover{
   border-bottom: 0.1rem solid white;
 }
 
 /* 앱버전 메뉴 */
-.hi-mainMenu-app {
-  width: 100vw;
-  height: 100%;
-  background-color: #141b33;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  z-index: 1001;
-  align-content: center;}
 #hi-mainMenu-app{
   width: 100vw; height: 100%;
   background-color: #141B33;
@@ -790,121 +770,78 @@ header {
   width: 100%; display: flex; justify-content: left; align-items: center;
   border-bottom: 0.1rem solid white; position: relative;
 }
-.hi-mainMenu-appBoxtop > div {
-  font-family: "Rosarivo";
-  color: white;
-  font-size: 2.5rem;
-  margin-right: 1rem;
-  padding-left: 0.5rem;
+.hi-mainMenu-appBoxtop>div{
+  font-family: "Rosarivo"; color: white;
+  font-size: 2.5rem; margin-right: 1rem; padding-left: 0.5rem;
 }
-.hi-mainMenu-appBoxtop > span {
-  font-family: "Rosarivo";
-  color: white;
-  padding-left: 0.5rem;
-  font-size: 2rem;
+.hi-mainMenu-appBoxtop>span{
+  font-family: "Rosarivo"; color: white;
+  padding-left: 0.5rem; font-size: 2rem;
   border-left: 0.1rem solid white;
 }
-#hi-accordionMenu-Close {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#hi-accordionMenu-Close{
+  width: 2rem; height: 2rem; cursor: pointer;
+  position: absolute; top: 50%; transform: translateY(-50%);
+  right: 0.5rem; display: flex; justify-content: center; align-items: center;
 }
-#hi-accordionMenu-Close img {
-  width: 2rem;
-  height: 2rem;
-  object-fit: contain;
+#hi-accordionMenu-Close img{
+  width: 2rem; height: 2rem; object-fit: contain;
   transition: 0.3s;
 }
-#hi-accordionMenu-Close > img:hover {
-  transform: rotate(180deg);
-}
-.hi-mainMenu-appBox {
-  width: 85%;
-  margin: auto;
-}
-.hi-accordionMenu {
+#hi-accordionMenu-Close>img:hover{transform: rotate(180deg);}
+.hi-mainMenu-appBox{width: 85%; margin: auto;}
+.hi-accordionMenu{ 
   background-color: rgba(191, 191, 191, 0);
-  text-align: left;
-  cursor: pointer;
-  padding: 0.5rem;
-  width: 100%;
-  color: white;
-  font-size: 2rem;
-  font-family: "Rosarivo";
-  border-bottom: 0.1rem solid white;
-  transition: 0.5s;
+  text-align: left; cursor: pointer;
+  padding: 0.5rem; width: 100%; color: white; 
+  font-size: 2rem; font-family: "Rosarivo";
+  border-bottom: 0.1rem solid white; transition: 0.5s;
 }
-.hi-accordionMenu:hover {
+.hi-accordionMenu:hover{
   background-color: rgba(128, 128, 128, 0.15);
 }
-.hi-accordionMenu::after {
-  content: "▼";
-  font-size: 1rem;
+.hi-accordionMenu::after{
+  content: "▼"; font-size: 1rem;
   color: rgb(255, 255, 255);
-  font-weight: bold;
-  float: right;
+  font-weight: bold; float: right;
   margin-top: 0.5rem;
 }
-.hi-accordionMenu.on {
+.hi-accordionMenu.on{
   background-color: rgba(169, 169, 169, 0.3);
 }
-.on::after {
-  content: "▲";
-  font-size: 1rem;
+.on::after{
+  content: "▲"; font-size: 1rem;
 }
-.hi-appMenu {
+.hi-appMenu{
   padding: 0 1rem;
   background-color: rgba(218, 218, 218, 0.05);
   max-height: 0;
   overflow: hidden;
   transition: 0.5s;
 }
-.hi-appMenu > p {
-  padding: 1rem 0;
-  width: 100%;
-  display: block;
-}
-.hi-appMenu a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.5rem;
+.hi-appMenu>p{ padding: 1rem 0; width: 100%; display: block;}
+.hi-appMenu a{
+  width: 100%; height: 100%; display: block;
+  color: rgba(255, 255, 255, 0.5); font-size: 1.5rem;
   transition: 0.3s;
 }
-.hi-appMenu p:hover a {
-  color: white;
-  font-weight: 600;
+.hi-appMenu p:hover a{
+  color: white; font-weight: 600;
 }
 
 /* menu close */
-#hi-menuBox-Close {
-  position: absolute;
-  right: 0;
-  margin-bottom: 1rem;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
+#hi-menuBox-Close{
+  position: absolute; right: 0; margin-bottom: 1rem;
+  width: 2rem; height: 2rem; cursor: pointer;
 }
-body.no-scroll {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+body.no-scroll{
+  width: 100vw; height: 100vh; overflow: hidden;
 }
-#hi-menuBox-Close img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+#hi-menuBox-Close img{
+  width: 100%; height: 100%; object-fit: contain;
   transition: 0.3s;
 }
-#hi-menuBox-Close img:hover {
+#hi-menuBox-Close img:hover{
   transform: rotate(180deg);
 }
 
