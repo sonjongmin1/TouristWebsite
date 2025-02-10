@@ -310,8 +310,9 @@
 /* 모바일 */
 @media (max-width: 768px) {
   body {
+    max-width: 100%;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
   }
 
