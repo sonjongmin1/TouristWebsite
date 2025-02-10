@@ -76,7 +76,7 @@ $(document).ready(function () {
   });
 });
 
-//이벤트 이동
+//이벤트 이동 + top Btn
 let hiSeasonEventCount = 0;
 let hiSeasonEventList = [
   "#hi-seasonEnf-e1",
@@ -106,6 +106,13 @@ $(document).ready(function () {
     }
     $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
   });
+
+  $('#hi-topBtn').click(function(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
 
 //메뉴 fade in/out
@@ -114,6 +121,10 @@ $(document).ready(function(){
   $('.hi-mainMenu-web').fadeOut();
   $('.hi-mainMenu-app').fadeOut();
   $('.jm-mainMenuBtn').click(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
       if(window.innerWidth<770){
         $('.hi-mainMenu-app').fadeIn();
       }else{
