@@ -304,3 +304,26 @@
   font-size: 2rem;
   cursor: pointer;
 }
+
+/*  */
+/* pc */
+@media (min-width: 1025px) {
+}
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .mb-br {
+    display: none;
+  }
+
+  .sp2-mainBox1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300%;
+    overflow-x: scroll;
+  }
+}
