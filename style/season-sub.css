@@ -363,4 +363,52 @@
   .sp2-subImg4 {
     margin-top: 40px;
   }
+
+  .sp2-mainBox2 {
+    flex-wrap: wrap;
+  }
+
+  .sp2-foodBox1,
+  .sp2-foodBox2,
+  .sp2-foodBox3,
+  .sp2-foodBox4 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .sp2-foodBox3,
+  .sp2-foodBox4 {
+    margin-top: 100px;
+  }
+
+  .sp2-section2 {
+    height: 100%;
+  }
+
+  .sp2-foodImg1,
+  .sp2-foodImg2,
+  .sp2-foodImg3,
+  .sp2-foodImg4 {
+    height: 80%;
+  }
+
+  .sp2-sec3-con {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sp2-sec3-con-img1 {
+    margin-bottom: 20px;
+  }
+
+  .sp2-sec3-con-img1,
+  .sp2-sec3-con-img2 {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .sp2-sec3-con-img1-opacity-con-in-con {
+    width: 85%;
+    height: 85%;
+  }
 }
