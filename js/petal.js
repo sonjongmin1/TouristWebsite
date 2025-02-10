@@ -16,7 +16,11 @@ class Petal {
   constructor() {
     this.x = Math.random() * canvas.width; // 랜덤한 x 위치
     this.y = Math.random() * canvas.height; // 랜덤한 y 위치
-    this.size = Math.random() * 10 + 10; // 꽃잎의 크기
+
+    // 화면 크기에 따라 꽃잎 크기 설정
+    const baseSize = window.innerWidth <= 768 ? 5 : 10; // 모바일에서는 작은 크기
+    this.size = Math.random() * baseSize + baseSize; // 꽃잎의 크기
+
     this.speedX = Math.random() * 2 - 0.5; // x축 속도
     this.speedY = Math.random() * 2 + 0.5; // y축 속도
   }
@@ -60,10 +64,14 @@ function render() {
   window.requestAnimationFrame(render); // 애니메이션을 계속 실행
 }
 
-// 창 크기 조정 시 캔버스 크기 재조정
+// 창 크기 조정 시 캔버스 크기 재조정 및 꽃잎 크기 재설정
 window.addEventListener("resize", () => {
   canvas.width = canvas.parentElement.offsetWidth;
   canvas.height = canvas.parentElement.offsetHeight;
-});
 
-console.log(window.scrollY);
+  // 꽃잎 배열 초기화 후 다시 생성
+  petalArray.length = 0; // 배열 비우기
+  for (let i = 0; i < total; i++) {
+    petalArray.push(new Petal());
+  }
+});
