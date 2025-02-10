@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  /* 스크롤바 지우기 */
+}
+
 body {
   width: 100vw;
   height: 100vh;
