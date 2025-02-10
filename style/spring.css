@@ -309,6 +309,12 @@
 
 /* 모바일 */
 @media (max-width: 768px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
   .sp1-navMenu > li > a {
     font-size: 1.6rem;
   }
