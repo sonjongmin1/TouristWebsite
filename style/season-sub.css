@@ -1,15 +1,15 @@
 /* 관광지 섹션 스타일 */
 .sp2-section1 {
   width: 100%;
-  height: 70%;
-  padding: 2rem 0;
+  height: 100%;
+  padding: 7rem 0;
   background-color: #0f172a;
   text-align: center;
 }
 
 /* 제목 */
 .sp2-subTit1 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #f8fafc;
 }
@@ -26,6 +26,7 @@
 .sp2-subBox2,
 .sp2-subBox3,
 .sp2-subBox4 {
+  position: relative;
   width: 24%;
   height: 100%;
   margin: 0 auto;
@@ -34,21 +35,39 @@
 .sp2-subImg2,
 .sp2-subImg3,
 .sp2-subImg4 {
+  position: relative;
   width: 100%;
   height: 50%;
-  background-color: #0f172a;
+  background-color: rgb(90, 77, 97);
   border-radius: 2rem;
-  border: 3px solid #fff;
   color: #fff;
 }
+
+.sp2-tr-design {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid rgb(90, 77, 97); /* 삼각형 색상 */
+}
+
+.sp2-tr-design.on {
+  top: -8%;
+  transform: rotate(180deg);
+}
+
 .sp2-subImg1,
 .sp2-subImg3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .sp2-subImg2,
 .sp2-subImg4 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sp2-subInf1,
@@ -97,93 +116,108 @@
 .sp2-foodImg4 {
   width: 100%;
   height: 50%;
-  background-color: palegreen;
+  background-color: rgb(90, 77, 97);
   border-radius: 30px 30px 0 0;
 }
 .sp2-foodTit1,
 .sp2-foodTit2,
 .sp2-foodTit3,
 .sp2-foodTit4 {
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   width: 100%;
   height: 10%;
-  background-color: palegoldenrod;
+  background-color: rgb(90, 77, 97);
 }
 .sp2-foodInf1,
 .sp2-foodInf2,
 .sp2-foodInf3,
 .sp2-foodInf4 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   height: 40%;
-  background-color: palevioletred;
+  background-color: rgb(90, 77, 97);
 }
 
 /* 봄에 열리는 축제 */
+
 .sp2-section3 {
-  width: 100%;
-  height: 70%;
-  padding: 2rem 0;
-  text-align: center;
-  background-color: #0f172a;
-  margin-top: 10%;
-}
-
-/* 제목 */
-.sp2-subTit3 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #f8fafc;
-}
-
-/* 본문 */
-.sp2-mainBox3 {
-  width: 90%;
-  height: 85%;
-  position: relative;
-  display: flex;
-  margin: 5rem auto;
-}
-.sp2-conBox1,
-.sp2-conBox2 {
-  width: 45%;
-  height: 80%;
-  margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.sp2-imgContainer {
-  display: flex;
   justify-content: center;
   width: 100%;
+  height: 600px;
+  border: 1px solid #000;
+  padding: 4rem;
+}
+
+.sp2-sec3-title {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+.sp2-sec3-con {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  border: 1px solid #000;
+}
+
+/* sp2-sec3-con-img1 아래태크에 전체 이미지 URL 복붙 */
+.sp2-sec3-con-img1 {
+  position: relative;
+  width: 50%;
   height: 100%;
-}
-.sp2-conImg1,
-.sp2-conImg2,
-.sp2-conImg3,
-.sp2-conImg4 {
-  width: 45%;
-  margin: 2rem auto;
-  background-color: palegoldenrod;
+  border: 1px solid #fff;
+  margin-right: 10px;
 }
 
-/* 제목 */
-.sp2-conTit1,
-.sp2-conTit2 {
-  width: 80%;
-  height: 15%;
-  background-color: palegreen;
-  margin-top: 1rem;
+.sp2-sec3-con-img1-opacity-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* 본문 */
-.sp2-conInf1,
-.sp2-conInf2 {
-  width: 80%;
-  height: 50%;
-  background-color: powderblue;
-  margin-top: 1rem;
+.sp2-sec3-con-img1-opacity-con-in-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  border: 1px solid blue;
+  font-size: 2rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span {
+  display: block;
+  color: #fff;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(1),
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(4) {
+  font-size: 1.2rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(2),
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(3) {
+  font-size: 2.4rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sp2-sec3-con-img2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #fff;
 }
 
 /* 갤러리 */
