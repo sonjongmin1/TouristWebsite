@@ -35,12 +35,31 @@ header {
   justify-content: end;
 }
 
+/* top Btn */
+#hi-topBtn {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  z-index: 1000;
+  bottom: 5rem;
+  right: 5rem;
+  cursor: pointer;
+}
+#hi-topBtn > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* 계절 메뉴 테그*/
 
 .jm-topNavMenu > ul > li > a {
   font-size: 2.5rem;
   font-weight: 400;
   color: #fff;
+  font-family: "Rosarivo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .jm-topNavMenu > ul > li {
@@ -58,6 +77,7 @@ header {
   background-image: url("../img/icon/mainHambar.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 /* 메인페이지 이미지 */
@@ -85,7 +105,7 @@ header {
   position: relative;
   width: 250px;
   background-repeat: no-repeat;
-  background-image: cover;
+  background-size: cover;
   background-position: center;
   transition: 2s;
 }
@@ -103,6 +123,10 @@ header {
 
 .jm-mainImgFc.on {
   display: block;
+}
+
+.jm-mainImg {
+  cursor: pointer;
 }
 
 .jm-mainImg > div {
@@ -123,21 +147,24 @@ header {
 }
 
 .jm-mainImgs > li:nth-child(2) {
-  background-image: url("../img/main/main-slide-sp.jpg");
+  background-image: url("../img/main/main-slide-sp.png");
 }
 .jm-mainImgs > li:nth-child(3) {
-  background-image: url("../img/main/main-slide-su.jpg");
+  background-image: url("../img/main/main-slide-su.png");
 }
 .jm-mainImgs > li:nth-child(4) {
   background-image: url("../img/main/main-slide-au.png");
 }
 .jm-mainImgs > li:nth-child(5) {
-  background-image: url("../img/main/main-slide-wi.jpg");
+  background-image: url("../img/main/main-slide-wi.png");
 }
 
 .jm-mainImg-content {
-  display: flex; align-items: end;
+  display: flex;
+  align-items: end;
   padding-right: 2rem;
+  font-family: "Rosarivo";
+  text-shadow: 0px 0px 5px black;
 }
 
 /* 메인 버튼 */
@@ -245,10 +272,28 @@ header {
   height: 80%;
   background-color: gray;
 }
+#hi-seasonImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
 .hi-seasonImg1 {
   border-radius: 3rem 0 0 0;
 }
+.hi-seasonImg1 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3rem 0 0 0;
+}
 .hi-seasonImg2 {
+  border-radius: 0 0 3rem 0;
+}
+.hi-seasonImg2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0 0 3rem 0;
 }
 .hi-seasonName {
@@ -306,7 +351,7 @@ header {
 }
 .hi-seasonEnf-imgLabel {
   width: 100%;
-  height: 1.5rem;
+  height: 3rem;
   background-color: rgba(20, 20, 57, 0.7);
   display: flex;
   justify-content: end;
@@ -314,8 +359,9 @@ header {
   color: white;
   cursor: pointer;
 }
-.hi-seasonEnf-imgLabel > span {
-  padding-right: 0.5rem;
+.hi-seasonEnf-imgLabel > a {
+  display: block;
+  padding-right: 2.5rem;
   color: white;
 }
 /* story style */
@@ -407,6 +453,14 @@ header {
   border-radius: 5rem;
 }
 
+/* 이미지 조절 */
+.jb-mainImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5rem;
+}
+
 /* 이미지 하단의 이름 */
 .jb-springName,
 .jb-summerName,
@@ -474,7 +528,7 @@ header {
 .jb-autumnBox,
 .jb-winterBox {
   font-size: 3rem;
-  font-family: "Rosarivo";
+  font-family: "Rosarivo", serif;
   margin-top: 1rem;
 }
 
@@ -496,15 +550,66 @@ header {
 .jb-spRevBox1,
 .jb-spRevBox2,
 .jb-spRevBox3,
-.jb-spRevBox4,
+.jb-spRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #ffc0cb;
+  border: 0.1rem solid #ffc0cb;
+  background-color: #ffc0cb15;
+  align-content: center;
+}
+.hi-reBoxSp-reviewStory {
+  color: #ffc0cb;
+}
+.hi-reBoxSp-reviewStory:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-suRevBox1,
 .jb-suRevBox2,
 .jb-suRevBox3,
-.jb-suRevBox4,
+.jb-suRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #22d5ff;
+  border: 0.1rem solid #22d5ff;
+  background-color: #22d5ff15;
+}
+
+.hi-reBoxSu-reviewStory {
+  color: #22d5ff;
+}
+.hi-reBoxSu-reviewStory:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-auRevBox1,
 .jb-auRevBox2,
 .jb-auRevBox3,
-.jb-auRevBox4,
+.jb-auRevBox4 {
+  width: 80%;
+  height: 6rem;
+  margin: 3rem auto;
+  border-radius: 2rem;
+  color: #ffba08;
+  border: 0.1rem solid #ffba08;
+  background-color: #ffba0815;
+}
+
+.hi-reBoxAu-reviewStory {
+  color: #ffba08;
+}
+.hi-reBoxAu-reviewStory:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
 .jb-wiRevBox1,
 .jb-wirevBox2,
 .jb-wiRevBox3,
@@ -513,23 +618,273 @@ header {
   height: 6rem;
   margin: 3rem auto;
   border-radius: 2rem;
-  background-color: #ffc0cb;
+  color: #add8e6;
+  border: 0.1rem solid #add8e6;
+  background-color: #add8e615;
+}
+
+.hi-reBoxWi-reviewStory {
+  color: #add8e6;
+}
+.hi-reBoxWi-reviewStory:nth-child(2) {
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 /* 버튼 스타일 */
-button {
-  background-color: #333;
+#jb-springBtn,
+#jb-summerBtn,
+#jb-autumnBtn,
+#jb-winterBtn {
+  background-color: #5555555e;
   color: white;
-  border: none;
+  border: 0.1rem solid #555;
   padding: 1rem 1.5rem;
   margin: 1rem 0.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
   font-size: 1.6rem;
+  transition: 0.2s;
 }
 
-button:hover {
-  background-color: #555;
+#jb-springBtn:hover,
+#jb-summerBtn:hover,
+#jb-autumnBtn:hover,
+#jb-winterBtn:hover {
+  background-color: #0e0e0e;
+}
+
+/* 카카오맵 api */
+#map {
+  width: 100%;
+  height: 50vh;
+  display: none;
+  margin-bottom: 5rem;
+}
+
+#address {
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#searchButton {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 30;
+}
+
+/* 웹버전 메뉴 */
+.hi-mainMenu-web {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+}
+.hi-mainMenu-web > div {
+  width: 60%;
+  margin-top: 10%;
+}
+.hi-menuBoxTop {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.1rem solid white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+.hi-menuBoxTop > div {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 3rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+.hi-menuBoxTop > span {
+  font-family: "Rosarivo";
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+
+.hi-menuBox {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hi-menuSub > div:nth-child(1) a {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 2rem;
+}
+.hi-menuSub > div:nth-child(2) > ul > li {
+  padding-top: 1rem;
+}
+.hi-menuSub > div:nth-child(2) > ul > li > a {
+  color: white;
+  font-family: "IBM Plex Sans KR";
+  font-size: 1.2rem;
+}
+.hi-menuSub > div a {
+  transition: 0.3s;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0);
+}
+.hi-menuSub > div a:hover {
+  border-bottom: 0.1rem solid white;
+}
+
+/* 앱버전 메뉴 */
+.hi-mainMenu-app {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  align-content: center;
+}
+.hi-mainMenu-appBoxtop {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 0.1rem solid white;
+  position: relative;
+}
+.hi-mainMenu-appBoxtop > div {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+.hi-mainMenu-appBoxtop > span {
+  font-family: "Rosarivo";
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+#hi-accordionMenu-Close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hi-accordionMenu-Close img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transition: 0.3s;
+}
+#hi-accordionMenu-Close > img:hover {
+  transform: rotate(180deg);
+}
+.hi-mainMenu-appBox {
+  width: 85%;
+  margin: auto;
+}
+.hi-accordionMenu {
+  background-color: rgba(191, 191, 191, 0);
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  font-family: "Rosarivo";
+  border-bottom: 0.1rem solid white;
+  transition: 0.5s;
+}
+.hi-accordionMenu:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+.hi-accordionMenu::after {
+  content: "▼";
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-top: 0.5rem;
+}
+.hi-accordionMenu.on {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+.on::after {
+  content: "▲";
+  font-size: 1rem;
+}
+.hi-appMenu {
+  padding: 0 1rem;
+  background-color: rgba(218, 218, 218, 0.05);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hi-appMenu > p {
+  padding: 1rem 0;
+  width: 100%;
+  display: block;
+}
+.hi-appMenu a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.hi-appMenu p:hover a {
+  color: white;
+  font-weight: 600;
+}
+
+/* menu close */
+#hi-menuBox-Close {
+  position: absolute;
+  right: 0;
+  margin-bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+body.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#hi-menuBox-Close img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+#hi-menuBox-Close img:hover {
+  transform: rotate(180deg);
 }
 
 /* footer 부분 */
@@ -546,4 +901,25 @@ footer {
 footer > span {
   color: white;
   font-size: 1.5rem;
+}
+.hi-footerBox {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+}
+.hi-figmaBox > a {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.hi-footerSubtxt {
+  padding-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hi-footerIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  opacity: 0.5;
+  transform: rotate(30deg);
 }

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll(".jb-mainImgWrapper > div");
   let index = 0;
   const totalSlides = slides.length;
-  const visibleSlides = 3; 
+  const visibleSlides = 3;
   const slideWidth = 280 + 16;
 
   function slideImages() {
@@ -66,17 +66,81 @@ $(document).ready(function () {
   // 모든 버튼에 대한 클릭 이벤트 설정
   $("button").click(function () {
     let season = $(this).attr("id").replace("jb-", "").replace("Btn", "");
-    $(".jb-reBox:visible").fadeOut(500, function () {
-      $(
-        ".jb-reBox." +
-          "jb-reBox" +
-          (["spring", "summer", "autumn", "winter"].indexOf(season) + 1)
-      ).fadeIn(500); // 해당 시즌 박스를 페이드인
-    });
+    if ($(this).attr("id") !== "searchButton") {
+      $(".jb-reBox:visible").fadeOut(500, function () {
+        $(
+          ".jb-reBox." +
+            "jb-reBox" +
+            (["spring", "summer", "autumn", "winter"].indexOf(season) + 1)
+        ).fadeIn(500); // 해당 시즌 박스를 페이드인
+      });
+    }
   });
 });
 
-//이벤트 이동
+// 카카오맵 api
+var infowindow = new kakao.maps.InfoWindow({ zIndex: 1 });
+var map;
+
+document.getElementById("searchButton").addEventListener("click", function () {
+  var address = document.getElementById("address").value.trim();
+
+  if (!address) {
+    alert("주소를 입력하세요.");
+    return;
+  }
+
+  if (!map) {
+    createMap();
+  }
+
+  var ps = new kakao.maps.services.Places();
+  ps.keywordSearch(address, placesSearchCB);
+});
+
+function createMap() {
+  var mapContainer = document.getElementById("map");
+  mapContainer.style.display = "block";
+  var mapOption = {
+    center: new kakao.maps.LatLng(37.566826, 126.9786567),
+    level: 5,
+  };
+  map = new kakao.maps.Map(mapContainer, mapOption);
+  mapContainer.style.display = "block";
+  map.relayout();
+}
+
+function placesSearchCB(data, status, pagination) {
+  if (status === kakao.maps.services.Status.OK) {
+    var bounds = new kakao.maps.LatLngBounds();
+
+    for (var i = 0; i < data.length; i++) {
+      displayMarker(data[i]);
+      bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+    }
+
+    map.setBounds(bounds);
+    map.relayout();
+  } else {
+    alert("검색 결과가 없습니다.");
+  }
+}
+
+function displayMarker(place) {
+  var marker = new kakao.maps.Marker({
+    map: map,
+    position: new kakao.maps.LatLng(place.y, place.x),
+  });
+
+  kakao.maps.event.addListener(marker, "click", function () {
+    infowindow.setContent(
+      '<div style="padding:5px;font-size:12px;">' + place.place_name + "</div>"
+    );
+    infowindow.open(map, marker);
+  });
+}
+
+//이벤트 이동 + top Btn
 let hiSeasonEventCount = 0;
 let hiSeasonEventList = [
   "#hi-seasonEnf-e1",
@@ -88,7 +152,6 @@ let hiSeasonEventList = [
 $(document).ready(function () {
   $(".hi-seasonEnf-mainBox > div").hide();
   $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
-  hiSeasonEventCount += 1;
 
   $("#hi-seasonEnf-btnL").click(function () {
     $(".hi-seasonEnf-mainBox > div").hide();
@@ -101,10 +164,66 @@ $(document).ready(function () {
 
   $("#hi-seasonEnf-btnR").click(function () {
     $(".hi-seasonEnf-mainBox > div").hide();
+    hiSeasonEventCount++;
     if (hiSeasonEventCount >= hiSeasonEventList.length) {
       hiSeasonEventCount = 0;
     }
     $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
-    hiSeasonEventCount++;
+  });
+
+  $("#hi-topBtn").click(function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+});
+
+//메뉴 fade in/out
+//웹메뉴
+$(document).ready(function () {
+  $(".hi-mainMenu-web").fadeOut();
+  $(".hi-mainMenu-app").fadeOut();
+  $(".jm-mainMenuBtn").click(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    if (window.innerWidth < 770) {
+      $(".hi-mainMenu-app").fadeIn();
+    } else {
+      $(".hi-mainMenu-web").fadeIn();
+    }
+    $("body").addClass("no-scroll");
+  });
+  $("#hi-menuBox-Close").click(() => {
+    $(".hi-mainMenu-web").fadeOut();
+    $("body").removeClass("no-scroll");
+  });
+  $("#hi-accordionMenu-Close").click(() => {
+    $(".hi-mainMenu-app").fadeOut();
+    $("body").removeClass("no-scroll");
+  });
+});
+//앱메뉴
+let hiAccordionMenu = document.querySelectorAll(".hi-accordionMenu");
+hiAccordionMenu.forEach((item) => {
+  item.addEventListener("click", function () {
+    // 현재 클릭된 아코디언이 아닌 경우 닫음
+    hiAccordionMenu.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("on");
+        otherItem.nextElementSibling.style.maxHeight = null;
+      }
+    });
+
+    // 클릭된 아이템의 아코디언 메뉴 확장/축소
+    let hiAppMenu = item.nextElementSibling;
+    item.classList.toggle("on");
+    if (hiAppMenu.style.maxHeight) {
+      hiAppMenu.style.maxHeight = null;
+    } else {
+      hiAppMenu.style.maxHeight = hiAppMenu.scrollHeight + "px"; // "rem" 대신 "px" 사용
+    }
   });
 });
