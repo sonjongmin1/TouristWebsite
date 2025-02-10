@@ -171,10 +171,10 @@ $(document).ready(function () {
     $(hiSeasonEventList[hiSeasonEventCount]).fadeIn();
   });
 
-  $("#hi-topBtn").click(function () {
+  $('#hi-topBtn').click(function(){
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth'
     });
   });
 });
@@ -182,33 +182,35 @@ $(document).ready(function () {
 //메뉴 fade in/out
 //웹메뉴
 $(document).ready(function () {
-  $(".hi-mainMenu-web").fadeOut();
-  $(".hi-mainMenu-app").fadeOut();
+  $("#hi-mainMenu-web").hide();
+  $("#hi-mainMenu-app").hide();
+  $("#hi-mainMenu-web").removeClass("hideMenu");
+  $("#hi-mainMenu-app").removeClass("hideMenu");
   $(".jm-mainMenuBtn").click(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth'
     });
     if (window.innerWidth < 770) {
-      $(".hi-mainMenu-app").fadeIn();
+      $("#hi-mainMenu-app").fadeIn();
     } else {
-      $(".hi-mainMenu-web").fadeIn();
+      $("#hi-mainMenu-web").fadeIn();
     }
     $("body").addClass("no-scroll");
   });
   $("#hi-menuBox-Close").click(() => {
-    $(".hi-mainMenu-web").fadeOut();
+    $("#hi-mainMenu-web").fadeOut();
     $("body").removeClass("no-scroll");
   });
   $("#hi-accordionMenu-Close").click(() => {
-    $(".hi-mainMenu-app").fadeOut();
+    $("#hi-mainMenu-app").fadeOut();
     $("body").removeClass("no-scroll");
   });
 });
 //앱메뉴
 let hiAccordionMenu = document.querySelectorAll(".hi-accordionMenu");
 hiAccordionMenu.forEach((item) => {
-  item.addEventListener("click", function () {
+  item.addEventListener("click", function() {
     // 현재 클릭된 아코디언이 아닌 경우 닫음
     hiAccordionMenu.forEach((otherItem) => {
       if (otherItem !== item) {
