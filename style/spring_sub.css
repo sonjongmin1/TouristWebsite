@@ -489,14 +489,14 @@
   padding: 2rem 0;
   text-align: center;
   background: linear-gradient(to bottom, #141b33 0%, #ffffff 100%);
-  margin : 0;
+  margin: 0;
 }
 
 /* 제목 */
 .sp3-subTit1 {
   font-size: 2rem;
   font-weight: 700;
-  color : white;
+  color: white;
 }
 
 /* 본문 */
@@ -565,4 +565,14 @@
   right: 15px;
   font-size: 2rem;
   cursor: pointer;
+}
+
+/* pc */
+@media (min-width: 1025px) {
+}
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+/* 모바일 */
+@media (max-width: 768px) {
 }
