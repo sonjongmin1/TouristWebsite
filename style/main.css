@@ -25,6 +25,13 @@ header {
   z-index: 1000;
 }
 
+.hi-topMenuImgLogo{
+  width: 15rem; height: 5rem;
+  position: absolute; 
+  top: 50%; transform: translateY(-50%); left: 20rem;
+}
+.hi-topMenuImgLogo>a>img{width: 100%; height: 100%; object-fit: contain;}
+
 .jm-topNavMenu > ul {
   display: flex;
   margin-right: 3rem;
@@ -333,12 +340,17 @@ header {
   background-color: aqua;
   align-content: end;
   margin-left: 10rem;
+  position: relative;
+}
+.hi-seasonEnf-img>img{
+  position: absolute; top: 0;
+  width: 100%; height: 100%; object-fit: cover;
 }
 .hi-seasonEnf-imgLabel {
-  width: 100%;
-  height: 3rem;
+  width: 100%; height: 3rem;
+  position: absolute; bottom: 0;
   background-color: rgba(20, 20, 57, 0.7);
-  display: flex;
+  display: flex; z-index: 1;
   justify-content: end;
   align-items: center;
   color: white;
@@ -461,7 +473,7 @@ header {
 
 .jb-section2 {
   width: 100%;
-  height: 90%;
+  height: 110vh;
   /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
   padding-bottom: 2rem;
   background-color: #0f172a;
@@ -545,11 +557,11 @@ header {
   background-color: #ffc0cb15;
   align-content: center;
 }
-.hi-reBoxSp-reviewStory {
-  color: #ffc0cb;
+.hi-reBoxSp-reviewStory:nth-child(1) {
+  color: #ffffff;
 }
 .hi-reBoxSp-reviewStory:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 1rem; color: #ffc0cb;
   font-size: 1.5rem;
 }
 
@@ -566,11 +578,11 @@ header {
   background-color: #22d5ff15;
 }
 
-.hi-reBoxSu-reviewStory {
-  color: #22d5ff;
+.hi-reBoxSu-reviewStory:nth-child(1) {
+  color: #ffffff;
 }
 .hi-reBoxSu-reviewStory:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 1rem; color: #22d5ff;
   font-size: 1.5rem;
 }
 
@@ -587,11 +599,11 @@ header {
   background-color: #ffba0815;
 }
 
-.hi-reBoxAu-reviewStory {
-  color: #ffba08;
+.hi-reBoxAu-reviewStory:nth-child(1) {
+  color: #ffffff;
 }
 .hi-reBoxAu-reviewStory:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 1rem; color: #ffba08;
   font-size: 1.5rem;
 }
 
@@ -608,12 +620,13 @@ header {
   background-color: #add8e615;
 }
 
-.hi-reBoxWi-reviewStory {
-  color: #add8e6;
+.hi-reBoxWi-reviewStory:nth-child(1) {
+  color: #ffffff;
 }
 .hi-reBoxWi-reviewStory:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.5rem;
+  color: #add8e6;
 }
 
 /* 버튼 스타일 */
@@ -633,15 +646,23 @@ button:hover {
   background-color: #0e0e0e;
 }
 
+/* 검색용 css */
+.hi-reserchBox{
+  width: 75%; height: 10rem; background-color: #94a3b8; margin: auto;
+}
+
+
+
 /* 웹버전 메뉴 */
-.hi-mainMenu-web{
+#hi-mainMenu-web{
   width: 100vw; height: 100%;
   background-color: #141B33;
   position: absolute; overflow: hidden;
   top: 0; z-index: 1001;
   display: flex; justify-content: center;
 }
-.hi-mainMenu-web>div{
+#hi-mainMenu-web.hideMenu{display: none;}
+#hi-mainMenu-web>div{
   width: 60%; margin-top: 10%;
 }
 .hi-menuBoxTop{
@@ -684,12 +705,13 @@ button:hover {
 }
 
 /* 앱버전 메뉴 */
-.hi-mainMenu-app{
+#hi-mainMenu-app{
   width: 100vw; height: 100%;
   background-color: #141B33;
   position: absolute; overflow: hidden;
   top: 0; z-index: 1001; align-content: center;
 }
+#hi-mainMenu-app{display: none;}
 .hi-mainMenu-appBoxtop{
   width: 100%; display: flex; justify-content: left; align-items: center;
   border-bottom: 0.1rem solid white; position: relative;
