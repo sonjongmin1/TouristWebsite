@@ -587,6 +587,10 @@ header {
 }
 .hi-reBoxSp-reviewStory:nth-child(1) {
   color: #ffffff;
+  transition: 0.3s;
+}
+.hi-reBoxSp-reviewStory:nth-child(1):hover {
+  color: #b8818a;
 }
 .hi-reBoxSp-reviewStory:nth-child(2) {
   margin-top: 1rem;
@@ -609,6 +613,10 @@ header {
 
 .hi-reBoxSu-reviewStory:nth-child(1) {
   color: #ffffff;
+  transition: 0.3s;
+}
+.hi-reBoxSu-reviewStory:nth-child(1):hover {
+  color: #0996b6;
 }
 .hi-reBoxSu-reviewStory:nth-child(2) {
   margin-top: 1rem;
@@ -631,6 +639,10 @@ header {
 
 .hi-reBoxAu-reviewStory:nth-child(1) {
   color: #ffffff;
+  transition: 0.3s;
+}
+.hi-reBoxAu-reviewStory:nth-child(1):hover {
+  color: #ad7f0a;
 }
 .hi-reBoxAu-reviewStory:nth-child(2) {
   margin-top: 1rem;
@@ -653,6 +665,10 @@ header {
 
 .hi-reBoxWi-reviewStory:nth-child(1) {
   color: #ffffff;
+  transition: 0.3s;
+}
+.hi-reBoxWi-reviewStory:nth-child(1):hover {
+  color: #7ab4c7;
 }
 .hi-reBoxWi-reviewStory:nth-child(2) {
   margin-top: 1rem;
@@ -712,7 +728,7 @@ header {
 }
 
 /* 웹버전 메뉴 */
-.hi-mainMenu-web {
+#hi-mainMenu-web {
   width: 100vw;
   height: 100%;
   background-color: #141b33;
@@ -794,7 +810,7 @@ header {
 }
 
 /* 앱버전 메뉴 */
-.hi-mainMenu-app {
+#hi-mainMenu-app {
   width: 100vw;
   height: 100%;
   background-color: #141b33;
