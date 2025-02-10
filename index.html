@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <!-- 구글폰트 end -->
+    <!-- 카카오 api -->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a582ab9bb85bc9a9d3b9874b6dd792f4&libraries=services"
+    ></script>
     <title>계절별 한국 관광 홈페이지</title>
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/style.css" />
@@ -451,6 +456,12 @@
         <button id="jb-winterBtn">Winter</button>
       </div>
     </section>
+    <div class="search-container">
+      <input id="address" type="text" placeholder="주소를 입력하세요" />
+      <button id="searchButton">검색</button>
+    </div>
+    <div id="map"></div>
+  </div>
     <!-- 메뉴 -->
     <section class="hi-mainMenu-web">
       <div>
