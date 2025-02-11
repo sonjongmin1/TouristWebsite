@@ -234,16 +234,6 @@
   border-radius: 10px;
 }
 
-.sp1-sec3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80rem;
-  border: 1px solid #000;
-  padding: 10rem;
-}
-
 .sp1-sec3-top {
   display: flex;
   width: 100%;
@@ -251,48 +241,34 @@
   align-items: center;
 }
 
-.sp1-sec3-api,
-.sp1-sec3-text {
-  width: 48%;
-  height: 100%;
-  border-radius: 1rem;
-}
-
-.sp1-sec3-api {
-  border: 1px solid red;
-  background-color: #000;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sp1-sec3-api div {
-  margin: 3% auto;
-  height: 20%;
-}
-
-.sp1-sec3-api span {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
-
 .sp1-sec3-text {
   border: 1px solid black;
 }
 
-.sp1-sec3-graph {
+#su-sp1-sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+.su-sp1-sec3-graph {
   text-align: center;
   align-content: center;
   font-size: 6rem;
   border: 1px solid #000;
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  margin-top: 5rem;
+}
+
+.su-graph {
+  width: 600px;
+  height: 500px;
+  background-image: url("../img/summer/su-grap.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
 }
 
 .su-cody {
@@ -375,6 +351,14 @@
   font-size: 3.2rem;
   color: #fff;
 }
+
+/* api 그래프 */
+#su-sp1-sec3-grahp {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+}
+/* api 그래프 */
 
 /*---------- 메뉴 및 모바일 메뉴 -----------------------*/
 /* 웹버전 메뉴 */
@@ -862,14 +846,7 @@ body.no-scroll {
     border-radius: 1rem;
   }
 
-  .sp1-sec3-api {
-    width: 5rem;
-    height: 50%;
-    border: 1px solid #000;
-    background-color: #aaaaaa;
-  }
-
-  .sp1-sec3-graph {
+  .su-sp1-sec3-graph {
     text-align: center;
     align-content: center;
     font-size: 2rem;
@@ -903,3 +880,93 @@ body.no-scroll {
 /* 추가수정사항 */
 @media (min-width: 727px) and (max-width: 768px) {
 }
+
+/* 여름 서브 1페이지  */
+#su-sub1-sp2-subImg1 {
+  background-image: url("../img/summer/su-img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#su-sub1-sp2-subImg2 {
+  background-image: url("../img/summer/su-img4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#su-sub1-sp2-subImg3 {
+  background-image: url("../img/summer/su-img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#su-sub1-sp2-subImg4 {
+  background-image: url("../img/summer/su-img9.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 여름 음식 */
+#su-sub1-sp2-foodImg1 {
+  background-image: url("../img/summer/su-food1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#su-sub1-sp2-foodImg2 {
+  background-image: url("../img/summer/su-food2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#su-sub1-sp2-foodImg3 {
+  background-image: url("../img/summer/su-food3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#su-sub1-sp2-foodImg4 {
+  background-image: url("../img/summer/su-food4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* sp2-sec3-con-img1 아래태크에 전체 이미지 URL 복붙 */
+#su-sp2-sec3-con-img1 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  background-image: url("../img/main/festival_su.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#su-sp2-sec3-con-img2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  background-image: url("../img/summer/su-sub1-img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  #su-sp2-sec3-con-img1,
+  #su-sp2-sec3-con-img2 {
+    width: 100%;
+  }
+}
+
+/*  */
