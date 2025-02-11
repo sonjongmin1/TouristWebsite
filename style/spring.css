@@ -162,24 +162,15 @@
   height: 60rem;
   background-color: #141b33;
 }
-.sp1-sec2 > div {
-  width: 30%;
-  height: 70%;
-}
-
-.sp1-sec2 > div:not(:last-child) {
-  margin-right: 20rem;
-}
 
 .sp1-sec2 div {
   color: #fff;
 }
 
-.sp1-sec2 > div:first-child {
-  padding: 2rem; width: 60%;
-}
 .sp1-sec2-box1{
-    background-color: aqua;
+    width: 80%; height: 70%;
+    display: flex; 
+    position: relative; justify-content: space-between;
 }
 
 .sp1-sec2-line {
@@ -207,6 +198,7 @@
 }
 
 .sp1-sub-img {
+  width: 50%; margin-left: 5rem;
   background-image: url("../img/spring-sub1/springSubSec1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +217,7 @@
 
 .sp1-sec3-top {
   display: flex;
-  width: 100%;
+  width: 90%; height: 40%;
   justify-content: space-between;
   align-items: center;
 }
@@ -238,17 +230,21 @@
 }
 
 .sp1-sec3-api {
-  border: 1px solid red;
-  background-color: #000;
+  border: 1px solid #FFCFCA;
+  background-color: #ffcfca50;
   text-align: center;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
-.sp1-sec3-api div {
+.sp1-sec3-api>div:nth-child(2){
+    display: flex; justify-content: space-around;
+}
+.sp1-sec3-api>div>div {
   margin: 3% auto;
   height: 20%;
 }
@@ -256,11 +252,13 @@
 .sp1-sec3-api span {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #e7887e;
 }
 
 .sp1-sec3-text {
   border: 1px solid black;
+  padding: 1rem; font-size: 1.5rem;
+  text-align: center;
 }
 
 .sp1-sec3-graph {
@@ -656,31 +654,47 @@ body.no-scroll {
 
   .sp1-sec2 {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding: 4rem;
     height: 60rem;
+    width: 100vw;
     background-color: #141b33;
     overflow-x: hidden;
     /* justify-content: center;
     align-items: center;
     /* width: 100%; */
   }
+  .sp1-sec2-box1{
+    width: 90%; height: 100%; display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .sp1-sec2-box1>div{
+    height: 45%;
+  }
+
+  .sp1-sec2-box1>div:nth-child(1){
+    align-content: center;text-align: center;
+  }
+
+  .sp1-sec2-line{margin: auto; margin-bottom: 3rem; width: 30%;}
 
   .sp1-sec2-title {
-    width: 100%; text-align: center;
+    opacity: 0;
   }
 
   .sp1-sec2-content {
-    width: 50rem;
     font-size: 1.6rem;
     line-height: 2.6rem;
     word-wrap: break-word;
-    background-color: #FFCFCA;
   }
 
   .sp1-sub-img {
-    width: 300px !important;
+    width: 100%; margin-left: 0rem;
+    margin-top: 5rem;
   }
 
   .sp-slide-left {
@@ -744,7 +758,7 @@ body.no-scroll {
     height: 400px;
 }
   /* ----- */
-.sp1-sec3 {
+/* .sp1-sec3 {
     display: flex;
     width: 100%;
     height: 500px;
@@ -767,7 +781,7 @@ body.no-scroll {
     height: 50%;
     border: 1px solid #000;
     background-color: #aaaaaa;
-}
+} */
 
 .sp1-sec3-graph {
     text-align: center;
