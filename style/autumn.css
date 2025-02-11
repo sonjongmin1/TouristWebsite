@@ -202,7 +202,7 @@
 }
 
 .sp1-sub-img {
-  background-image: url("../img/spring-sub1/springSubSec1.jpg");
+  background-image: url("../img/autumn/한라산.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -245,7 +245,7 @@
 
 .sp1-sec3-api div {
   margin: 3% auto;
-  height: 20%;
+  height: 1%;
 }
 
 .sp1-sec3-api span {
@@ -256,18 +256,23 @@
 
 .sp1-sec3-text {
   border: 1px solid black;
+  text-align: center;
+  padding : 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
 }
 
 .sp1-sec3-graph {
-  text-align: center;
-  align-content: center;
-  font-size: 6rem;
-  border: 1px solid #000;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  margin-top: 5rem;
-}
+  margin-top: 3rem;
+  width : 90%;
+  height: 50%;
+  background-image: url(../img/autumn/가을_api.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  }
 
 .sp1-sec4 {
   display: flex;
@@ -318,6 +323,7 @@
   height: 75%;
 }
 
+
 .sp1-sec4-card > li:nth-child(2) {
   height: 20%;
   display: flex;
@@ -325,6 +331,19 @@
   align-items: center;
   font-size: 2.4rem;
   background-color: lightgrey;
+}
+
+#cardImg1{
+  background-image: url(../img/autumn/남자가을코트.jpg);
+}
+#cardImg2{
+  background-image: url(../img/autumn/남자가을캐주얼.jpg);
+}
+#cardImg3{
+  background-image: url(../img/autumn/여자가을코트.jpg);
+}
+#cardImg4{
+  background-image: url(../img/autumn/여자가을캐주얼.jpg);
 }
 
 .sp1-sec4-card-even {
@@ -394,6 +413,14 @@
   background-image: url(../img/autumn/남이섬.jpg);
   background-size: cover;
 }
+.sp2-subImg3 {
+  background-image: url(../img/autumn/서울세계불꽃축제2.jpg);
+  background-size: cover;
+}
+.sp2-subImg4 {
+  background-image: url(../img/autumn/한강공원.jpg);
+  background-size: cover;
+}
 .sp2-tr-design {
   position: absolute;
   left: 50%;
@@ -414,11 +441,13 @@
 .sp2-subImg1,
 .sp2-subImg3 {
   margin-bottom: 20px;
+  z-index: 3;
 }
 
 .sp2-subImg2,
 .sp2-subImg4 {
   margin-top: 20px;
+  z-index: 30;
 }
 
 .sp2-subInf1,
@@ -428,9 +457,10 @@
   width: 100%;
   height: 50%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   background-color: white;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: start;
   padding: 2rem;
 }
@@ -474,6 +504,22 @@
   height: 50%;
   background-color: rgb(90, 77, 97);
   border-radius: 30px 30px 0 0;
+}
+.sp2-foodImg1{
+  background-image: url(../img/autumn/전어.jpg);
+  background-size: cover;
+}
+.sp2-foodImg2{
+  background-image: url(../img/autumn/감.jpg);
+  background-size: cover;
+}
+.sp2-foodImg3{
+  background-image: url(../img/autumn/대하.jpg);
+  background-size: cover;
+}
+.sp2-foodImg4{
+  background-image: url(../img/autumn/밤.jpg);
+  background-size: cover;
 }
 .sp2-foodTit1,
 .sp2-foodTit2,
@@ -538,6 +584,7 @@
   height: 100%;
   border: 1px solid #fff;
   margin-right: 10px;
+  background-image: url(../img/autumn/서울세계불꽃축제.jpg);
 }
 
 .sp2-sec3-con-img1-opacity-con {
@@ -585,6 +632,7 @@
   width: 50%;
   height: 100%;
   border: 1px solid #fff;
+  background-image: url(../img/autumn/피아골단풍축제1.jpg);
 }
 
 /* 갤러리 */
