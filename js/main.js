@@ -214,14 +214,14 @@ hiAccordionMenu.forEach((item) => {
     // 현재 클릭된 아코디언이 아닌 경우 닫음
     hiAccordionMenu.forEach((otherItem) => {
       if (otherItem !== item) {
-        otherItem.classList.remove("on");
+        otherItem.classList.remove("ons");
         otherItem.nextElementSibling.style.maxHeight = null;
       }
     });
 
     // 클릭된 아이템의 아코디언 메뉴 확장/축소
     let hiAppMenu = item.nextElementSibling;
-    item.classList.toggle("on");
+    item.classList.toggle("ons");
     if (hiAppMenu.style.maxHeight) {
       hiAppMenu.style.maxHeight = null;
     } else {
