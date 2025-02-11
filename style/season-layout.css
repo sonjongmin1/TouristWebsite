@@ -104,15 +104,6 @@
 .sp1-sec1-img-Box > li:not(:last-child) {
   margin-right: 6rem;
 }
-.sp1-mainImg1 {
-  background-image: url("../img/spring-sub1/springSubMain1.jpg");
-}
-.sp1-mainImg2 {
-  background-image: url("../img/spring-sub1/springSubMain2.jpg");
-}
-.sp1-mainImg3 {
-  background-image: url("../img/spring-sub1/springSubMain3.jpg");
-}
 
 .sp-slide-left,
 .sp-slide-right {
