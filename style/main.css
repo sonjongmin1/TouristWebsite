@@ -499,7 +499,7 @@ header {
 
 .jb-section2 {
   width: 100%;
-  height: 110vh;
+  height: 80vh;
   /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
   padding-bottom: 2rem;
   background-color: #0f172a;
@@ -718,7 +718,12 @@ header {
   font-size: 16px;
   cursor: pointer;
 }
-
+.jb-mapTit {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #0f172a;
+}
 .search-container {
   position: relative;
   text-align: center;
@@ -729,6 +734,7 @@ header {
 .hi-mapSection {
   position: relative;
   padding: 3rem 0;
+  background-color: #ffffff;
 }
 
 /* 웹버전 메뉴 */
@@ -1223,7 +1229,7 @@ footer > span {
 
   .jb-section2 {
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
     background-color: #0f172a;
     text-align: center;
@@ -1511,7 +1517,7 @@ footer > span {
 
   .jb-section2 {
     width: 100%;
-    height: 140vh;
+    height: 110vh;
     /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
     background-color: #0f172a;
     text-align: center;
