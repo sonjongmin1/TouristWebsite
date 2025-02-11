@@ -1,0 +1,416 @@
+/* 관광지 섹션 스타일 */
+.sp2-section1 {
+  width: 100%;
+  height: 90%;
+  padding: 7rem 0;
+  background-color: #0f172a;
+  text-align: center;
+}
+
+/* 제목 */
+.sp2-subTit1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+/* 본문 */
+.sp2-mainBox1 {
+  width: 90%;
+  height: 70%;
+  position: relative;
+  margin: 10rem auto;
+  display: flex;
+}
+.sp2-subBox1,
+.sp2-subBox2,
+.sp2-subBox3,
+.sp2-subBox4 {
+  position: relative;
+  width: 24%;
+  height: 80%;
+  margin: 0 auto;
+}
+.sp2-subImg1,
+.sp2-subImg2,
+.sp2-subImg3,
+.sp2-subImg4 {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(90, 77, 97);
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.sp2-tr-design {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid rgb(90, 77, 97); /* 삼각형 색상 */
+}
+
+.sp2-tr-design.on {
+  top: -8%;
+  transform: rotate(180deg);
+}
+
+.sp2-subImg1,
+.sp2-subImg3 {
+  margin-bottom: 20px;
+}
+
+.sp2-subImg2,
+.sp2-subImg4 {
+  margin-top: 20px;
+}
+
+.sp2-subInf1,
+.sp2-subInf2,
+.sp2-subInf3,
+.sp2-subInf4 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+}
+
+/* 제철음식 세션 스타일 */
+.sp2-section2 {
+  width: 100%;
+  height: 70%;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* 제목 */
+.sp2-subTit2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* 본문 */
+.sp2-mainBox2 {
+  width: 90%;
+  height: 75%;
+  position: relative;
+  margin: 9rem auto;
+  display: flex;
+}
+.sp2-foodBox1,
+.sp2-foodBox2,
+.sp2-foodBox3,
+.sp2-foodBox4 {
+  width: 24%;
+  height: 100%;
+  margin: 0 auto;
+}
+.sp2-foodImg1,
+.sp2-foodImg2,
+.sp2-foodImg3,
+.sp2-foodImg4 {
+  width: 100%;
+  height: 50%;
+  background-color: rgb(90, 77, 97);
+  border-radius: 30px 30px 0 0;
+}
+.sp2-foodTit1,
+.sp2-foodTit2,
+.sp2-foodTit3,
+.sp2-foodTit4 {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(90, 77, 97);
+}
+.sp2-foodInf1,
+.sp2-foodInf2,
+.sp2-foodInf3,
+.sp2-foodInf4 {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(90, 77, 97);
+}
+
+/* 봄에 열리는 축제 */
+
+.sp2-section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #000;
+  padding: 4rem 6rem;
+}
+
+.sp2-sec3-title {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+.sp2-sec3-con {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  border: 1px solid #000;
+}
+
+/* sp2-sec3-con-img1 아래태크에 전체 이미지 URL 복붙 */
+.sp2-sec3-con-img1 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #fff;
+  margin-right: 10px;
+}
+
+.sp2-sec3-con-img1-opacity-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  border: 1px solid blue;
+  font-size: 2rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span {
+  display: block;
+  color: #fff;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(1),
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(4) {
+  font-size: 1.2rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(2),
+.sp2-sec3-con-img1-opacity-con-in-con span:nth-child(3) {
+  font-size: 2.4rem;
+}
+
+.sp2-sec3-con-img1-opacity-con-in-con span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sp2-sec3-con-img2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+/* 갤러리 */
+.sp3-section1 {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #141b33 0%, #ffffff 100%);
+  margin: 0;
+}
+
+/* 제목 */
+.sp3-subTit1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* 본문 */
+.sp3-galBox1,
+.sp3-galBox2,
+.sp3-galBox3 {
+  width: 100%;
+  height: 25%;
+  margin: 7rem auto;
+  display: flex;
+}
+
+.sp3-galImgBox {
+  width: 20%;
+  height: 100%;
+  background-color: green;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 50%;
+  height: 60%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.modal-img {
+  margin-top: 10rem;
+  width: 80%;
+  height: 70%;
+  background-color: gray;
+}
+
+.modal-text {
+  margin-top: 5rem;
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333333;
+  padding: 1rem;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/*  */
+/* pc */
+@media (min-width: 1025px) {
+}
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .mb-br {
+    display: none;
+  }
+
+  .sp2-section1 {
+    height: 100%;
+  }
+  .sp2-mainBox1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+    white-space: nowrap;
+    padding: 4rem;
+    /* border: 1px solid #fff; */
+  }
+
+  .sp2-mainBox1 > div {
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid yellow; */
+  }
+
+  .sp2-mainBox1 > div:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .sp2-mainBox1 > div:nth-child(even) {
+    position: relative;
+    top: -288px;
+  }
+
+  .sp2-subTit1 {
+    margin-bottom: 45px;
+  }
+
+  .sp2-subImg1,
+  .sp2-subImg3 {
+    margin-bottom: 40px;
+  }
+  .sp2-subImg1 img {
+  }
+
+  .sp2-subImg2,
+  .sp2-subImg4 {
+    margin-top: 40px;
+  }
+
+  .sp2-mainBox2 {
+    flex-wrap: wrap;
+  }
+
+  .sp2-foodBox1,
+  .sp2-foodBox2,
+  .sp2-foodBox3,
+  .sp2-foodBox4 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .sp2-foodBox3,
+  .sp2-foodBox4 {
+    margin-top: 100px;
+  }
+
+  .sp2-section2 {
+    height: 100%;
+  }
+
+  .sp2-foodImg1,
+  .sp2-foodImg2,
+  .sp2-foodImg3,
+  .sp2-foodImg4 {
+    height: 80%;
+  }
+
+  .sp2-sec3-con {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sp2-sec3-con-img1 {
+    margin-bottom: 20px;
+  }
+
+  .sp2-sec3-con-img1,
+  .sp2-sec3-con-img2 {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .sp2-sec3-con-img1-opacity-con-in-con {
+    width: 85%;
+    height: 85%;
+  }
+}
