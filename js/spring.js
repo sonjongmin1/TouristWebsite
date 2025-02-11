@@ -62,3 +62,45 @@ leftButton.addEventListener("click", () => {
 rightButton.addEventListener("click", () => {
   if (!isSliding) moveSlide("right");
 });
+
+// 날씨 api
+let temp = document.querySelector("#temp");
+let wind = document.querySelector("#wind");
+let intro = document.querySelector("#intro");
+
+let API_Key = "a796bfc95507eaa60eadf9bfdd83b79d";
+let cityName = "seoul";
+
+let weather = async () => {
+  let response = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_Key}&units=metric`
+  );
+  let data = await response.json();
+  console.log(data);
+  temp.textContent = `${data.main.temp}°C`;
+  wind.textContent = `${data.wind.speed}m/s`;
+  let icon = data.weather[0].main;
+  let weatherIcon = "";
+
+  switch (icon) {
+    case "Clear":
+      weatherIcon =
+        "<span style='color: yellow; font-size:2rem;'>&#9728;</span>";
+      break;
+    case "Wind":
+      weatherIcon =
+        "<span style='color: gray; font-size:2rem;'>&#127788;</span>";
+      break;
+    case "Clouds":
+      weatherIcon = "<span style='color: gray; font-size:2rem;'>&#9729;</span>";
+      break;
+    case "Rain":
+      weatherIcon = "<span style='color: blue; font-size:2rem;'>&#9748;</span>";
+      break;
+    case "Snow":
+      weatherIcon =
+        "<span style='color: white; font-size:2rem;'>&#2603;</span>";
+  }
+  iconDiv.innerHTML = weatherIcon;
+};
+weather();
