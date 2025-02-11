@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0,minimum-scale=1.0"
     />
     <title>가을날의 즐거움</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../style/season-layout.css" />
     <link rel="stylesheet" href="../style/season-sub.css" />
     <link rel="stylesheet" href="../style/style.css" />
@@ -14,7 +15,11 @@
   <body>
     <header>
       <div class="sp1-nav">
-        <div class="sp1-imgLogo"><a href="../index.html">BRAND</a></div>
+        <div class="sp1-imgLogo">
+          <a href="../index.html">
+            <div class="onuriLogo"></div>
+          </a>
+        </div>
         <ul class="sp1-navMenu">
           <li><a class="mb-br" href="./autumn.html">한국의 가을</a></li>
           <li>
@@ -165,5 +170,118 @@
         </div>
       </div>
     </section>
+    <!-- -------------------------------- -->
+    <!-- 탭메뉴 -->
+    <section id="hi-mainMenu-web" class="hideMenu">
+      <div>
+        <div class="hi-menuBoxTop">
+          <div>
+            <a href="../index.html"
+              ><img src="../img/icon/logo_white.png" alt="온누리 로고"
+            /></a>
+          </div>
+          <span>Menu</span>
+          <div id="hi-menuBox-Close">
+            <img src="../img/icon/close.png" alt="close menu" />
+          </div>
+        </div>
+        <div class="hi-menuBox">
+          <div class="hi-menuSub">
+            <div><a href="../subpage/spring.html">Spring</a></div>
+            <div>
+              <ul>
+                <li><a href="../subpage/spring.html">한국의 봄</a></li>
+                <li><a href="../subpage/spring_sub1.html">봄날의 즐거움</a></li>
+                <li><a href="../subpage/spring_sub2.html">갤러리</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 여름 -->
+          <div class="hi-menuSub">
+            <div><a href="../subpage/summer.html">Summer</a></div>
+            <div>
+              <ul>
+                <li><a href="../subpage/summer.html">한국의 여름</a></li>
+                <li><a href="../subpage/summer_sub1.html">여름의 즐거움</a></li>
+                <li><a href="../subpage/summer_sub2.html">갤러리</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 가을 -->
+          <div class="hi-menuSub">
+            <div><a href="../subpage/autumn.html">Autumn</a></div>
+            <div>
+              <ul>
+                <li><a href="../subpage/autumn.html">한국의 가을</a></li>
+                <li><a href="../subpage/autumn_sub1.html">가을의 즐거움</a></li>
+                <li><a href="../subpage/autumn_sub2.html">갤러리</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- 겨울 -->
+          <div class="hi-menuSub">
+            <div><a href="../subpage/winter.html">Winter</a></div>
+            <div>
+              <ul>
+                <li><a href="../subpage/winter.html">한국의 겨울</a></li>
+                <li>
+                  <a href="../subpage/winter_sub1.html">겨울날의 즐거움</a>
+                </li>
+                <li><a href="../subpage/winter_sub2.html">갤러리</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 모바일 버전 메뉴 -->
+    <section id="hi-mainMenu-app" class="hideMenu">
+      <div class="hi-mainMenu-appBox">
+        <div class="hi-mainMenu-appBoxtop">
+          <div>
+            <a href="../index.html"
+              ><img src="../img/icon/logo_white.png" alt="온누리 로고"
+            /></a>
+          </div>
+          <span>Menu</span>
+          <div id="hi-accordionMenu-Close">
+            <img src="../img/icon/close.png" alt="close menu" />
+          </div>
+        </div>
+        <!-- 봄 -->
+        <div class="hi-accordionMenu">&nbsp;&nbsp;Spring</div>
+        <div class="hi-appMenu">
+          <p><a href="../subpage/spring.html">한국의 봄</a></p>
+          <p><a href="../subpage/spring_sub1.html">봄날의 즐거움</a></p>
+          <p><a href="../subpage/spring_sub2.html">갤러리</a></p>
+        </div>
+        <!-- 여름 -->
+        <div class="hi-accordionMenu">&nbsp;&nbsp;Summer</div>
+        <div class="hi-appMenu">
+          <p><a href="../subpage/summer.html">한국의 여름</a></p>
+          <p><a href="../subpage/summer_sub1.html">여름의 즐거움</a></p>
+          <p><a href="../subpage/summer_sub2.html">갤러리</a></p>
+        </div>
+        <!-- 가을 -->
+        <div class="hi-accordionMenu">&nbsp;&nbsp;Autumn</div>
+        <div class="hi-appMenu">
+          <p><a href="../subpage/autumn.html">한국의 가을</a></p>
+          <p><a href="../subpage/autumn_sub1.html">가을의 즐거움</a></p>
+          <p><a href="../subpage/autumn_sub2.html">갤러리</a></p>
+        </div>
+        <!-- 겨울 -->
+        <div class="hi-accordionMenu">&nbsp;&nbsp;Winter</div>
+        <div class="hi-appMenu">
+          <p><a href="../subpage/winter.html">한국의 겨울</a></p>
+          <p><a href="../subpage/winter_sub1.html">겨울날의 즐거움</a></p>
+          <p><a href="../subpage/winter_sub2.html">갤러리</a></p>
+        </div>
+      </div>
+    </section>
+    <footer class="sp1-ft">
+      <span>footer</span>
+    </footer>
+    <!-- ------------------------------------- -->
   </body>
+  <script src="../js/subMenuTab.js"></script>
 </html>
