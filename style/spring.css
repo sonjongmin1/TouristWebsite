@@ -1,0 +1,805 @@
+/* jongmin sub-page ST*/
+
+.sp1-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 8rem;
+  background-color: #141b33;
+}
+.sp1-imgLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+.sp1-imgLogo > a {
+  position: relative;
+  width: 110px;
+  height: 22px;
+}
+
+.onuriLogo {
+  position: absolute;
+  top: 0;
+  width: 110px;
+  height: 22px;
+  background-image: url(../img/icon/logo_white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sp1-navMenu {
+  position: relative;
+  display: flex;
+  right: 70px;
+}
+
+.sp1-navMenu > li > a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.sp1-navMenu > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sp1-hamBar {
+  width: 5rem;
+  height: 5rem;
+  background-image: url("../img/icon/mainHambar.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sp1-sec1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60rem;
+  padding: 4rem;
+}
+
+.sp1-sec1 > div {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.sp1-sec1-img-Box-bg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1230px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.sp1-sec1-img-Box {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp1-sec1-img-Box > li {
+  width: 37rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.sp1-sec1-img-Box > li {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sp1-sec1-img-Box > li:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.sp1-mainImg1{
+    background-image: url(../img/spring-sub1/springSubMain1.png);
+}
+.sp1-mainImg2{
+    background-image: url(../img/spring-sub1/springSubMain2.png);
+}
+.sp1-mainImg3{
+    background-image: url(../img/spring-sub1/springSubMain3.png);
+}
+
+.sp-slide-left,
+.sp-slide-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  top: 45%;
+}
+
+.sp-slide-left {
+  left: 0;
+  background-image: url("../img/icon/mainArrow.svg");
+}
+.sp-slide-right {
+  right: 0;
+  transform: rotate(180deg);
+  background-image: url("../img/icon/mainArrow.svg");
+}
+/* 벚꽃 캔버스 */
+.sp1-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none; /* 캔버스 위에서 마우스 이벤트 무시 */
+}
+
+.sp1-sec2 > div {
+  position: relative;
+  z-index: 2; /* 콘텐츠를 캔버스 위로 보이게 설정 */
+}
+/* 벚꽃 캔버스 */
+.sp1-sec2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60rem;
+  background-color: #141b33;
+}
+.sp1-sec2 > div {
+  width: 30%;
+  height: 70%;
+}
+
+.sp1-sec2 > div:not(:last-child) {
+  margin-right: 20rem;
+}
+
+.sp1-sec2 div {
+  color: #fff;
+}
+
+.sp1-sec2 > div:first-child {
+  padding: 2rem; width: 60%;
+}
+.sp1-sec2-box1{
+    background-color: aqua;
+}
+
+.sp1-sec2-line {
+  width: 30rem;
+  height: 0.03rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 0.03rem solid #FFCFCA;
+}
+
+.sp1-sec2-title {
+  font-size: 1.6rem;
+}
+
+.sp1-sec2-title-main {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+}
+
+.sp1-sec2-content {
+    width: 100%; 
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.sp1-sub-img {
+  background-image: url("../img/spring-sub1/springSubSec1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.sp1-sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80rem;
+  border: 1px solid #000;
+  padding: 10rem;
+}
+
+.sp1-sec3-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sp1-sec3-api,
+.sp1-sec3-text {
+  width: 48%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.sp1-sec3-api {
+  border: 1px solid red;
+  background-color: #000;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp1-sec3-api div {
+  margin: 3% auto;
+  height: 20%;
+}
+
+.sp1-sec3-api span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sp1-sec3-text {
+  border: 1px solid black;
+}
+
+.sp1-sec3-graph {
+  text-align: center;
+  align-content: center;
+  font-size: 6rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.sp1-sec4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #141b33; */
+  width: 100%;
+  height: 60rem;
+}
+
+.sp1-sec4 > div {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.sp1-sec4 > ul {
+  height: 70%;
+}
+
+.sp1-sec4-card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellowgreen; */
+}
+
+.sp1-sec4-card-box > li {
+  width: 17%;
+  height: 90%;
+}
+
+.sp1-sec4-card-box > li:not(:last-child) {
+  margin-right: 4.5rem;
+}
+
+.sp1-sec4-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.sp1-sec4-card > li:nth-child(1) {
+  background-color: lightgrey;
+  height: 75%;
+}
+
+.sp1-sec4-card > li:nth-child(2) {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  background-color: lightgrey;
+}
+
+.sp1-sec4-card-even {
+  border-top-left-radius: 5rem; /* 왼쪽 위 대각 모서리 */
+  border-top-right-radius: 5rem;
+}
+
+.sp1-ft {
+  height: 10rem;
+  background-color: #141b33;
+  padding: 4rem;
+}
+
+.sp1-ft > span {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+/*---------- 메뉴 및 모바일 메뉴 -----------------------*/
+/* 웹버전 메뉴 */
+#hi-mainMenu-web {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+}
+#hi-mainMenu-web {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+}
+#hi-mainMenu-web.hideMenu {
+  display: none;
+}
+#hi-mainMenu-web > div {
+  width: 60%;
+  margin-top: 10%;
+}
+.hi-menuBoxTop {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.1rem solid white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+.hi-menuBoxTop > div {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 3rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+.hi-menuBoxTop > div:nth-child(1) {
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  width: 13rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hi-menuBoxTop > div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hi-menuBoxTop > span {
+  font-family: "Rosarivo";
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+
+.hi-menuBox {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.hi-menuSub > div:nth-child(1) a {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 2rem;
+}
+.hi-menuSub > div:nth-child(2) > ul > li {
+  padding-top: 1rem;
+}
+.hi-menuSub > div:nth-child(2) > ul > li > a {
+  color: white;
+  font-family: "IBM Plex Sans KR";
+  font-size: 1.2rem;
+}
+.hi-menuSub > div a {
+  transition: 0.3s;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0);
+}
+.hi-menuSub > div a:hover {
+  border-bottom: 0.1rem solid white;
+}
+
+/* 앱버전 메뉴 */
+#hi-mainMenu-app {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  align-content: center;
+}
+#hi-mainMenu-app {
+  width: 100vw;
+  height: 100%;
+  background-color: #141b33;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 1001;
+  align-content: center;
+}
+#hi-mainMenu-app {
+  display: none;
+}
+.hi-mainMenu-appBoxtop {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-bottom: 0.1rem solid white;
+  position: relative;
+}
+.hi-mainMenu-appBoxtop > div {
+  font-family: "Rosarivo";
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+}
+.hi-mainMenu-appBoxtop > div:nth-child(1) {
+  margin-right: 1rem;
+  padding-left: 0.5rem;
+  width: 12rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.hi-mainMenu-appBoxtop > div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hi-mainMenu-appBoxtop > span {
+  font-family: "Rosarivo";
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 2rem;
+  border-left: 0.1rem solid white;
+}
+#hi-accordionMenu-Close {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hi-accordionMenu-Close img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transition: 0.3s;
+}
+#hi-accordionMenu-Close > img:hover {
+  transform: rotate(180deg);
+}
+.hi-mainMenu-appBox {
+  width: 85%;
+  margin: auto;
+}
+.hi-accordionMenu {
+  background-color: rgba(191, 191, 191, 0);
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  font-family: "Rosarivo";
+  border-bottom: 0.1rem solid white;
+  transition: 0.5s;
+}
+.hi-accordionMenu:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+.hi-accordionMenu::after {
+  content: "▼";
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-top: 0.5rem;
+}
+.hi-accordionMenu.on {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+.on::after {
+  content: "▲";
+  font-size: 1rem;
+}
+.hi-appMenu {
+  padding: 0 1rem;
+  background-color: rgba(218, 218, 218, 0.05);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hi-appMenu > p {
+  padding: 1rem 0;
+  width: 100%;
+  display: block;
+}
+.hi-appMenu a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.hi-appMenu p:hover a {
+  color: white;
+  font-weight: 600;
+}
+
+/* menu close */
+#hi-menuBox-Close {
+  position: absolute;
+  right: 0;
+  margin-bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+body.no-scroll {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#hi-menuBox-Close img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.3s;
+}
+#hi-menuBox-Close img:hover {
+  transform: rotate(180deg);
+}
+/*---------- 메뉴 및 모바일 메뉴 -----------------------*/
+
+/* jongmin sub-page ED*/
+
+/* pc */
+@media (min-width: 1025px) {
+}
+/* 태블릿 */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  body {
+    max-width: 100vw !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .mb-br {
+    display: none;
+  }
+
+  .sp1-navMenu > li > a {
+    font-size: 1.6rem;
+  }
+
+  .sp1-imgLogo > a {
+    font-size: 2.4rem;
+
+    /* color: #fff; */
+  }
+
+  .sp1-hamBar {
+    width: 4rem;
+    height: 4rem;
+    /* background-image: url("../img/icon/mainHambar.svg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
+
+  .sp1-nav {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 2rem;
+    /* height: 8rem;
+    background-color: #141b33; */
+  }
+
+  .sp1-sec2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    height: 60rem;
+    background-color: #141b33;
+    overflow-x: hidden;
+    /* justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  .sp1-sec2-title {
+    width: 100%; text-align: center;
+  }
+
+  .sp1-sec2-content {
+    width: 50rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    word-wrap: break-word;
+    background-color: #FFCFCA;
+  }
+
+  .sp1-sub-img {
+    width: 300px !important;
+  }
+
+  .sp-slide-left {
+    left: 435px;
+  }
+  .sp-slide-right {
+    right: 435px;
+  }
+
+  .sp1-sec4-card-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid black;
+  }
+
+  .sp1-sec4-card-box > li {
+    width: 130px;
+    height: 170px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .sp1-sec4-card-box > li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sp1-sec4-card > li:nth-child(2) {
+    font-size: 1.4rem;
+  }
+
+  .sp1-sec1 {
+    height: 50rem;
+    overflow: hidden;
+  }
+
+  .sp1-sec1-img-Box {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+.sp1-sec1-img-Box > li {
+    width: 37rem;
+    height: 30rem;
+    border-radius: 10px;
+}
+
+.sp1-sec1-img-Box > li {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sp1-sec1-img-Box-bg {
+    height: 400px;
+}
+  /* ----- */
+.sp1-sec3 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding: 4rem;
+}
+
+.sp1-sec3 > div {
+    height: 50%;
+    margin-bottom: 5rem;
+}
+
+.sp1-sec3 > div:nth-child(1) {
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem;
+}
+
+.sp1-sec3-api {
+    width: 5rem;
+    height: 50%;
+    border: 1px solid #000;
+    background-color: #aaaaaa;
+}
+
+.sp1-sec3-graph {
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.sp-slide-left,
+.sp-slide-right {
+    width: 40px;
+    height: 40px;
+}
+.sp1-sec4 > ul {
+    height: auto;
+}
+
+.mb-hidden {
+    display: none;
+}
+}
+
+@media (min-width: 502px) and (max-width: 768px) {
+.sp1-sec4-card-box > li {
+    width: 205px;
+    height: 220px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+}
+}
+
+/* 추가수정사항 */
+@media (min-width: 727px) and (max-width: 768px) {
+}
