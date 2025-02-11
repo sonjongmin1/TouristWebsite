@@ -76,7 +76,12 @@
 .sp2-subInf4 {
   width: 100%;
   height: 50%;
+  display: flex;
+  align-items: center;
   background-color: white;
+  font-size: 1.4rem;
+  text-align: start;
+  padding: 2rem;
 }
 
 /* 제철음식 세션 스타일 */
@@ -127,6 +132,11 @@
   width: 100%;
   height: 10%;
   background-color: rgb(90, 77, 97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
 }
 .sp2-foodInf1,
 .sp2-foodInf2,
@@ -136,6 +146,12 @@
   width: 100%;
   height: 40%;
   background-color: rgb(90, 77, 97);
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 2rem;
 }
 
 /* 봄에 열리는 축제 */
@@ -410,5 +426,95 @@
   .sp2-sec3-con-img1-opacity-con-in-con {
     width: 85%;
     height: 85%;
+  }
+
+  .sp1-navMenu {
+    display: none;
+  }
+
+  /* 갤러리 */
+  .sp3-section1 {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #141b33 0%, #ffffff 100%);
+    margin: 0;
+  }
+
+  /* 제목 */
+  .sp3-subTit1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  /* 본문 */
+  .sp3-galBox1,
+  .sp3-galBox2 {
+    width: 100%;
+    height: 25%;
+    margin: 1rem auto;
+    display: flex;
+  }
+  .sp3-galBox1 {
+    margin-top: 10rem;
+  }
+  .sp3-galImgBox {
+    width: 25%;
+    height: 70%;
+    background-color: green;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  /* 모달 스타일 */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    position: relative;
+    width: 50%;
+    height: 60%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .modal-img {
+    margin-top: 10rem;
+    width: 80%;
+    height: 70%;
+    background-color: gray;
+  }
+
+  .modal-text {
+    margin-top: 5rem;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333333;
+    padding: 1rem;
+  }
+
+  #closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
   }
 }
