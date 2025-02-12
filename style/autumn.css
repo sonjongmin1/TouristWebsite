@@ -729,6 +729,46 @@
   font-size: 2rem;
   cursor: pointer;
 }
+footer {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > span {
+  color: white;
+  font-size: 1.5rem;
+}
+.hi-footerBox {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+}
+.hi-figmaBox > a {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.hi-downBox > a {
+  height: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.hi-footerSubtxt {
+  padding-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hi-footerIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  opacity: 0.5;
+  transform: rotate(30deg);
+}
 
 /*  */
 /* pc */
@@ -1684,6 +1724,47 @@ body.no-scroll {
 
     .mb-hidden {
       display: none;
+    }
+
+    footer {
+      width: 100%;
+      height: 10rem;
+      position: relative;
+      background-color: #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer > span {
+      color: white;
+      font-size: 1.5rem;
+    }
+    .hi-footerBox {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 5rem;
+    }
+    .hi-figmaBox > a {
+      height: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    .hi-downBox > a {
+      height: 2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .hi-footerSubtxt {
+      padding-left: 0.5rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .hi-footerIcon {
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: contain;
+      opacity: 0.5;
+      transform: rotate(30deg);
     }
   }
 }
