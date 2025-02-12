@@ -12,6 +12,28 @@ let typingTexts = [
   "Winter is cold with quiet snowfall.",
 ]; // 각 클릭에 대응하는 텍스트 배열
 
+// 모바일 여부를 체크하는 함수
+let isMobile = () => window.innerWidth <= 768;
+
+// 모바일 상태에서 타이핑 효과를 비활성화하도록 설정
+let currentIsMobile = isMobile();
+
+// 화면 크기가 변경될 때마다 모바일 여부를 업데이트하고 타이핑 효과를 제어
+window.addEventListener("resize", () => {
+  const newIsMobile = isMobile();
+  if (newIsMobile !== currentIsMobile) {
+    currentIsMobile = newIsMobile;
+
+    // 크기가 모바일로 변경될 때 기존 타이핑 상태 초기화
+    if (currentIsMobile) {
+      jmMainImgContentTyping.forEach((typingDiv) => {
+        typingDiv.classList.remove("on");
+        typingDiv.textContent = ""; // 타이핑된 내용 초기화
+      });
+    }
+  }
+});
+
 jmMainImgEl.forEach((img, index) => {
   let isTyping = false; // 각 이미지별로 타이핑 중 여부를 추적하는 변수
 
@@ -59,8 +81,8 @@ jmMainImgEl.forEach((img, index) => {
             setTimeout(() => {
               jmMainImgContentTyping[index].classList.add("on");
 
-              // 타이핑 효과가 이미 시작되었는지 확인
-              if (!isTyping) {
+              // 모바일에서는 타이핑 효과를 비활성화
+              if (!currentIsMobile && !isTyping) {
                 isTyping = true; // 타이핑 중 표시
 
                 let typingText = typingTexts[index]; // 각 클릭에 대응하는 텍스트
