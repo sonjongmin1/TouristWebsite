@@ -202,7 +202,7 @@
 }
 
 .sp1-sub-img {
-  background-image: url("../img/spring-sub1/springSubSec1.jpg");
+  background-image: url("../img/autumn/한라산.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -245,7 +245,7 @@
 
 .sp1-sec3-api div {
   margin: 3% auto;
-  height: 20%;
+  height: 1%;
 }
 
 .sp1-sec3-api span {
@@ -256,17 +256,43 @@
 
 .sp1-sec3-text {
   border: 1px solid black;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
 }
 
 .sp1-sec3-graph {
   text-align: center;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   font-size: 6rem;
-  border: 1px solid #000;
+  border: 1px solid #e7887e;
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 55%;
   margin-top: 5rem;
+}
+
+.sp1-sec3-graph > div:nth-child(1) {
+  width: 30%;
+  height: 10%;
+  text-align: center;
+  color: #e7887e;
+  font-size: 2rem;
+  align-content: center;
+}
+
+.sp1-sec3-graph > div:nth-child(2) {
+  width: 40%;
+  height: 80%;
+  background-image: url(../img/autumn/가을_api.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .sp1-sec4 {
@@ -325,6 +351,19 @@
   align-items: center;
   font-size: 2.4rem;
   background-color: lightgrey;
+}
+
+#cardImg1 {
+  background-image: url(../img/autumn/남자가을코트.jpg);
+}
+#cardImg2 {
+  background-image: url(../img/autumn/남자가을캐주얼.jpg);
+}
+#cardImg3 {
+  background-image: url(../img/autumn/여자가을코트.jpg);
+}
+#cardImg4 {
+  background-image: url(../img/autumn/여자가을캐주얼.jpg);
 }
 
 .sp1-sec4-card-even {
@@ -394,6 +433,14 @@
   background-image: url(../img/autumn/남이섬.jpg);
   background-size: cover;
 }
+.sp2-subImg3 {
+  background-image: url(../img/autumn/서울세계불꽃축제2.jpg);
+  background-size: cover;
+}
+.sp2-subImg4 {
+  background-image: url(../img/autumn/한강공원.jpg);
+  background-size: cover;
+}
 .sp2-tr-design {
   position: absolute;
   left: 50%;
@@ -414,11 +461,13 @@
 .sp2-subImg1,
 .sp2-subImg3 {
   margin-bottom: 20px;
+  z-index: 3;
 }
 
 .sp2-subImg2,
 .sp2-subImg4 {
   margin-top: 20px;
+  z-index: 30;
 }
 
 .sp2-subInf1,
@@ -428,9 +477,10 @@
   width: 100%;
   height: 50%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: start;
   background-color: white;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   text-align: start;
   padding: 2rem;
 }
@@ -474,6 +524,22 @@
   height: 50%;
   background-color: rgb(90, 77, 97);
   border-radius: 30px 30px 0 0;
+}
+.sp2-foodImg1 {
+  background-image: url(../img/autumn/전어.jpg);
+  background-size: cover;
+}
+.sp2-foodImg2 {
+  background-image: url(../img/autumn/감.jpg);
+  background-size: cover;
+}
+.sp2-foodImg3 {
+  background-image: url(../img/autumn/대하.jpg);
+  background-size: cover;
+}
+.sp2-foodImg4 {
+  background-image: url(../img/autumn/밤.jpg);
+  background-size: cover;
 }
 .sp2-foodTit1,
 .sp2-foodTit2,
@@ -538,6 +604,7 @@
   height: 100%;
   border: 1px solid #fff;
   margin-right: 10px;
+  background-image: url(../img/autumn/서울세계불꽃축제.jpg);
 }
 
 .sp2-sec3-con-img1-opacity-con {
@@ -549,16 +616,6 @@
   position: absolute;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.sp2-sec3-con-img1-opacity-con-in-con {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 70%;
-  border: 1px solid blue;
-  font-size: 2rem;
 }
 
 .sp2-sec3-con-img1-opacity-con-in-con span {
@@ -585,6 +642,7 @@
   width: 50%;
   height: 100%;
   border: 1px solid #fff;
+  background-image: url(../img/autumn/피아골단풍축제1.jpg);
 }
 
 /* 갤러리 */
@@ -1506,10 +1564,40 @@ body.no-scroll {
     }
 
     .sp1-sec3-api {
-      width: 5rem;
-      height: 50%;
+      width: 48%;
+      height: 100%;
       border: 1px solid #000;
       background-color: #aaaaaa;
+      font-size: 1.2rem;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .sp1-sec3-api > span {
+      margin: 0 auto;
+    }
+    .sp1-sec3-api > div {
+      margin-top: 2rem;
+    }
+
+    .sp1-sec3-text {
+      font-size: 1.2rem;
+    }
+
+    .sp1-sec2-content {
+      width: 300%;
+      font-size: 1.1rem;
+    }
+
+    .sp1-sec3-text {
+      border: 1px solid black;
+      text-align: center;
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
     }
 
     .sp1-sec3-graph {
@@ -1518,6 +1606,71 @@ body.no-scroll {
       font-size: 2rem;
       border: 1px solid #000;
       border-radius: 10px;
+    }
+
+    .sp1-sec3-graph > div:nth-child(1) {
+      width: 50%;
+      font-size: 1.4rem;
+      margin-top: -1rem;
+    }
+
+    .sp2-subInf1,
+    .sp2-subInf2,
+    .sp2-subInf3,
+    .sp2-subInf4 {
+      width: 100%;
+      height: 50%;
+      align-items: start;
+      background-color: white;
+      font-size: 1.2rem;
+      text-align: start;
+      padding: 2rem;
+    }
+
+    .sp2-foodInf1,
+    .sp2-foodInf2,
+    .sp2-foodInf3,
+    .sp2-foodInf4 {
+      margin-top: 0.5rem;
+      width: 100%;
+      height: 40%;
+      background-color: rgb(90, 77, 97);
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.7rem;
+      text-align: start;
+      padding: 2rem;
+    }
+
+    .sp2-sec3-con-img1-opacity-con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .sp2-sec3-con-img1-opacity-con-in-con span {
+      display: block;
+      color: #fff;
+    }
+
+    .sp2-sec3-con-img1-opacity-con-in-con span:nth-child(1),
+    .sp2-sec3-con-img1-opacity-con-in-con span:nth-child(4) {
+      font-size: 1rem;
+    }
+
+    .sp2-sec3-con-img1-opacity-con-in-con span:nth-child(2),
+    .sp2-sec3-con-img1-opacity-con-in-con span:nth-child(3) {
+      font-size: 1.5rem;
+    }
+
+    .sp2-sec3-con-img1-opacity-con-in-con span:not(:last-child) {
+      margin-bottom: 10px;
     }
 
     .sp-slide-left,

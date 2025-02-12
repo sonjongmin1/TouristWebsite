@@ -451,7 +451,7 @@
   .sp3-galBox2 {
     width: 100%;
     height: 25%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     display: flex;
   }
   .sp3-galBox1 {
@@ -481,7 +481,7 @@
   .modal-content {
     position: relative;
     width: 50%;
-    height: 60%;
+    height: 40%;
     background: white;
     display: flex;
     justify-content: center;
@@ -493,7 +493,8 @@
   .modal-img {
     margin-top: 10rem;
     width: 80%;
-    height: 70%;
+    height: 40%;
+    background-position: center;
     background-color: gray;
   }
 
@@ -502,7 +503,7 @@
     width: 80%;
     height: 50%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     color: #333333;
     padding: 1rem;
   }
