@@ -8,8 +8,9 @@
     />
     <title>봄</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="icon" href="../favicon/sp_favicon.ico" />
     <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/season-layout.css" />
+    <link rel="stylesheet" href="../style/spring.css" />
   </head>
   <body class="spring">
     <header>
@@ -49,64 +50,83 @@
     </section>
     <section class="sp1-sec2">
       <canvas class="sp1-canvas"></canvas>
-      <div>
-        <div class="sp1-sec2-title">02.01 ~ 05. 31</div>
-        <div class="sp1-sec2-line"></div>
-        <div class="sp1-sec2-title-main">봄</div>
-        <div class="sp1-sec2-content">
-          봄은 새로운 시작과 생명이 깨어나는 계절입니다.
-          <br class="mb-br" />한국의 봄은 벚꽃, 유채꽃, 진달래 등 형형색색의
-          <br class="mb-br" />꽃들이 만발하고, 따뜻한 날씨 속에서 다채로운 봄
-          <br class="mb-br" />풍경과 활동을 만끽할 수 있는 시기입니다.
+      <div class="sp1-sec2-box1">
+        <div>
+          <div class="sp1-sec2-title">03.01 ~ 05. 31</div>
+          <div class="sp1-sec2-line"></div>
+          <div class="sp1-sec2-title-main">봄</div>
+          <div class="sp1-sec2-content">
+            봄은 사계절 중 첫번째 계절로,
+            <br class="mb-br" />꽃들이 피어나고, 나무들이 싹을 틔우는
+            시기입니다. <br class="mb-br" />따뜻한 날씨 속에서 다채로운 봄
+            풍경과 <br class="mb-br" />활동을 만끽할 수 있는 시기입니다.
+            <br class="mb-br" />
+            <br class="mb-br" />추운 겨울에서 점차 따스해지는 시기이나,
+            <br class="mb-br" />일교차가 크고 갑자기 추워지는 꽃샘추위가 오는
+            <br class="mb-br" />변덕스러움을 가지고 있기도 한 계절입니다.
+          </div>
         </div>
+        <div class="sp1-sub-img"></div>
       </div>
-      <div class="sp1-sub-img"></div>
     </section>
     <section class="sp1-sec3">
       <div class="sp1-sec3-top">
         <div class="sp1-sec3-api">
+          <div>현재 한국 날씨</div>
           <div>
-            <span>기온 : </span>
-            <span id="temp"></span>
-          </div>
-          <div>
-            <span>풍속 : </span>
-            <span id="wind"></span>
-          </div>
-          <div>
-            <span>날씨 : </span>
-            <span id="iconDiv"></span>
+            <div>
+              <span>기온 : </span>
+              <span id="temp"></span>
+            </div>
+            <div>
+              <span>풍속 : </span>
+              <span id="wind"></span>
+            </div>
+            <div>
+              <span>날씨 : </span>
+              <span id="iconDiv"></span>
+            </div>
           </div>
         </div>
-        <div class="sp1-sec3-text"></div>
+        <div class="sp1-sec3-text">
+          기상학적으로 9일간 일평균기온의 이동 평균이 5도 이상으로 <br />
+          9일 동안 올라간 후 떨어지지 않으면 그 5도 이상 올라간 첫 날부터<br />
+          봄이 왔다고 말할수 있다.<br />
+          한국의 봄은 기온에 따라 초봄, 봄, 늦봄으로 구분할수 있으며, <br />
+          갑자기 추위가 찾아오기도 하는 변덕적인 기후와 <br />큰 일교차를 가지고
+          있다는 특징이 있다.
+        </div>
       </div>
-      <div class="sp1-sec3-graph">API에 대한 통계 그래프</div>
+      <div class="sp1-sec3-graph">
+        <div>연도별 봄 평균 기온</div>
+        <div></div>
+      </div>
     </section>
     <section class="sp1-sec4">
-      <div>날씨 따라 완성하는 봄 코디</div>
+      <div>따스한 햇살 아래, 봄맞이 패션</div>
       <ul class="sp1-sec4-card-box">
         <li>
           <ul class="sp1-sec4-card">
-            <li></li>
-            <li>봄날의 포멀 매치</li>
+            <li id="sp1-sec4-card-img1"></li>
+            <li>봄날 포근한 코디</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li class="sp1-sec4-card-even"></li>
-            <li>데일리 스프링 캐주얼</li>
+            <li class="sp1-sec4-card-even" id="sp1-sec4-card-img2"></li>
+            <li>데일리 코디</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li></li>
-            <li>봄날의 우아함</li>
+            <li id="sp1-sec4-card-img3"></li>
+            <li>깔끔한 캐주얼룩</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li class="sp1-sec4-card-even"></li>
-            <li>러블리 데일리핏</li>
+            <li class="sp1-sec4-card-even" id="sp1-sec4-card-img4"></li>
+            <li>사랑스러운 코디</li>
           </ul>
         </li>
       </ul>
@@ -164,9 +184,11 @@
             <div><a href="../subpage/winter.html">Winter</a></div>
             <div>
               <ul>
-                <li><a href="../subpage/spring.html">한국의 겨울</a></li>
-                <li><a href="../subpage/spring.html">겨울날의 즐거움</a></li>
-                <li><a href="../subpage/spring.html">갤러리</a></li>
+                <li><a href="../subpage/winter.html">한국의 겨울</a></li>
+                <li>
+                  <a href="../subpage/winter_sub1.html">겨울날의 즐거움</a>
+                </li>
+                <li><a href="../subpage/winter_sub2.html">갤러리</a></li>
               </ul>
             </div>
           </div>
@@ -211,15 +233,41 @@
         <!-- 겨울 -->
         <div class="hi-accordionMenu">&nbsp;&nbsp;Winter</div>
         <div class="hi-appMenu">
-          <p><a href="../subpage/spring.html">한국의 겨울</a></p>
-          <p><a href="../subpage/spring.html">겨울날의 즐거움</a></p>
-          <p><a href="../subpage/spring.html">갤러리</a></p>
+          <p><a href="../subpage/winter.html">한국의 겨울</a></p>
+          <p><a href="../subpage/winter_sub1.html">겨울날의 즐거움</a></p>
+          <p><a href="../subpage/winter_sub2.html">갤러리</a></p>
         </div>
       </div>
     </section>
     <!-- ------------------------------------- -->
-    <footer class="sp1-ft">
-      <span>footer</span>
+    <!-- footer 부분 -->
+    <footer>
+      <span>이 페이지는 학습 및 포트폴리오를 위해 제작되었습니다</span>
+      <div class="hi-footerBox">
+        <div class="hi-figmaBox">
+          <a
+            href="https://www.figma.com/design/599GWSnvNaoEHdQ0H3iW6G/TouristWebsite_Design?node-id=0-1&p=f&t=E0qoQzzdOEmYrA6V-0"
+            target="_blank"
+          >
+            <img
+              src="../img/icon/linkImg.png"
+              alt="피그마 링크"
+              class="hi-footerIcon"
+            />
+            <span class="hi-footerSubtxt">Page design with Figma</span>
+          </a>
+        </div>
+        <div class="hi-downBox">
+          <a href="../img/기획서양식_저기만이기조.pdf" download>
+            <img
+              src="../img/icon/downloadImg.png"
+              alt="기획서 다운로드"
+              class="hi-footerIcon"
+            />
+            <span class="hi-footerSubtxt">기획서 다운로드 하기</span>
+          </a>
+        </div>
+      </div>
     </footer>
     <script src="../js/canvas.js"></script>
     <script src="../js/spring.js"></script>
