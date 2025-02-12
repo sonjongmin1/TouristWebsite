@@ -10,8 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/season-layout.css" />
+    <link rel="stylesheet" href="../style/winter.css" />
   </head>
-  <body class="winter">
+  <body class="summer">
     <header>
       <div class="sp1-nav">
         <div class="sp1-imgLogo">
@@ -19,79 +20,116 @@
             <div class="onuriLogo"></div>
           </a>
         </div>
-        <ul class="sp1-navMenu">
-          <li><a class="mb-hidden" href="./spring.html">한국의 겨울</a></li>
+        <ul class="sp1-navMenu-su">
+          <li><a class="mb-hidden" href="./winter.html">한국의 겨울</a></li>
           <li>
-            <a class="mb-hidden" href="./spring_sub1.html">겨울날의 즐거움</a>
+            <a class="mb-hidden" href="./winter_sub1.html">겨울의 즐거움</a>
           </li>
-          <li><a class="mb-hidden" href="./spring_sub2.html">갤러리</a></li>
+          <li><a class="mb-hidden" href="./winter_sub2.html">갤러리</a></li>
         </ul>
         <div class="sp1-hamBar"></div>
       </div>
     </header>
     <section class="sp1-sec1">
-      <div>한국의 겨울</div>
+      <div class="su">한국의 겨울</div>
       <div class="sp1-sec1-img-Box-bg">
         <ul class="sp1-sec1-img-Box">
-          <li class="sp1-mainImg1"></li>
-          <li class="sp1-mainImg2"></li>
-          <li class="sp1-mainImg3"></li>
-          <li class="sp1-mainImg1"></li>
-          <li class="sp1-mainImg2"></li>
-          <li class="sp1-mainImg3"></li>
-          <li class="sp1-mainImg1"></li>
-          <li class="sp1-mainImg2"></li>
-          <li class="sp1-mainImg3"></li>
+          <li class="sp1-mainImg1-su"></li>
+          <li class="sp1-mainImg2-su"></li>
+          <li class="sp1-mainImg3-su"></li>
+          <li class="sp1-mainImg4-su"></li>
+          <li class="sp1-mainImg5-su"></li>
+          <li class="sp1-mainImg6-su"></li>
+          <li class="sp1-mainImg7-su"></li>
+          <li class="sp1-mainImg8-su"></li>
+          <li class="sp1-mainImg9-su"></li>
         </ul>
         <button class="sp-slide-left"></button>
         <button class="sp-slide-right"></button>
       </div>
     </section>
-    <section class="sp1-sec2">
+    <section class="sp1-sec2" id="su-sp1-sec2">
       <canvas class="sp1-canvas"></canvas>
       <div>
-        <div class="sp1-sec2-title">12.01 ~ 02. 28</div>
+        <div class="sp1-sec2-title">12.01 ~ 02 .28</div>
         <div class="sp1-sec2-line"></div>
         <div class="sp1-sec2-title-main">겨울</div>
-        <div class="sp1-sec2-content">
-          겨울은 차가운 날씨와 함께 따뜻한 차 한잔의 여유를 즐길 수 있는
-          계절입니다.
-          <br class="mb-br" />한국의 겨울은 눈이 내리고, 겨울 축제와 다양한
-          <br class="mb-br" />겨울 스포츠를 즐길 수 있는 시기로, 한파 속에서도
-          <br class="mb-br" />따뜻한 실내 활동과 함께 매력을 찾을 수 있습니다.
+        <div class="sp1-sec2-content" id="su-sp1-sec2-content">
+          겨울은 사계절 중 네번째 계절로, 새하얀 눈이 내리는 소리를 들을 수 있는
+          시기입니다. 길가에 쌓인 눈을 밟고 거리에 하얀 입김, 밤하늘 별 빛마저
+          더 선명하게 빛나는 시기입니다. 차가운 날씨가 계속되지만, 하얀 눈이
+          내리는 풍경과 포근한 실내에서의 아늑함이 공존하는 계절입니다.
+          <!-- <br class="mb-br-su" />
+          <br class="mb-br-su" /> -->
         </div>
       </div>
-      <div class="sp1-sub-img"></div>
+      <div class="sp1-sub-img-su"></div>
     </section>
+
+    <!--  -->
     <section class="sp1-sec3">
-      <div class="sp1-sec3-apiImg"></div>
-      <div class="sp1-sec3-graph">API에 대한 통계 그래프</div>
+      <div class="sp1-sec3-top">
+        <div class="sp1-sec3-api">
+          <div>현재 한국 날씨</div>
+          <div>
+            <div>
+              <span>기온 : </span>
+              <span id="temp"></span>
+            </div>
+            <div>
+              <span>풍속 : </span>
+              <span id="wind"></span>
+            </div>
+            <div>
+              <span>날씨 : </span>
+              <span id="iconDiv"></span>
+            </div>
+          </div>
+        </div>
+        <div class="sp1-sec3-text">
+          기상학적으로 9일간 일평균기온의 이동 평균이 5도 이하로 내려간 후, 9일
+          동안 지속적으로 떨어지면 그 5도 이하로 내려간 첫날부터 겨울이
+          시작되었다고 본다.<br />
+          <span class="mb-hidden"
+            >한국의 겨울은 기온에 따라 초겨울, 한겨울, 늦겨울로 구분할 수
+            있으며, 차가운 대륙성 고기압의 영향을 받아 낮은 기온과 건조한 날씨가
+            특징이다. 또한, 지역에 따라 폭설이 내리기도 하며, 강한 바람과 함께
+            체감온도가 더욱 낮아지는 경우가 많다.</span
+          >
+        </div>
+      </div>
+      <div class="sp1-sec3-graph">
+        <div>연도별 겨울 평균 기온</div>
+        <div></div>
+      </div>
     </section>
-    <section class="sp1-sec4">
-      <div>날씨 따라 완성하는 겨울 코디</div>
+    <!--   -->
+
+    <section class="sp1-sec4" id="su-sp1-sec4">
+      <div class="su-cody">겨울에 맞는 코디</div>
       <ul class="sp1-sec4-card-box">
         <li>
           <ul class="sp1-sec4-card">
-            <li></li>
-            <li>따뜻한 겨울 아우터</li>
+            <li id="su-cody-img8"></li>
+            <li>포근한 룩</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li class="sp1-sec4-card-even"></li>
-            <li>스키/스노보드 룩</li>
+            <li class="sp1-sec4-card-even" id="su-cody-img7"></li>
+            <li>데일리 스타일</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li></li>
-            <li>포근한 겨울 데일리</li>
+            <li id="su-cody-img6"></li>
+            <li>꾸안꾸 캐주얼</li>
           </ul>
         </li>
         <li>
           <ul class="sp1-sec4-card">
-            <li class="sp1-sec4-card-even"></li>
-            <li>겨울철 스타일링</li>
+            <li class="sp1-sec4-card-even" id="su-cody-img5"></li>
+            <li>데이트룩</li>
           </ul>
         </li>
       </ul>
@@ -149,9 +187,11 @@
             <div><a href="../subpage/winter.html">Winter</a></div>
             <div>
               <ul>
-                <li><a href="../subpage/spring.html">한국의 겨울</a></li>
-                <li><a href="../subpage/spring.html">겨울날의 즐거움</a></li>
-                <li><a href="../subpage/spring.html">갤러리</a></li>
+                <li><a href="../subpage/winter.html">한국의 겨울</a></li>
+                <li>
+                  <a href="../subpage/winter_sub1.html">겨울날의 즐거움</a>
+                </li>
+                <li><a href="../subpage/winter_sub2.html">갤러리</a></li>
               </ul>
             </div>
           </div>
@@ -196,9 +236,9 @@
         <!-- 겨울 -->
         <div class="hi-accordionMenu">&nbsp;&nbsp;Winter</div>
         <div class="hi-appMenu">
-          <p><a href="../subpage/spring.html">한국의 겨울</a></p>
-          <p><a href="../subpage/spring.html">겨울날의 즐거움</a></p>
-          <p><a href="../subpage/spring.html">갤러리</a></p>
+          <p><a href="../subpage/winter.html">한국의 겨울</a></p>
+          <p><a href="../subpage/winter_sub1.html">겨울날의 즐거움</a></p>
+          <p><a href="../subpage/winter_sub2.html">갤러리</a></p>
         </div>
       </div>
     </section>
@@ -209,5 +249,6 @@
     <script src="../js/canvas.js"></script>
     <script src="../js/spring.js"></script>
     <script src="../js/subMenuTab.js"></script>
+    <script src="../js/summer_sub2.js"></script>
   </body>
 </html>
