@@ -1323,10 +1323,59 @@ body.no-scroll {
 .sp3-galBox1,
 .sp3-galBox2,
 .sp3-galBox3 {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 25%;
-  margin: 7rem auto;
   display: flex;
+}
+
+.sp3-galBox1 > div:nth-child(1) {
+  background-image: url("../img/summer/su-img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sp3-galBox1 > div:nth-child(2) {
+  background-image: url("../img/summer/su-img2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sp3-galBox1 > div:nth-child(3) {
+  background-image: url("../img/summer/su-img3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sp3-galBox2 > div:nth-child(1) {
+  background-image: url("../img/summer/su-img4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sp3-galBox2 > div:nth-child(2) {
+  background-image: url("../img/summer/su-img9.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sp3-galBox2 > div:nth-child(3) {
+  background-image: url("../img/summer/su-sub1-img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .sp3-galImgBox {
