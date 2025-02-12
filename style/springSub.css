@@ -434,25 +434,30 @@ footer > span {
   }
 
   .sp2-section1 {
-    height: 100%;
+    height: 100%; overflow-x: hidden; overflow-y: hidden;
   }
   .sp2-mainBox1 {
-    display: block;
     width: 100%;
     height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     margin: 0;
     white-space: nowrap;
-    padding: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0rem 0rem 4rem 4rem; 
     /* border: 1px solid #fff; */
   }
 
-  .sp2-mainBox1 > div {
-    display: inline-block;
+  .sp2-subBox1,
+  .sp2-subBox2,
+  .sp2-subBox3,
+  .sp2-subBox4 {
     width: 100%;
-    height: 500px;
-    /* border: 1px solid yellow; */
+    height: 80%;
+    margin: 0 auto;
   }
 
   .sp2-mainBox1 > div:not(:last-child) {
@@ -461,8 +466,33 @@ footer > span {
 
   .sp2-mainBox1 > div:nth-child(even) {
     position: relative;
-    top: -288px;
   }
+  .sp2-section2{
+    height: 150vh; position: relative;
+    padding-bottom: 3rem; 
+  }
+
+  .sp2-foodInf1,
+  .sp2-foodInf2,
+  .sp2-foodInf3,
+  .sp2-foodInf4{
+    width: 100%; height: 60%; font-size: 0.9rem;
+    word-wrap: break-word; overflow: hidden;
+    margin-top: -5rem;
+  }
+.sp2-subInf1 span:nth-child(2),
+.sp2-subInf2 span:nth-child(2),
+.sp2-subInf3 span:nth-child(2),
+.sp2-subInf4 span:nth-child(2) {
+  font-family: "IBM Plex Sans KR";
+  position: relative;
+  display: flex; width: 100%;
+  height: 40%;
+  align-items: center;
+  color: #fff;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
 
   .sp2-subTit1 {
     margin-bottom: 45px;
@@ -486,18 +516,18 @@ footer > span {
   .sp2-foodBox2,
   .sp2-foodBox3,
   .sp2-foodBox4 {
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 45%;
+    position: relative;
+    margin-bottom: 5rem;
   }
 
   .sp2-foodBox3,
   .sp2-foodBox4 {
-    margin-top: 100px;
+    margin-top: 10rem;
   }
 
-  .sp2-section2 {
-    height: 100%;
-  }
+  
 
   .sp2-foodImg1,
   .sp2-foodImg2,
