@@ -86,6 +86,41 @@ jmMainImgEl.forEach((img, index) => {
 
 // jm 메인이미지 구현 끝
 
+// 애니메이션 시작
+
+// 애니메이션
+console.log(window.scrollY);
+
+let hiSection = document.querySelector(".hi-section");
+let eventFestival = document.querySelector("#event-festival");
+
+window.addEventListener("scroll", function () {
+  if (window.innerWidth >= 768) {
+    // 화면 크기가 768px 이상일 때만 실행
+    let scrollThreshold = 268; // 기본 스크롤 값
+
+    if (window.scrollY >= scrollThreshold) {
+      hiSection.classList.add("on");
+    } else {
+      hiSection.classList.remove("on");
+    }
+  }
+});
+
+window.addEventListener("scroll", function () {
+  // 화면 크기가 768px 이상일 때만 스크롤 처리
+  if (window.innerWidth >= 768) {
+    if (window.scrollY >= 1000) {
+      // 스크롤 값이 1120 이상일 때만 클래스 추가
+      eventFestival.classList.add("on");
+    } else {
+      eventFestival.classList.remove("on");
+    }
+  }
+});
+
+// 애니메이션 끝
+
 // 슬라이드 시키기
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -275,35 +310,4 @@ hiAccordionMenu.forEach((item) => {
       hiAppMenu.style.maxHeight = hiAppMenu.scrollHeight + "px"; // "rem" 대신 "px" 사용
     }
   });
-});
-
-// 애니메이션
-console.log(window.scrollY);
-
-let hiSection = document.querySelector(".hi-section");
-let eventFestival = document.querySelector("#event-festival");
-
-window.addEventListener("scroll", function () {
-  if (window.innerWidth >= 768) {
-    // 화면 크기가 768px 이상일 때만 실행
-    let scrollThreshold = 268; // 기본 스크롤 값
-
-    if (window.scrollY >= scrollThreshold) {
-      hiSection.classList.add("on");
-    } else {
-      hiSection.classList.remove("on");
-    }
-  }
-});
-
-window.addEventListener("scroll", function () {
-  // 화면 크기가 768px 이상일 때만 스크롤 처리
-  if (window.innerWidth >= 768) {
-    if (window.scrollY >= 1000) {
-      // 스크롤 값이 1120 이상일 때만 클래스 추가
-      eventFestival.classList.add("on");
-    } else {
-      eventFestival.classList.remove("on");
-    }
-  }
 });
