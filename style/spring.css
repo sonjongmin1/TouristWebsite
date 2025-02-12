@@ -211,13 +211,12 @@
   justify-content: center;
   align-items: center;
   height: 80rem;
-  border: 1px solid #000;
   padding: 10rem;
 }
 
 .sp1-sec3-top {
   display: flex;
-  width: 90%; height: 30%;
+  width: 90%; height: 40%;
   justify-content: space-between;
   align-items: center;
 }
@@ -305,7 +304,7 @@
   text-align: center;
   margin-bottom: 2rem;
   font-size: 3.2rem;
-  color: #fff;
+  color: #000000;
 }
 
 .sp1-sec4 > ul {
@@ -320,7 +319,7 @@
 }
 
 .sp1-sec4-card-box > li {
-  width: 17%;
+  width: 20%;
   height: 90%;
 }
 
@@ -837,23 +836,27 @@ body.no-scroll {
   
   .sp1-sec3-graph {
     text-align: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     font-size: 6rem;
-    border: 1px solid #000;
+    border: 1px solid #e7887e;
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 55%;
     margin-top: 5rem;
   }
-  
-
-.sp1-sec3-graph {
-    text-align: center;
-    align-content: center;
-    font-size: 2rem;
-    border: 1px solid #000;
-    border-radius: 10px;
-}
+  .sp1-sec3-graph>div:nth-child(1){
+    width: 100%; height: 10%; text-align: center; color: #e7887e;
+    font-size: 2rem; align-content: center; 
+  }
+  .sp1-sec3-graph>div:nth-child(2){
+    width: 100%; height: 80%;
+    background-image: url(../img/spring-sub1/springSubSec2.png);
+    background-position: center; background-repeat: no-repeat;
+    background-size: contain; 
+  }
 
 .sp-slide-left,
 .sp-slide-right {
