@@ -261,7 +261,7 @@
 }
 
 .sp1-sec3-text {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
   padding: 1rem; font-size: 1.5rem;
   text-align: center; align-content: center;
 }
@@ -338,6 +338,7 @@
 .sp1-sec4-card > li:nth-child(1) {
   background-color: lightgrey;
   height: 75%;
+  border: 1px solid #ff8b7e;
 }
 
 .sp1-sec4-card > li:nth-child(2) {
@@ -345,13 +346,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.4rem;
-  background-color: lightgrey;
+  font-size: 2rem;
+  background-color: #ffcfca5f;
+  border: 1px solid #ff8b7e;
+  border-radius: 2rem;
 }
 
 .sp1-sec4-card-even {
   border-top-left-radius: 5rem; /* 왼쪽 위 대각 모서리 */
-  border-top-right-radius: 5rem;
+  border-top-right-radius: 5rem; overflow: hidden;
+}
+
+#sp1-sec4-card-img1{
+  background-image: url(../img/spring-sub1/springSub-faImg1.jpg);
+  background-position: center; background-repeat: no-repeat; background-size:cover;
+}
+#sp1-sec4-card-img2{
+  background-image: url(../img/spring-sub1/springSub-faImg2.jpg);
+  background-position: top center; background-repeat: no-repeat; background-size: cover;
+}
+#sp1-sec4-card-img3{
+  background-image: url(../img/spring-sub1/springSub-faImg3.jpg);
+  background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+#sp1-sec4-card-img4{
+  background-image: url(../img/spring-sub1/springSub-faImg4.jpg);
+  background-position: center; background-repeat: no-repeat; background-size: cover;
 }
 
 .sp1-ft {
@@ -621,6 +641,50 @@ body.no-scroll {
 #hi-menuBox-Close img:hover {
   transform: rotate(180deg);
 }
+
+/* footer 부분 */
+
+footer {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > span {
+  color: white;
+  font-size: 1.5rem;
+}
+.hi-footerBox {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 5rem;
+}
+.hi-figmaBox > a {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.hi-downBox > a {
+  height: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.hi-footerSubtxt {
+  padding-left: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hi-footerIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  opacity: 0.5;
+  transform: rotate(30deg);
+}
+
 /*---------- 메뉴 및 모바일 메뉴 -----------------------*/
 
 /* jongmin sub-page ED*/
@@ -730,7 +794,7 @@ body.no-scroll {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
   }
 
   .sp1-sec4-card-box > li {
@@ -783,7 +847,7 @@ body.no-scroll {
     justify-content: center;
     align-items: center;
     height: 80rem; width: 100vw;
-    border: 1px solid #000;
+    border: 1px solid #00000000;
     padding: 5rem;
   }
   
@@ -829,7 +893,7 @@ body.no-scroll {
   }
   
   .sp1-sec3-text {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: 1rem; font-size: 1.5rem;
     text-align: center;
   }
