@@ -140,7 +140,7 @@ function displayMarker(place) {
   });
 }
 
-// 카카오맵 api 시작 끝
+// 카카오맵 api 끝
 
 //이벤트 이동 + top Btn
 let hiSeasonEventCount = 0;
