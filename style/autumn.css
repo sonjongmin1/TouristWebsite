@@ -305,9 +305,9 @@
 
 .sp1-sec4 > div {
   text-align: center;
-  margin-bottom: 2rem;
   font-size: 3.2rem;
-  color: #fff;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .sp1-sec4 > ul {

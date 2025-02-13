@@ -105,14 +105,14 @@
   margin-right: 6rem;
 }
 
-.sp1-mainImg1{
-    background-image: url(../img/spring-sub1/springSubMain1.png);
+.sp1-mainImg1 {
+  background-image: url(../img/spring-sub1/springSubMain1.png);
 }
-.sp1-mainImg2{
-    background-image: url(../img/spring-sub1/springSubMain2.png);
+.sp1-mainImg2 {
+  background-image: url(../img/spring-sub1/springSubMain2.png);
 }
-.sp1-mainImg3{
-    background-image: url(../img/spring-sub1/springSubMain3.png);
+.sp1-mainImg3 {
+  background-image: url(../img/spring-sub1/springSubMain3.png);
 }
 
 .sp-slide-left,
@@ -167,10 +167,12 @@
   color: #fff;
 }
 
-.sp1-sec2-box1{
-    width: 80%; height: 70%;
-    display: flex; 
-    position: relative; justify-content: space-between;
+.sp1-sec2-box1 {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
 
 .sp1-sec2-line {
@@ -178,7 +180,7 @@
   height: 0.03rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  border: 0.03rem solid #FFCFCA;
+  border: 0.03rem solid #ffcfca;
 }
 
 .sp1-sec2-title {
@@ -192,13 +194,14 @@
 }
 
 .sp1-sec2-content {
-    width: 100%; 
-    font-size: 1.6rem;
-    line-height: 2.6rem;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .sp1-sub-img {
-  width: 50%; margin-left: 5rem;
+  width: 50%;
+  margin-left: 5rem;
   background-image: url("../img/spring-sub1/springSubSec1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,7 +219,8 @@
 
 .sp1-sec3-top {
   display: flex;
-  width: 90%; height: 40%;
+  width: 90%;
+  height: 40%;
   justify-content: space-between;
   align-items: center;
 }
@@ -229,7 +233,7 @@
 }
 
 .sp1-sec3-api {
-  border: 1px solid #FFCFCA;
+  border: 1px solid #ffcfca;
   background-color: #ffcfca50;
   text-align: center;
   height: 100%;
@@ -240,16 +244,19 @@
   padding: 1rem;
 }
 
-.sp1-sec3-api>div:nth-child(1){
-  width: 100%; text-align: center;
-  font-size: 2rem;color: #ff8b7e;
+.sp1-sec3-api > div:nth-child(1) {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #ff8b7e;
   font-weight: 600;
 }
 
-.sp1-sec3-api>div:nth-child(2){
-    display: flex; justify-content: space-around;
+.sp1-sec3-api > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
 }
-.sp1-sec3-api>div>div {
+.sp1-sec3-api > div > div {
   margin: 3% auto;
   height: 20%;
 }
@@ -262,8 +269,10 @@
 
 .sp1-sec3-text {
   border: 1px solid rgba(0, 0, 0, 0);
-  padding: 1rem; font-size: 1.5rem;
-  text-align: center; align-content: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  align-content: center;
 }
 
 .sp1-sec3-graph {
@@ -279,16 +288,22 @@
   margin-top: 5rem;
 }
 
-.sp1-sec3-graph>div:nth-child(1){
-  width: 30%; height: 10%; text-align: center; color: #e7887e;
-  font-size: 2rem; align-content: center; 
+.sp1-sec3-graph > div:nth-child(1) {
+  width: 30%;
+  height: 10%;
+  text-align: center;
+  color: #e7887e;
+  font-size: 2rem;
+  align-content: center;
 }
 
-.sp1-sec3-graph>div:nth-child(2){
-  width: 40%; height: 80%;
+.sp1-sec3-graph > div:nth-child(2) {
+  width: 40%;
+  height: 80%;
   background-image: url(../img/spring-sub1/springSubSec2.png);
-  background-position: center; background-repeat: no-repeat;
-  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .sp1-sec4 {
@@ -354,24 +369,33 @@
 
 .sp1-sec4-card-even {
   border-top-left-radius: 5rem; /* 왼쪽 위 대각 모서리 */
-  border-top-right-radius: 5rem; overflow: hidden;
+  border-top-right-radius: 5rem;
+  overflow: hidden;
 }
 
-#sp1-sec4-card-img1{
+#sp1-sec4-card-img1 {
   background-image: url(../img/spring-sub1/springSub-faImg1.jpg);
-  background-position: center; background-repeat: no-repeat; background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#sp1-sec4-card-img2{
+#sp1-sec4-card-img2 {
   background-image: url(../img/spring-sub1/springSub-faImg2.jpg);
-  background-position: top center; background-repeat: no-repeat; background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#sp1-sec4-card-img3{
+#sp1-sec4-card-img3 {
   background-image: url(../img/spring-sub1/springSub-faImg3.jpg);
-  background-position: center; background-repeat: no-repeat; background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#sp1-sec4-card-img4{
+#sp1-sec4-card-img4 {
   background-image: url(../img/spring-sub1/springSub-faImg4.jpg);
-  background-position: center; background-repeat: no-repeat; background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sp1-ft {
@@ -747,23 +771,30 @@ footer > span {
     align-items: center;
     /* width: 100%; */
   }
-  .sp1-sec2-box1{
-    width: 90%; height: 100%; display: flex;
+  .sp1-sec2-box1 {
+    width: 90%;
+    height: 100%;
+    display: flex;
     margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
   }
-  .sp1-sec2-box1>div{
+  .sp1-sec2-box1 > div {
     height: 45%;
   }
 
-  .sp1-sec2-box1>div:nth-child(1){
-    align-content: center;text-align: center;
+  .sp1-sec2-box1 > div:nth-child(1) {
+    align-content: center;
+    text-align: center;
   }
 
-  .sp1-sec2-line{margin: auto; margin-bottom: 3rem; width: 30%;}
+  .sp1-sec2-line {
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 30%;
+  }
 
   .sp1-sec2-title {
     opacity: 0;
@@ -776,7 +807,8 @@ footer > span {
   }
 
   .sp1-sub-img {
-    width: 100%; margin-left: 0rem;
+    width: 100%;
+    margin-left: 0rem;
     margin-top: 5rem;
   }
 
@@ -824,49 +856,51 @@ footer > span {
     overflow: hidden;
   }
 
-.sp1-sec1-img-Box > li {
+  .sp1-sec1-img-Box > li {
     width: 37rem;
     height: 30rem;
     border-radius: 10px;
-}
+  }
 
-.sp1-sec1-img-Box > li {
+  .sp1-sec1-img-Box > li {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+  }
 
-.sp1-sec1-img-Box-bg {
+  .sp1-sec1-img-Box-bg {
     height: 400px;
-}
+  }
   /* ----- */
   .sp1-sec3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80rem; width: 100vw;
+    height: 80rem;
+    width: 100vw;
     border: 1px solid #00000000;
     padding: 5rem;
   }
-  
+
   .sp1-sec3-top {
     display: flex;
-    width: 100%; height: 45%;
+    width: 100%;
+    height: 45%;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .sp1-sec3-api,
   .sp1-sec3-text {
     width: 49%;
     height: 100%;
     border-radius: 1rem;
   }
-  
+
   .sp1-sec3-api {
-    border: 1px solid #FFCFCA;
+    border: 1px solid #ffcfca;
     background-color: #ffcfca50;
     text-align: center;
     height: 100%;
@@ -876,28 +910,31 @@ footer > span {
     align-items: center;
     padding: 1rem;
   }
-  
-  .sp1-sec3-api>div:nth-child(2){
-      display: flex; justify-content: space-around;
-      flex-direction: column; margin-top: 1rem;
+
+  .sp1-sec3-api > div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 1rem;
   }
-  .sp1-sec3-api>div>div {
+  .sp1-sec3-api > div > div {
     margin: 3% auto;
     height: 20%;
   }
-  
+
   .sp1-sec3-api span {
     font-size: 2rem;
     font-weight: bold;
     color: #e7887e;
   }
-  
+
   .sp1-sec3-text {
     border: 1px solid rgba(0, 0, 0, 0);
-    padding: 1rem; font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
-  
+
   .sp1-sec3-graph {
     text-align: center;
     display: flex;
@@ -911,38 +948,44 @@ footer > span {
     height: 55%;
     margin-top: 5rem;
   }
-  .sp1-sec3-graph>div:nth-child(1){
-    width: 100%; height: 10%; text-align: center; color: #e7887e;
-    font-size: 2rem; align-content: center; 
+  .sp1-sec3-graph > div:nth-child(1) {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: #e7887e;
+    font-size: 2rem;
+    align-content: center;
   }
-  .sp1-sec3-graph>div:nth-child(2){
-    width: 100%; height: 80%;
+  .sp1-sec3-graph > div:nth-child(2) {
+    width: 100%;
+    height: 80%;
     background-image: url(../img/spring-sub1/springSubSec2.png);
-    background-position: center; background-repeat: no-repeat;
-    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-.sp-slide-left,
-.sp-slide-right {
+  .sp-slide-left,
+  .sp-slide-right {
     width: 40px;
     height: 40px;
-}
-.sp1-sec4 > ul {
+  }
+  .sp1-sec4 > ul {
     height: auto;
-}
+  }
 
-.mb-hidden {
+  .mb-hidden {
     display: none;
-}
+  }
 }
 
 @media (min-width: 502px) and (max-width: 768px) {
-.sp1-sec4-card-box > li {
+  .sp1-sec4-card-box > li {
     width: 205px;
     height: 220px;
     margin-right: 0;
     margin-bottom: 2rem;
-}
+  }
 }
 
 /* 추가수정사항 */
