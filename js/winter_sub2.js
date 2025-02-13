@@ -5,9 +5,9 @@ const modalText = document.querySelector(".modal-text");
 const closeBtn = document.getElementById("closeBtn");
 
 const modalImagePaths = {
-  1: "../img/winter/스키1.jpg",
-  2: "../img/winter/김장1.png",
-  3: "../img/winter/설날1.jpg",
+  1: "../img/winter/스키1.jpg",
+  2: "../img/winter/김장1.png",
+  3: "../img/winter/설날1.jpg",
   4: "../img/winter/온천1.jpg",
   5: "../img/winter/얼음낚시1.jpg",
   6: "../img/winter/제야의종1.jpg",

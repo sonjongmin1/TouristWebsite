@@ -117,31 +117,31 @@
 }
 
 .sp1-mainImg1-su {
-  background-image: url("../img/winter/겨울1.jpg");
+  background-image: url("../img/winter/겨울1.jpg");
 }
 .sp1-mainImg2-su {
-  background-image: url("../img/winter/겨울2.jpg");
+  background-image: url("../img/winter/겨울2.jpg");
 }
 .sp1-mainImg3-su {
-  background-image: url("../img/winter/겨울3.jpg");
+  background-image: url("../img/winter/겨울3.jpg");
 }
 .sp1-mainImg4-su {
-  background-image: url("../img/winter/겨울1.jpg");
+  background-image: url("../img/winter/겨울1.jpg");
 }
 .sp1-mainImg5-su {
-  background-image: url("../img/winter/겨울2.jpg");
+  background-image: url("../img/winter/겨울2.jpg");
 }
 .sp1-mainImg6-su {
-  background-image: url("../img/winter/겨울3.jpg");
+  background-image: url("../img/winter/겨울3.jpg");
 }
 .sp1-mainImg7-su {
-  background-image: url("../img/winter/겨울1.jpg");
+  background-image: url("../img/winter/겨울1.jpg");
 }
 .sp1-mainImg8-su {
-  background-image: url("../img/winter/겨울2.jpg");
+  background-image: url("../img/winter/겨울2.jpg");
 }
 .sp1-mainImg9-su {
-  background-image: url("../img/winter/겨울3.jpg");
+  background-image: url("../img/winter/겨울3.jpg");
 }
 
 .sp-slide-left,
@@ -233,7 +233,7 @@
 }
 
 .sp1-sub-img-su {
-  background-image: url("../img/winter/겨울1.jpg");
+  background-image: url("../img/winter/겨울1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -680,28 +680,28 @@ body.no-scroll {
 
 /* 여름 코디 사진 */
 #su-cody-img5 {
-  background-image: url(../img/winter/겨울코디4.jpg);
+  background-image: url("../img/winter/겨울코디4.jpg");
   background-position: 100% 95%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #su-cody-img6 {
-  background-image: url(../img/winter/겨울코디3.jpg);
+  background-image: url("../img/winter/겨울코디3.jpg");
   background-repeat: no-repeat;
   background-position: 100% 80%;
   background-size: cover;
 }
 
 #su-cody-img7 {
-  background-image: url(../img/winter/겨울코디2.jpg);
+  background-image: url("../img/winter/겨울코디2.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: cover;
 }
 
 #su-cody-img8 {
-  background-image: url(../img/winter/겨울코디1.jpg);
+  background-image: url("../img/winter/겨울코디1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: cover;
@@ -841,7 +841,7 @@ body.no-scroll {
   }
 
   #su-cody-img5 {
-    background-image: url(../img/winter/겨울코디1.jpg);
+    background-image: url("../img/winter/겨울코디1.jpg");
     background-position: 43% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -862,7 +862,7 @@ body.no-scroll {
   }
 
   #su-cody-img8 {
-    background-image: url(../img/winter/겨울코디4.jpg);
+    background-image: url(../img/winter/겨울코디1.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: cover;
@@ -978,28 +978,28 @@ body.no-scroll {
 
 /* 여름 서브 1페이지  */
 #su-sub1-sp2-subImg1 {
-  background-image: url("../img/winter/비발디파크.jpg");
+  background-image: url("../img/winter/비발디파크.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #su-sub1-sp2-subImg2 {
-  background-image: url("../img/winter/양떼목장.jpg");
+  background-image: url("../img/winter/양떼목장.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #su-sub1-sp2-subImg3 {
-  background-image: url("../img/winter/오대산.jpg");
+  background-image: url("../img/winter/오대산.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #su-sub1-sp2-subImg4 {
-  background-image: url("../img/winter/보문호수.jpg");
+  background-image: url("../img/winter/보문호수.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1007,25 +1007,25 @@ body.no-scroll {
 
 /* 여름 음식 */
 #su-sub1-sp2-foodImg1 {
-  background-image: url("../img/winter/방어.jpg");
+  background-image: url("../img/winter/방어.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #su-sub1-sp2-foodImg2 {
-  background-image: url("../img/winter/곶감.jpg");
+  background-image: url("../img/winter/곶감.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #su-sub1-sp2-foodImg3 {
-  background-image: url("../img/winter/과매기.jpg");
+  background-image: url("../img/winter/과매기.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #su-sub1-sp2-foodImg4 {
-  background-image: url("../img/winter/석화.jpg");
+  background-image: url("../img/winter/석화.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1037,7 +1037,7 @@ body.no-scroll {
   width: 50%;
   height: 100%;
   margin-right: 10px;
-  background-image: url("../img/winter/대관령눈꽃축제.jpg");
+  background-image: url("../img/winter/대관령눈꽃축제.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1048,7 +1048,7 @@ body.no-scroll {
   width: 50%;
   height: 100%;
   margin-right: 10px;
-  background-image: url("../img/winter/해운대빛축제.jpg");
+  background-image: url("../img/winter/해운대빛축제.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1332,7 +1332,7 @@ body.no-scroll {
 }
 
 .sp3-galBox1 > div:nth-child(1) {
-  background-image: url("../img/winter/스키.jpg");
+  background-image: url("../img/winter/스키.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1340,7 +1340,7 @@ body.no-scroll {
 }
 
 .sp3-galBox1 > div:nth-child(2) {
-  background-image: url("../img/winter/김장.jpg");
+  background-image: url("../img/winter/김장.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1348,7 +1348,7 @@ body.no-scroll {
 }
 
 .sp3-galBox1 > div:nth-child(3) {
-  background-image: url("../img/winter/설날.jpg");
+  background-image: url("../img/winter/설날.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1356,7 +1356,7 @@ body.no-scroll {
 }
 
 .sp3-galBox2 > div:nth-child(1) {
-  background-image: url("../img/winter/온천.jpg");
+  background-image: url("../img/winter/온천.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1364,7 +1364,7 @@ body.no-scroll {
 }
 
 .sp3-galBox2 > div:nth-child(2) {
-  background-image: url("../img/winter/얼음낚시.jpg");
+  background-image: url("../img/winter/얼음낚시.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1372,7 +1372,7 @@ body.no-scroll {
 }
 
 .sp3-galBox2 > div:nth-child(3) {
-  background-image: url("../img/winter/제야의종.jpg");
+  background-image: url("../img/winter/제야의종.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
