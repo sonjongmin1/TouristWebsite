@@ -1507,6 +1507,12 @@ footer > span {
   width: 500px !important;
   height: 320px !important;
   margin-bottom: 100px;
+  background-size: 115% !important;
+  transition: 1.5s;
+}
+
+.sp3-galBox1 > div:hover {
+  background-size: 120% !important;
 }
 
 .sp3-galBox2 {
@@ -1521,9 +1527,45 @@ footer > span {
   width: 500px !important;
   height: 320px !important;
   margin-bottom: 100px;
+  background-size: 110% !important;
+  transition: 1.5s;
+}
+
+.sp3-galBox2 > div:hover {
+  background-size: 115% !important;
 }
 
 /* -----------2행 2열 ------------ */
+
+/* 모달 추가수정 */
+.modal-content {
+  padding: 6rem 6rem !important;
+  background-color: rgb(18, 42, 63) !important;
+  border: 1px solid #22d5ff !important;
+  height: 65% !important;
+}
+
+.modal-img {
+  width: 100% !important;
+  height: 70% !important;
+  margin: 0 !important;
+  border-radius: 3px !important;
+}
+
+.modal-text {
+  width: 100% !important;
+  height: 30% !important;
+  margin: 0 !important;
+  font-size: 1.6rem !important;
+  margin-top: 20px !important;
+  align-content: center !important;
+  color: #22d5ff !important;
+}
+
+#closeBtn {
+  color: #22d5ff !important;
+  font-size: 3.2rem !important;
+}
 
 /*  */
 /* pc */
@@ -1820,15 +1862,55 @@ footer > span {
   }
 
   .sp3-galBox1 > div {
-    width: 80% !important;
+    width: 90% !important;
     height: 200px !important;
     margin-bottom: 30px !important;
   }
 
   .sp3-galBox2 > div {
-    width: 80% !important;
+    width: 90% !important;
     height: 200px !important;
     margin-bottom: 30px !important;
+  }
+
+  .sp3-galImgBox {
+    background-size: 115% !important;
+  }
+
+  /* 모바일 모달 */
+
+  #modal {
+    padding: 4rem !important;
+  }
+
+  .modal-content {
+    width: 100% !important;
+    padding: 4rem 4rem !important;
+    background-color: rgb(18, 42, 63) !important;
+    border: 1px solid #22d5ff !important;
+    height: 45% !important;
+  }
+
+  .modal-img {
+    width: 100% !important;
+    height: 70% !important;
+    margin: 0 !important;
+    border-radius: 3px !important;
+  }
+
+  .modal-text {
+    width: 100% !important;
+    height: 30% !important;
+    margin: 0 !important;
+    font-size: 1.6rem !important;
+    margin-top: 20px !important;
+    align-content: center !important;
+    color: #22d5ff !important;
+  }
+
+  #closeBtn {
+    color: #22d5ff !important;
+    font-size: 2.4rem !important;
   }
 
   /* -------------------- */

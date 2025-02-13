@@ -22,6 +22,20 @@ const imageDescriptions = {
   6: "부산 바다 축제는 매년 여름 부산의 해운대, 광안리 등 주요 해변에서 열리는 대한민국 최대의 해변 축제다. 음악 공연, 서핑 대회, 불꽃놀이 등 다채로운 프로그램이 마련되어 있으며, 뜨거운 여름을 더욱 뜨겁게 즐길 수 있는 대표적인 여름 행사로 자리 잡았다.",
 };
 
+const shortDescriptions = {
+  1: "롯데월드: 서울의 대형 테마파크!",
+  2: "시그니엘부산: 해운대 호텔.",
+  3: "대금굴: 삼척의 신비로운 동굴.",
+  4: "삼척 솔비치: 강원도 고급 리조트.",
+  5: "스누피 가든: 제주 테마 정원.",
+  6: "부산 바다 축제: 여름 대표 축제.",
+};
+
+// 모바일 크기 확인 함수
+function isMobile() {
+  return window.innerWidth <= 768; // 모바일 화면 너비 기준
+}
+
 // 각 이미지 박스 클릭 이벤트
 images.forEach((imgBox) => {
   imgBox.addEventListener("click", (e) => {
@@ -33,14 +47,14 @@ images.forEach((imgBox) => {
 
     // 모달 이미지 설정
     modalImg.style.backgroundImage = `url('${modalImgSrc}')`;
+    modalImg.style.backgroundPosition = "center";
+    modalImg.style.backgroundRepeat = "no-repeat";
+    modalImg.style.backgroundSize = "cover";
 
-    // 추가된 스타일 설정
-    modalImg.style.backgroundPosition = "center"; // 이미지를 중앙에 위치
-    modalImg.style.backgroundRepeat = "no-repeat"; // 이미지 반복 방지
-    modalImg.style.backgroundSize = "cover"; // 이미지 비율 유지하며 전체 영역 채우기
-
-    // 모달 텍스트 설정
-    modalText.textContent = imageDescriptions[index];
+    // 텍스트 설정 (모바일과 PC 구분)
+    modalText.textContent = isMobile()
+      ? shortDescriptions[index]
+      : imageDescriptions[index];
   });
 });
 
