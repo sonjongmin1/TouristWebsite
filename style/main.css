@@ -755,9 +755,12 @@ header {
 }
 
 #searchButton {
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  background-color: #0f172a;
+  border-radius: 10px;
+  color: #fff;
 }
 .jb-mapTit {
   font-size: 1.5rem;
@@ -1666,6 +1669,14 @@ footer > span {
     opacity: 1;
     left: 0;
     transition: none;
+  }
+
+  .jb-reBox {
+    padding: 0;
+  }
+
+  #searchButton {
+    padding: 10px 30px 10px 30px;
   }
 
   /* 모바일 애니메이션 */
