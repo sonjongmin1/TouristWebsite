@@ -543,7 +543,6 @@ header {
   width: 100%;
   height: 90vh;
   /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
-  padding-bottom: 2rem;
   background-color: #0f172a;
   text-align: center;
   margin-top: 10%;
@@ -554,7 +553,7 @@ header {
   font-size: 3rem;
   font-family: "Rosarivo";
   color: #f8fafc;
-  padding-top: 2rem; /*제목위 여백*/
+  padding-top: 6.5rem; /*제목위 여백*/
 }
 .jb-subTit3 {
   font-size: 1.25rem;
@@ -623,8 +622,10 @@ header {
   color: #ffc0cb;
   border: 0.1rem solid #ffc0cb;
   background-color: #ffc0cb15;
+  padding: 10px;
 }
 .hi-reBoxSp-reviewStory:nth-child(1) {
+  padding-bottom: 5px;
   color: #ffffff;
   transition: 0.3s;
 }
@@ -632,7 +633,6 @@ header {
   color: #b8818a;
 }
 .hi-reBoxSp-reviewStory:nth-child(2) {
-  margin-top: 1rem;
   color: #ffc0cb;
   font-size: 1.5rem;
 }
@@ -1319,7 +1319,6 @@ footer > span {
     border: 0.1rem solid #ffc0cb;
     background-color: #ffc0cb15;
     align-content: center;
-    padding: 0 1rem;
   }
 
   .jb-suRevBox1,
