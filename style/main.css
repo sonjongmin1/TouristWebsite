@@ -1299,7 +1299,7 @@ footer > span {
 
   .jb-section2 {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
     background-color: #0f172a;
     text-align: center;
@@ -1587,7 +1587,7 @@ footer > span {
 
   .jb-section2 {
     width: 100%;
-    height: 110vh;
+    height: 125vh;
     /* padding: 2rem 0; 밑에 흰배경이 생성 됨 */
     background-color: #0f172a;
     text-align: center;
@@ -1686,6 +1686,14 @@ footer > span {
 
   #searchButton {
     padding: 10px 30px 10px 30px;
+  }
+
+  .jb-subTit2 {
+    padding-top: 35px;
+  }
+
+  .jb-subTit3 {
+    margin-bottom: 0;
   }
 
   /* 모바일 애니메이션 */
