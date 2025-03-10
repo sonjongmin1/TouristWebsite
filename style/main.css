@@ -1101,6 +1101,15 @@ footer > span {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0; /* 가로 스크롤바도 숨기고 싶으면 height 추가 */
+  }
+
+  * {
+    overflow-x: hidden !important;
+  }
+
   /* header */
   .jm-topNavMenu {
     height: 10rem;
