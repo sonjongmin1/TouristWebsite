@@ -470,6 +470,7 @@ header {
   padding: 2rem 0;
   text-align: center;
   margin-top: 10%;
+  overflow-x: hidden;
 }
 
 /* 제목 스타일 */
